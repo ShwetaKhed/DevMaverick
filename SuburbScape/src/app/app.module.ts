@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ExplorationComponent } from './exploration/exploration.component';
 import { RecommendationComponent } from './exploration/recommendation/recommendation.component';
 import { SuburbDetailsComponent } from './suburb-details/suburb-details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SuburbDetailsComponent } from './suburb-details/suburb-details.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
