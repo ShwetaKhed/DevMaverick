@@ -1,1 +1,50 @@
-<p>recommendation works!</p>
+
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+<section class="hero image-as-background" style="background-image: url('assets/home2.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
+  <div class="hero-container">
+    <app-navbar></app-navbar>
+    <p style=" margin-top: 50px;color: white;
+		font-size: 18px;
+    text-align: center;">
+     Write here
+    </p>
+    <div class="card-container">
+    <mat-card>
+    <cdk-accordion class="example-accordion">
+      <cdk-accordion-item
+        *ngFor="let item of items; let index = index;"
+        #accordionItem="cdkAccordionItem"
+        class="example-accordion-item"
+        role="button"
+        tabindex="0"
+        [attr.id]="'accordion-header-' + index"
+        [attr.aria-expanded]="accordionItem.expanded"
+        [attr.aria-controls]="'accordion-body-' + index">
+        <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+          {{ item.LGA }}
+          <span class="example-accordion-item-description">
+            Click to {{ accordionItem.expanded ? 'close' : 'open' }}
+          </span>
+        </div>
+        <div
+          class="example-accordion-item-body"
+          role="region"
+          [style.display]="accordionItem.expanded ? '' : 'none'"
+          [attr.id]="'accordion-body-' + index"
+          [attr.aria-labelledby]="'accordion-header-' + index">
+          {{item.Median}}
+        </div>
+      </cdk-accordion-item>
+    </cdk-accordion>
+    <p>&nbsp;</p>
+  </mat-card>
+</div>
+
+
+
+  </div>
+
+
+

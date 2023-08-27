@@ -1,1 +1,93 @@
-<p>exploration works!</p>
+
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+<section class="hero image-as-background" style="background-image: url('assets/home2.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
+  <div class="hero-container">
+    <app-navbar></app-navbar>
+    <p style=" margin-top: 50px;color: white;
+		font-size: 18px;
+		letter-spacing: 3px;
+    text-align: center;">
+     To begin with, search for suburbs within your rental budget
+          </p>
+
+
+  </div>
+</section>
+<section style="margin-left: 100px;">
+  <div class="container">
+    <div class="col-sm-6" style="margin-top: 50px;">
+      <form #myForm="ngForm" autocomplete="off" novalidate fxLayout="column wrap"
+      fxLayoutAlign="center center" fxLayoutGap="10px" (ngSubmit)="search()">
+      <p style="font-size: 18px;">Rental - Price </p>
+          <p>* Please select your monthly rental budget</p>
+      <div class="container">
+        <div class="col-sm-5">
+
+          <mat-divider style="width: 100%;"></mat-divider>
+          <mat-form-field style="margin-top: 40px; ">
+            <mat-label>Min</mat-label>
+            <mat-select required="true" (selectionChange)="onOptionSelected($event)" id="minRent" name="minRent" [(ngModel)]="minRent" style="background-color: transparent;">
+              <mat-option *ngFor="let option of options" [value]="option.value">{{ option.label }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-5">
+
+          <mat-form-field style="margin-top: 40px; ">
+            <mat-label>Max</mat-label>
+            <mat-select required="true"  id="maxRent" name="maxRent" [(ngModel)]="maxRent" style="background-color: transparent;">
+              <mat-option *ngFor="let option of option1" [value]="option.value">{{ option.label }}</mat-option>
+
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <mat-card-actions>
+        <a routerLink="/home" mat-button style=" cursor: pointer;  margin-left: 150px;
+        margin-top: 20px; background-color:rgb(17, 17, 82);
+        color: #e7eae9; width: 100px;">Back</a>
+        <button mat-button style="background-color: rgb(17, 17, 82); color: white;
+        margin-left: 15px; margin-top: 20px;width: 100px;" type="submit"
+                        mat-raised-button>
+                 Search
+                </button>
+      </mat-card-actions>
+      </form>
+    </div>
+    <div class="col-sm-6" style="margin-top: 20px;">
+      <div class="wrapper">
+        <div class="card">
+          <div class="poster">
+            <img src="assets/housing.jpg" alt="Location Unknown">
+
+          </div>
+          <p class="para">
+            "What housing opportunities and features does regional Victoria provide?"</p>
+          <p style="text-align: center;">** Hover for more details</p>
+          <div class="details">
+            <div>
+              <i><u> Diverse Architecture</u></i> -
+              Houses in regional Victoria can exhibit a wide range of architectural styles,
+               reflecting the historical & cultural influences.  <br>
+              <i><u> Affordability</u></i> -
+              Houses are more affordable than those in major cities like Melbourne.
+              <br>
+              <i><u>Lifestyle and Scenery</u> </i> -
+              Regional Victoria offers a picturesque & diverse landscape,
+              with coastal towns, agricultural regions, wine-producing areas. <br>
+              <i><u>Community Atmosphere</u></i> -
+              Smaller populations can lead to closer connections among neighbors
+              and a slower-paced, more communal way of life. <br>
+              <i><u>Commuting</u></i> -
+              Commuting times can be shorter in regional areas compared to big cities.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+

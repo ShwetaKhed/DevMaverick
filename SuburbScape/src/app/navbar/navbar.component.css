@@ -1,0 +1,62 @@
+mat-toolbar {
+  font-family: "Cambria", sans-serif;
+  font-size: 30px;
+  height: 70px;
+  background-color: transparent;
+}
+
+:root {
+  --duration: 0.3s;
+  --durationBack: 0.15s;
+  --ease: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+
+.heading {
+  font: 400 1.65rem/1 "Prata";
+  padding: 1.55rem 4.5rem 1.25rem;
+  line-height: 1;
+  border: none;
+
+  color: #e4810f;
+  cursor: pointer;
+  position: relative;
+  transition: background var(--ease) var(--durationBack);
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    z-index: 0;
+    position: absolute;
+    inset: 0;
+    border: 2px solid currentColor;
+    transition: transform var(--ease) var(--duration);
+  }
+
+  &::before {
+    transform: scale(1.075, 1);
+  }
+
+  &::after {
+    transform: scale(1.025, 1.2);
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transition-duration: var(--duration);
+
+    &::before,
+    &::after {
+      transform: scale(1, 1);
+      transition-duration: var(--duration);
+    }
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+
+
