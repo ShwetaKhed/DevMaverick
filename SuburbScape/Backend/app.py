@@ -47,7 +47,7 @@ def get_crime_data():
         cursor.execute("SELECT * FROM crime_vF")
         rows = cursor.fetchall()
         for row in rows:
-            data.append({'LGA': row[0], 'Category': row[1], 'Offence_Count': row[2], 'Rate_per_100,000_population': row[3]})
+            data.append({'LGA': row[0], 'Category': row[1], 'Offence_Count': row[2], 'Rate_per_100000_population': row[3]})
         cursor.close()
         conn.close()
         return jsonify(data)

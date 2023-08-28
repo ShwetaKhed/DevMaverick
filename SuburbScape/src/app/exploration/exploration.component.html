@@ -9,19 +9,19 @@
 		font-size: 18px;
 		letter-spacing: 3px;
     text-align: center;">
-     To begin with, search for suburbs within your rental budget
+     To begin with, search for suburbs within your weekly budget
           </p>
 
 
   </div>
 </section>
-<section style="margin-left: 100px;">
+<section style="margin-left: 100px;" >
   <div class="container">
     <div class="col-sm-6" style="margin-top: 50px;">
       <form #myForm="ngForm" autocomplete="off" novalidate fxLayout="column wrap"
-      fxLayoutAlign="center center" fxLayoutGap="10px" (ngSubmit)="search()">
+      fxLayoutAlign="center center" fxLayoutGap="10px" >
       <p style="font-size: 18px;">Rental - Price </p>
-          <p>* Please select your monthly rental budget</p>
+          <p>* Please select your weekly rental budget</p>
       <div class="container">
         <div class="col-sm-5">
 
@@ -44,16 +44,18 @@
           </mat-form-field>
         </div>
       </div>
-      <mat-card-actions>
-        <a routerLink="/home" mat-button style=" cursor: pointer;  margin-left: 150px;
+
+        <button mat-raised-button routerLink="/" style=" cursor: pointer;  margin-left: 150px;
         margin-top: 20px; background-color:rgb(17, 17, 82);
-        color: #e7eae9; width: 100px;">Back</a>
-        <button mat-button style="background-color: rgb(17, 17, 82); color: white;
-        margin-left: 15px; margin-top: 20px;width: 100px;" type="submit"
-                        mat-raised-button>
+        color: #e7eae9; width: 100px;">
+        Back
+
+      </button>
+
+        <button mat-raised-button style="background-color: rgb(17, 17, 82); color: white;
+        margin-left: 15px; margin-top: 20px;width: 100px;" (click)="search()">
                  Search
                 </button>
-      </mat-card-actions>
       </form>
     </div>
     <div class="col-sm-6" style="margin-top: 20px;">
@@ -89,5 +91,6 @@
     </div>
   </div>
 </section>
+
 
 

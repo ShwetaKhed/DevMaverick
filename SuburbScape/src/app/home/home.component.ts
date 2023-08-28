@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Renderer2 } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -22,12 +23,14 @@ export class HomeComponent {
     });
   }
 
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2, private router: Router) {}
 
   scrollDown() {
     const yOffset = window.innerHeight;
     this.renderer.setProperty(document.documentElement, 'scrollTop', yOffset);
   }
 
-
+  explore(){
+    this.router.navigate(['explore']);
+  }
 }

@@ -15,6 +15,7 @@ export class ExplorationComponent {
   minRent = 0;
   maxRent = 0;
   suburbList: Suburb[] = [];
+  crimeSuburbList : Suburb[] = [];
   options = [
     { value: 'Any', label: 'Any' },
     { value: '200', label: '$200' },
@@ -30,11 +31,12 @@ export class ExplorationComponent {
       }
 
   search(){
+
    if(this.minRent == 0 || this.maxRent == 0){
     alert("Please select min and max rent");
     return;
    }
-    console.log(this.minRent);
+
     if (String(this.minRent) == "Any")
     {
       this.minRent = 200;
@@ -47,10 +49,13 @@ export class ExplorationComponent {
       var median = response[i]["Median"];
       if (Number(this.minRent) <= Number(median) && Number(median) <= Number(this.maxRent))
       {
+
         this.suburbList.push(response[i]);
       }
      }
-     if (this.minRent)
+
+
+
      this.sharedService.suburbList = this.suburbList;
      this.router.navigate(['/recommend']);
     });

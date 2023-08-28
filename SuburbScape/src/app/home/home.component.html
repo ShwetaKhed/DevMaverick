@@ -5,61 +5,104 @@
 <section class="hero image-as-background" style="background-image: url('assets/home2.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
   <div class="hero-container">
     <app-navbar></app-navbar>
-
     <p class="hero-title animate fadeInLeft delay-600">
-Quote goes here?
-sfndsjkdsjknckdsjnck
-dshfbskjdnfdksjnskmskmks
-    </p>
-    <button mat-raised-button style="margin-top: 50px; margin-left: 100px; height: 50px;">
-      <mat-icon>explore</mat-icon>
-     Explore Regional Victoria
-    </button>
-    <br>
-    <span style="margin-left: 570px; color: white;">Scroll for more</span>
-    <div class="scroll-down-arrow" style="align-content: center;">
-      <span style="margin-left: 600px;" (click)="scrollDown()"></span></div>
-    </div>
+      Why Regional Victoria?
+      </p>
+      <p class="hero-subtitle animate fadeInLeft delay-800">
+        Discover better job opportunities, affordable living, vibrant communities and stunning landscapes.
+      </p>
+      <button mat-raised-button style="margin-top: 50px; margin-left: 100px; height: 50px; width: 280px;"
+      (click)="explore()">
+        <mat-icon>explore</mat-icon>
+       Explore Regional Victoria
+      </button>
+      <br>
+      <span style="margin-left: 570px; color: white;">Scroll for more</span>
+      <div class="scroll-down-arrow" style="align-content: center;">
+        <span style="margin-left: 600px;" (click)="scrollDown()"></span></div>
+      </div>
+
+
+
 </section>
 <div class="heading">
   <br><br>
 <span > What city dwellers love about regional victoria?</span>
  </div>
-<section id="timeline">
-  <div class="tl-item" >
-    <div class="tl-bg" style="background-image: url(assets/jobs.jpg)"></div>
-
-    <div class="title">
-      <p class="f2 heading--sanSerif" >Young people recognize regional job prospects</p>
-    </div>
-
-    <div class="tl-content">
-
-      <p>Young people believed there are many opportunities for professional, skilled and low skilled
-        roles in regional areas. 47% of Australians aged between 18-29 are more
-        likely than other age groups to agree regions offer
-        jobs with salaries on par with the city.</p>
-    </div>
-
+ <div class="site__wrapper">
+  <div class="grid">
+      <div class="card">
+        <div class="card__image">
+          <img src="assets/boxes.jpg" alt="">
+          <div class="card__overlay card__overlay--indigo">
+            <div class="card__overlay-content">
+              <p class="card_title">Almost 1 in 5 metro residents are
+                considering a move to regional Australia despite
+                a return to ‘normal life’ post-pandemic.</p>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 
-  <div class="tl-item" >
+  <div class="grid">
+      <div class="card">
+        <div class="card__image">
+          <img src="assets/jobs.jpg"   alt="">
 
-    <div class="tl-bg" style="background-image: url(assets/cost_of_living.jpg)"></div>
-
-    <div class="title">
-      <p class="f2 heading--sanSerif">The cost of living in the
-        city is biting.</p>
-    </div>
-
-    <div class="tl-content">
-
-      <p>Cost of living concerns increased
-        significantly, raising from 64% in
-        2020, to 79% in 2023.</p>
-    </div>
+          <div class="card__overlay card__overlay--blue">
+            <div class="card__overlay-content">
+              <p  class="card_title">Young people recognise regional job prospects.</p>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
-</section>
+
+  <div class="grid">
+      <div class="card">
+        <div class="card__image">
+          <img src="assets/coast.jpg" style ="height: 240px;">
+          <div class="card__overlay card__overlay--indigo">
+            <div class="card__overlay-content">
+              <p  class="card_title">Significantly higher interest in
+                coastal living.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="grid">
+      <div class="card">
+        <div class="card__image">
+          <img src="assets/crowd.jpg" style ="height: 240px;">
+          <div class="card__overlay card__overlay--indigo">
+            <div class="card__overlay-content">
+              <p class="card_title">Dissatisfaction with city life has
+                increased in the last three years.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="grid">
+      <div class="card">
+        <div class="card__image">
+          <img src="assets/lapflex.jpg" style ="height: 240px;">
+
+          <div class="card__overlay card__overlay--blue">
+            <div class="card__overlay-content">
+              <p  class="card_title">The more job flexibility,
+                the more interest there
+                is in regional living.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
 <div style="  height: 70px;">
   <br><br>
 <span > </span>

@@ -8,14 +8,7 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent {
   constructor(private router: Router) {
-
-    console.log("const")
   }
-
-  ngOnInit(): void {
-    console.log("on init");
-  }
-
 
   about() {
     this.router.navigate(['/about']);
@@ -27,7 +20,6 @@ export class NavbarComponent {
 
   explore(){
     this.router.navigate(['explore']);
-
   }
 
 }

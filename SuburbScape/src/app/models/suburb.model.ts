@@ -3,5 +3,7 @@ export interface Suburb {
   LGA: string,
   count: number,
   Median: number,
-  Desciption: string
+  Description: string,
+  Crime: number,
+  CrimePerData: number
 }
