@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Suburb } from '../models/suburb.model';
 import { SharedService } from '../shared.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-exploration',
@@ -15,7 +16,7 @@ export class ExplorationComponent {
   minRent = 0;
   maxRent = 0;
   suburbList: Suburb[] = [];
-  crimeSuburbList : Suburb[] = [];
+
   options = [
     { value: 'Any', label: 'Any' },
     { value: '200', label: '$200' },
@@ -26,40 +27,37 @@ export class ExplorationComponent {
   option1 = [ { value: 'Any', label: 'Any' }];
 
   constructor(private router: Router, private http: HttpClient,
-     private sharedService: SharedService) {
-
+     private sharedService: SharedService, private snackBar: MatSnackBar) {
+      this.http.get<any>('https://devmaverick.azurewebsites.net/api/data').subscribe((response) => {
+        console.log(response);
+        this.suburbList = response;
+        });
       }
 
   search(){
+    this.sharedService.selectedSuburb = [];
 
    if(this.minRent == 0 || this.maxRent == 0){
-    alert("Please select min and max rent");
+    this.showSnackbar("Please select min and max rent");
     return;
    }
 
-    if (String(this.minRent) == "Any")
+   for (var i = 0; i < this.suburbList.length; i++)
+   {
+    var median = this.suburbList[i]["Median"];
+
+    if (Number(this.minRent) <= Number(median) && Number(median) <= Number(this.maxRent))
     {
-      this.minRent = 200;
+      this.sharedService.selectedSuburb.push(this.suburbList[i]);
     }
+   }
 
-    this.http.get<any>('http://localhost:5000/api/rent_data').subscribe((response) => {
-    this.suburbList = [];
-     for (var i = 0; i < response.length; i++)
-     {
-      var median = response[i]["Median"];
-      if (Number(this.minRent) <= Number(median) && Number(median) <= Number(this.maxRent))
-      {
+   if (this.sharedService.selectedSuburb.length == 0)
+   {
+    this.sharedService.selectedSuburb = this.suburbList;
+   }
 
-        this.suburbList.push(response[i]);
-      }
-     }
-
-
-
-     this.sharedService.suburbList = this.suburbList;
-     this.router.navigate(['/recommend']);
-    });
-
+   this.router.navigate(['/recommend']);
   }
 
   onOptionSelected(event: any) {
@@ -104,6 +102,14 @@ export class ExplorationComponent {
 
     this.option1 = optionMappings[selectedValue] || [];
 
+  }
+
+  showSnackbar(message: string): void {
+    this.snackBar.open(message, 'Dismiss', {
+      duration: 3000, // Display duration in milliseconds
+      verticalPosition: 'bottom', // Position of the snackbar
+      horizontalPosition: 'center', // Position of the snackbar
+    });
   }
 
 }

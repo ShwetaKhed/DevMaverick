@@ -2,78 +2,87 @@
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
-<section class="hero image-as-background" style="background-image: url('assets/home2.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
+<section class="hero image-as-background" style="background-image: url('assets/home.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
   <div class="hero-container">
     <app-navbar></app-navbar>
-    <p style=" margin-top: 30px;color: white;
-		font-size: 18px;
-    text-align: center;">
-    Recommended Regional Suburbs
-    </p>
-    <div class="card-container">
-    <mat-card style ="height : 350px; overflow-y: auto;">
-      <div style="height: 80px">
-      <button mat-raised-button style="margin-top: 10px; margin-left:40px; height: 40px;
-       width: 120px; background-color: rgb(17, 17, 82); color: white; margin-bottom: 20px;"
-        routerLink="/explore">
-        <mat-icon>arrow_back</mat-icon>
-       Back
-      </button>
-    </div>
-    <cdk-accordion class="example-accordion">
-      <cdk-accordion-item
-        *ngFor="let item of items; let index = index;"
-        #accordionItem="cdkAccordionItem"
-        class="example-accordion-item"
-        role="button"
-        tabindex="0"
-        [attr.id]="'accordion-header-' + index"
-        [attr.aria-expanded]="accordionItem.expanded"
-        [attr.aria-controls]="'accordion-body-' + index">
-        <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
-          {{ item.LGA }}
-          <span class="example-accordion-item-description">
-            Click to {{ accordionItem.expanded ? 'close' : 'open' }}
-          </span>
-        </div>
-        <div class = "example-accordion-item-body container"
-        role="region"
-        [style.display]="accordionItem.expanded ? '' : 'none'"
-        [attr.id]="'accordion-body-' + index"
-        [attr.aria-labelledby]="'accordion-header-' + index">
-        <div class="col-sm-5" style="margin-left: 20px;">
-          <mat-divider style="width: 100%;"></mat-divider>
-          &nbsp;
-          <br>
-
-          <i><b>Description</b></i> - {{item.Description}} <br>
-          <mat-divider style="width: 100%;"></mat-divider>
-          &nbsp; <br>
-          <i><b>Median Rent</b></i> - {{item.Median}}  / week<br>
-          <mat-divider style="width: 100%;"></mat-divider>
-          &nbsp; <br>
-          <i><b>Crime Data</b></i> -  <br>
-          <mat-divider style="width: 100%;"></mat-divider>
-          Reported Offence Count - {{item.Crime}} <br>
-          Rate of Crime per 100000 people - {{item.CrimePerData}} <br>
-          &nbsp;
-        </div>
-        <div class="col-sm-5">
-          Add image here
-        </div>
-
       </div>
+</section>
+<button mat-raised-button style=" height: 40px; margin-top: 30px; margin-left: 30px;
+width: 120px; background-color: rgb(17, 17, 82); color: white; "
+ routerLink="/explore">
+ <mat-icon>arrow_back</mat-icon>
+Back
+</button>
+<div class="heading">
+<span > Recommended Regional Suburbs</span>
+<br>&nbsp;<br>
+<mat-divider style="width: 75%; margin-left: 170px;"></mat-divider>
+ <br>
+ <section style="margin-left: 50px; "  >
+  <div class="container">
+    <div class="col-sm-6" style="margin-top: 10px;" >
+      <cdk-accordion class="example-accordion">
+        <cdk-accordion-item
+          *ngFor="let item of items; let index = index;"
+          #accordionItem="cdkAccordionItem"
+          class="example-accordion-item"
+          role="button"
+          tabindex="0"
+          [attr.id]="'accordion-header-' + index"
+          [attr.aria-expanded]="accordionItem.expanded"
+          [attr.aria-controls]="'accordion-body-' + index">
+          <div class="example-accordion-item-header" (click)="createChart(index, item.Median, item.LGA, item.Offence_Count); accordionItem.toggle(); ">
+            <span style="font-size: 20px;">{{ item.LGA }} </span>
+            <span class="example-accordion-item-description">
+              {{ accordionItem.expanded ? '-' : '+' }}
+            </span>
+          </div>
+          <div class = "example-accordion-item-body"
+          role="region"
+          [style.display]="accordionItem.expanded ? '' : 'none'"
+          [attr.id]="'accordion-body-' + index"
+          [attr.aria-labelledby]="'accordion-header-' + index">
+            <mat-divider style="width: 100%;"></mat-divider><br>
+             <div style="font-size: 15px; margin-left: 63px;">{{item.Description}} </div><br>
+             <mat-divider style="width: 100%;"></mat-divider>
+             <br>
+             <span style="font-size: 15px;">Median Rent </span><br>
+             <div style="font-size: 15px; ">{{item.Median}} </div><br>
+             <mat-divider style="width: 100%;"></mat-divider>
+             <br>
+             <span style="font-size: 15px;">Reported Offences </span><br>
+             <div style="font-size: 15px; ">{{item.Offence_Count}} </div><br>
 
-      </cdk-accordion-item>
-    </cdk-accordion>
-    <p>&nbsp;</p>
-  </mat-card>
 
-</div>
+          </div>
+        </cdk-accordion-item>
+      </cdk-accordion>
+      </div>
+      <div class="col-sm-6" [style.margin-top]="getRandomMargin()"  >
+        <p style="font-size: 18px; text-align: center; ">Weekly Rental Price Comparison</p>
+        <mat-divider style="width: 450px;margin-left: 50px; "></mat-divider>
+        <canvas style="margin-left: 10px;" id="MyChart" >{{ chart }}</canvas> <br>
+
+        <p style="font-size: 18px; text-align: center; ">Yearly Offence Count Report (Highest VS Selected Suburb)</p>
+        <mat-divider style="width: 450px; margin-left: 50px;"></mat-divider>
+        <canvas style="margin-left: 10px;" id="MyChart1" >{{ piechart }}</canvas> <br>
+      </div>
 
 
 
   </div>
+</section>
+
+<div style="height: 20px;">
+  &nbsp;
+</div>
+
+
+
+
+
+
+
 
 
 

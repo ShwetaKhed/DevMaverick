@@ -1,17 +1,80 @@
-import { Component } from '@angular/core';
+import { Component,ElementRef, ViewChild, AfterViewInit, HostListener } from '@angular/core';
 import { Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { trigger, state, style, animate, transition } from '@angular/animations';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  animations: [
+    trigger('counterAnimation', [
+      state('void', style({
+        opacity: 0,
+        transform: 'translateY(20px)'
+      })),
+      transition(':enter', [
+        animate('2s ease', style({
+          opacity: 1,
+          transform: 'translateY(0)'
+        }))
+      ])
+    ]),
+    trigger('counterAnimation1', [
+      state('void', style({
+        opacity: 0,
+        transform: 'translateY(20px)'
+      })),
+      transition(':enter', [
+        animate('2s ease', style({
+          opacity: 1,
+          transform: 'translateY(0)'
+        }))
+      ])
+    ]),
+    trigger('counterAnimation2', [
+      state('void', style({
+        opacity: 0,
+        transform: 'translateY(20px)'
+      })),
+      transition(':enter', [
+        animate('2s ease', style({
+          opacity: 1,
+          transform: 'translateY(0)'
+        }))
+      ])
+    ]),
+    trigger('fadeIn', [
+      state('void', style({ opacity: 0 })),
+      state('*', style({ opacity: 1 })),
+      transition(':enter', animate('0.5s ease-in-out')),
+    ])
+  ]
 })
 export class HomeComponent {
+  counter: number = 0;
+  counter1: number = 0;
+  counter2: number = 0;
+  lastScrollPosition = 0;
+  showAnimation = false;
+  images = [
+    { id: 1, url: 'assets/home.jpg' },
+    { id: 2, url: 'path-to-image2.jpg' },
+    { id: 3, url: 'path-to-image3.jpg' },
+    // ... add more images
+  ];
+
+  @ViewChild('counterElement') counterElement!: ElementRef;
+  @ViewChild('counterElement1') counterElement1!: ElementRef;
+  @ViewChild('counterElement2') counterElement2!: ElementRef;
+
 
   ngOnInit(): void {
     this.doHero();
+
+
   }
   doHero(): void {
     window.addEventListener('scroll', () => {
@@ -23,14 +86,84 @@ export class HomeComponent {
     });
   }
 
-  constructor(private renderer: Renderer2, private router: Router) {}
+  constructor(private renderer: Renderer2, private router: Router) {
+  }
 
   scrollDown() {
+    this.counter = 0;
+    this.counter1 = 0;
+    this.counter2 = 0;
     const yOffset = window.innerHeight;
     this.renderer.setProperty(document.documentElement, 'scrollTop', yOffset);
+    this.counterElement.nativeElement.classList.add('animated', 'fadeInDownBig');
+    interval(100)
+      .subscribe(() => {
+        if (this.counter < 73) {
+          this.counter++;
+        }
+      });
+
+    this.counterElement1.nativeElement.classList.add('animated', 'fadeInDownBig');
+
+    interval(100)
+      .subscribe(() => {
+        if (this.counter1 < 61) {
+          this.counter1++;
+        }
+      });
+
+      this.counterElement2.nativeElement.classList.add('animated', 'fadeInDownBig');
+
+    interval(100)
+      .subscribe(() => {
+        if (this.counter2 < 52) {
+          this.counter2++;
+        }
+      });
   }
 
   explore(){
     this.router.navigate(['explore']);
   }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event) {
+    this.counter = 0;
+    this.counter1 = 0;
+    this.counter2 = 0;
+    this.lastScrollPosition = window.scrollY;
+    this.counterElement.nativeElement.classList.add('animated', 'fadeInDownBig');
+    interval(100)
+      .subscribe(() => {
+        if (this.counter < 73) {
+          this.counter++;
+        }
+      });
+      this.counterElement1.nativeElement.classList.add('animated', 'fadeInDownBig');
+
+      interval(100)
+        .subscribe(() => {
+          if (this.counter1 < 61) {
+            this.counter1++;
+          }
+        });
+
+
+      this.counterElement2.nativeElement.classList.add('animated', 'fadeInDownBig');
+
+      interval(100)
+        .subscribe(() => {
+          if (this.counter2 < 52) {
+            this.counter2++;
+          }
+        });
+
+        if ( this.lastScrollPosition == 650){
+        const triggerPosition = 800; // Adjust the position as needed
+        const yOffset = window.pageYOffset || document.documentElement.scrollTop;
+        this.showAnimation = yOffset > triggerPosition;
+        }
+  }
+
+
 }

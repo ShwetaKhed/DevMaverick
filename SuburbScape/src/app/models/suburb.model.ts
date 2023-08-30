@@ -4,6 +4,6 @@ export interface Suburb {
   count: number,
   Median: number,
   Description: string,
-  Crime: number,
-  CrimePerData: number
+  Offence_Count: number,
+  Rate_per_100000_population: number
 }

@@ -2,30 +2,28 @@
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
-<section class="hero image-as-background" style="background-image: url('assets/home2.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
+<section class="hero image-as-background" style="background-image: url('assets/home.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
   <div class="hero-container">
     <app-navbar></app-navbar>
-    <p style=" margin-top: 50px;color: white;
-		font-size: 18px;
-		letter-spacing: 3px;
-    text-align: center;">
-     To begin with, search for suburbs within your weekly budget
-          </p>
-
-
-  </div>
+      </div>
 </section>
-<section style="margin-left: 100px;" >
+
+<div class="heading">
+  <br><br>
+<span > Explore Victorian Regions by entering your preferred criteria</span>
+ </div>
+ <mat-divider style="width: 75%; margin-left: 170px;"></mat-divider>
+ <br>
+ <section style="margin-left: 100px; "  >
   <div class="container">
-    <div class="col-sm-6" style="margin-top: 50px;">
+    <div class="col-sm-6 animate fadeInUp delay-1000" style="margin-top: 10px;" >
       <form #myForm="ngForm" autocomplete="off" novalidate fxLayout="column wrap"
       fxLayoutAlign="center center" fxLayoutGap="10px" >
-      <p style="font-size: 18px;">Rental - Price </p>
-          <p>* Please select your weekly rental budget</p>
+      <p style="font-size: 18px; text-align: center; margin-right: 60px;">Rental - Price </p>
+          <p style="text-align: center; margin-right: 60px;"> <span style="color: red;">*</span> Please select your weekly rental budget</p>
       <div class="container">
         <div class="col-sm-5">
-
-          <mat-divider style="width: 100%;"></mat-divider>
+          <mat-divider style="width: 500px; "></mat-divider>
           <mat-form-field style="margin-top: 40px; ">
             <mat-label>Min</mat-label>
             <mat-select required="true" (selectionChange)="onOptionSelected($event)" id="minRent" name="minRent" [(ngModel)]="minRent" style="background-color: transparent;">
@@ -39,7 +37,6 @@
             <mat-label>Max</mat-label>
             <mat-select required="true"  id="maxRent" name="maxRent" [(ngModel)]="maxRent" style="background-color: transparent;">
               <mat-option *ngFor="let option of option1" [value]="option.value">{{ option.label }}</mat-option>
-
             </mat-select>
           </mat-form-field>
         </div>
@@ -58,39 +55,18 @@
                 </button>
       </form>
     </div>
-    <div class="col-sm-6" style="margin-top: 20px;">
-      <div class="wrapper">
-        <div class="card">
-          <div class="poster">
-            <img src="assets/housing.jpg" alt="Location Unknown">
-
-          </div>
-          <p class="para">
-            "What housing opportunities and features does regional Victoria provide?"</p>
-          <p style="text-align: center;">** Hover for more details</p>
-          <div class="details">
-            <div>
-              <i><u> Diverse Architecture</u></i> -
-              Houses in regional Victoria can exhibit a wide range of architectural styles,
-               reflecting the historical & cultural influences.  <br>
-              <i><u> Affordability</u></i> -
-              Houses are more affordable than those in major cities like Melbourne.
-              <br>
-              <i><u>Lifestyle and Scenery</u> </i> -
-              Regional Victoria offers a picturesque & diverse landscape,
-              with coastal towns, agricultural regions, wine-producing areas. <br>
-              <i><u>Community Atmosphere</u></i> -
-              Smaller populations can lead to closer connections among neighbors
-              and a slower-paced, more communal way of life. <br>
-              <i><u>Commuting</u></i> -
-              Commuting times can be shorter in regional areas compared to big cities.
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="col-sm-6" style="margin-top: 10px;">
+      <p style="font-size: 18px; text-align: center; margin-left: 20px;margin-right: 60px; margin-bottom: 50px;">Weekly Median Rent Across Different Regions </p>
+        <app-chart ></app-chart>
     </div>
   </div>
 </section>
+
+
+
+
+
+
 
 
 

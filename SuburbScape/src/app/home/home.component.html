@@ -2,108 +2,70 @@
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
-<section class="hero image-as-background" style="background-image: url('assets/home2.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
+<section class="hero image-as-background" style="background-image: url('assets/home.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
   <div class="hero-container">
     <app-navbar></app-navbar>
     <p class="hero-title animate fadeInLeft delay-600">
-      Why Regional Victoria?
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Why Regional Victoria?
       </p>
-      <p class="hero-subtitle animate fadeInLeft delay-800">
-        Discover better job opportunities, affordable living, vibrant communities and stunning landscapes.
+
+
+      <p class="hero-subtitle2 animate fadeInLeft delay-1000">
+       "Explore better lifestyle, make stronger connections and affordable housing"
       </p>
-      <button mat-raised-button style="margin-top: 50px; margin-left: 100px; height: 50px; width: 280px;"
+
+      <button mat-raised-button style="margin-top: 50px; margin-left: 450px; height: 50px; width: 280px;"
       (click)="explore()">
-        <mat-icon>explore</mat-icon>
+      <mat-icon>explore</mat-icon>
        Explore Regional Victoria
       </button>
-      <br>
-      <span style="margin-left: 570px; color: white;">Scroll for more</span>
+      <br>&nbsp;<br>
+
       <div class="scroll-down-arrow" style="align-content: center;">
-        <span style="margin-left: 600px;" (click)="scrollDown()"></span></div>
+        <span style="margin-left: 580px; margin-top: 200px;" (click)="scrollDown()"></span></div>
       </div>
-
-
-
 </section>
+<div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); margin-bottom: 20px;"></div>
 <div class="heading">
   <br><br>
-<span > What city dwellers love about regional victoria?</span>
+<span > What people love about regional victoria?</span>
  </div>
- <div class="site__wrapper">
-  <div class="grid">
-      <div class="card">
-        <div class="card__image">
-          <img src="assets/boxes.jpg" alt="">
-          <div class="card__overlay card__overlay--indigo">
-            <div class="card__overlay-content">
-              <p class="card_title">Almost 1 in 5 metro residents are
-                considering a move to regional Australia despite
-                a return to ‘normal life’ post-pandemic.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+ <mat-divider style="width: 75%; margin-left: 200px;"></mat-divider>
+ <br>
+ <p style="text-align: center; font-size: 20px; margin-bottom: 30px;">We asked people to rank which factors influenced their decision to move regionally.</p>
+ <div class="container">
+  <div class="row">
+    <div class="col-md-4" >
+      <h1><span class="counter" style="color: #00bce4; font-size: 40px;" [@counterAnimation]="'enter'" #counterElement>{{ counter }} %</span></h1>
+      <h3>said regional areas offer better <br>lifestyle/amenity</h3>
+    </div>
+    <div class="col-md-4">
+      <h1><span class="counter" style="color: green; font-size: 40px;" [@counterAnimation1]="'enter'" #counterElement1>{{ counter1 }} %</span></h1>
+      <h3>said they loved being closer to the natural environment</h3>
+    </div>
+    <div class="col-md-4">
+      <h1><span class="counter" style="color: red; font-size: 40px;" [@counterAnimation2]="'enter'" #counterElement2>{{ counter2 }} %</span></h1>
+      <h3>said they are satisfied with affordable <br>housing</h3>
+
+    </div>
   </div>
-
-  <div class="grid">
-      <div class="card">
-        <div class="card__image">
-          <img src="assets/jobs.jpg"   alt="">
-
-          <div class="card__overlay card__overlay--blue">
-            <div class="card__overlay-content">
-              <p  class="card_title">Young people recognise regional job prospects.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-
-  <div class="grid">
-      <div class="card">
-        <div class="card__image">
-          <img src="assets/coast.jpg" style ="height: 240px;">
-          <div class="card__overlay card__overlay--indigo">
-            <div class="card__overlay-content">
-              <p  class="card_title">Significantly higher interest in
-                coastal living.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-
-  <div class="grid">
-      <div class="card">
-        <div class="card__image">
-          <img src="assets/crowd.jpg" style ="height: 240px;">
-          <div class="card__overlay card__overlay--indigo">
-            <div class="card__overlay-content">
-              <p class="card_title">Dissatisfaction with city life has
-                increased in the last three years.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-
-  <div class="grid">
-      <div class="card">
-        <div class="card__image">
-          <img src="assets/lapflex.jpg" style ="height: 240px;">
-
-          <div class="card__overlay card__overlay--blue">
-            <div class="card__overlay-content">
-              <p  class="card_title">The more job flexibility,
-                the more interest there
-                is in regional living.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-
-<div style="  height: 70px;">
+</div>
+<br>
+<mat-divider style="width: 75%; margin-left: 200px;"></mat-divider>
+<div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100);">
   <br><br>
-<span > </span>
+<span ></span>
  </div>
+ <div class="heading">
+  <br><br>
+<span > Why people are moving to regional Victoria?</span>
+ </div>
+ <mat-divider style="width: 75%; margin-left: 200px;"></mat-divider>
+ <br>
+
+
+
+
+
+
+

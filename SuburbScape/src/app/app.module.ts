@@ -22,6 +22,9 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
+import { AboutComponent } from './about/about.component';
+import { ChartComponent } from './chart/chart.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -32,7 +35,9 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
     HomeComponent,
     ExplorationComponent,
     RecommendationComponent,
-    SuburbDetailsComponent
+    SuburbDetailsComponent,
+    AboutComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +54,8 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
     MatSelectModule,
     FormsModule,
     HttpClientModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
