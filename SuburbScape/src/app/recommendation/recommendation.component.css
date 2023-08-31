@@ -49,15 +49,7 @@
 		height: 100%;
 	}
 
-	p {
-		color: white;
-		font-size: 13px;
-    font-weight: bold;
-		letter-spacing: 6px;
-    opacity: 0.8;
-    text-transform: uppercase;
-    text-align: left;
-	}
+
 }
 
 
@@ -77,171 +69,21 @@
 	}
 }
 
-.hero-subtitle {
-	color: white;
-	letter-spacing: 1px;
-  line-height: 1.1;
-  margin: 5px 0;
-  margin-top: 10px;
-  text-align: center;
-  width: 100%;
-  @media screen and (min-width:640px) {
-		font-size: 2vw;
-	}
-}
-
-.hero-subtitle2 {
-	color: white;
-	letter-spacing: 1px;
-  line-height: 1.1;
-  margin: 5px 0;
-  margin-top: 10px;
-  text-align: center;
-  width: 100%;
-  @media screen and (min-width:640px) {
-		font-size: 1.6vw;
-	}
-}
-
-.main-content {
-  height: auto;
-	padding: 30px 50px;
-	position: relative;
-  width: 60%;
-}
-
-.main-content p {
-  color: #25373D;
-  font-size: 18px;
-  line-height: 1.5;
-}
 
 
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-12px, 0, 0);
 
-    transform: translate3d(-12px, 0, 0);
-  }
 
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
+
+
+
+
 
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
-.animate {
-    animation-duration: 0.75s;
-    animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(0.2, 0.3, 0.25, 0.9);
-}
 
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
-
-
-.delay-600 {
-  animation-delay: 0.6s;
-}
-
-.delay-1000 {
-  animation-delay: 0.6s;
-}
-
-
-@keyframes arrowBounce {
-  0%, 100% {
-    transform: rotate(45deg) translateY(0);
-  }
-  50% {
-    transform: rotate(45deg) translateY(10px);
-  }
-}
-
-@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  margin-top: 200px;
-}
-
-.col-md-4 {
-  text-align: center;
-  padding-bottom: 50px;
-
-}
-
-.col-md-4:last-child {
-  border-right: 0px solid black;
-}
-
-.counter {
-  animation-duration: 1s;
-  animation-delay: 0s;
-}
-
-i {
-  font-size: 20px !Important;
-}
-
-@media (max-width: 991px) {
-  .col-md-4 {
-    width: 50%;
-    margin: auto auto;
-  }
-
-
-}
-
-.animate-element {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  position: absolute;
-  left: 50%;
-  top: 1200px;
-  transform: translateX(-50%);
-}
 
 .container {
   display: flex;
@@ -249,23 +91,6 @@ i {
   padding: 0px;
 }
 
-.colophon {
-
-	background: hsl(0, 0%, 10%);
-	color: white;
-  font-size: 90%;
-	text-align: center;
-  line-height: 1.8em;
-}
-
-.colophon a {
-	color: white;
-}
-
-.colophon a:hover,
-.colophon a:focus {
-	border-bottom: 1px solid white;
-}
 
 .example-accordion {
   display: block;
@@ -327,6 +152,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
+  font-size: 15px!important;
 }
 
 

@@ -85,7 +85,9 @@ export class HomeComponent {
   }
 
   scrollDown() {
+
     const yOffset = window.innerHeight;
+    console.log(yOffset);
     this.renderer.setProperty(document.documentElement, 'scrollTop', yOffset);
     this.counterElement.nativeElement.classList.add('animated', 'fadeInDownBig');
     interval(200)
@@ -112,6 +114,14 @@ export class HomeComponent {
           this.counter2++;
         }
       });
+  }
+
+  scrollLater() {
+    const yOffset = window.scrollY;
+    window.scrollTo({
+      top: yOffset + 400,
+      behavior: "smooth"
+    });
   }
 
   explore(){
