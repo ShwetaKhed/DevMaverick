@@ -42,6 +42,19 @@ export class ExplorationComponent {
     return;
    }
 
+
+   if (String(this.minRent) == "Any" && String(this.maxRent) == "Any"){
+    this.minRent = 200;
+    this.maxRent = 600;
+  }
+   else if (String(this.minRent) == "Any")
+    {
+      this.minRent = 200;
+    }
+    else if (String(this.maxRent) == "Any"){
+      this.maxRent = 600;
+    }
+
    for (var i = 0; i < this.suburbList.length; i++)
    {
     var median = this.suburbList[i]["Median"];
@@ -52,10 +65,7 @@ export class ExplorationComponent {
     }
    }
 
-   if (this.sharedService.selectedSuburb.length == 0)
-   {
-    this.sharedService.selectedSuburb = this.suburbList;
-   }
+
 
    this.router.navigate(['/recommend']);
   }
@@ -74,7 +84,6 @@ export class ExplorationComponent {
     const optionMappings: OptionMappings = {
       "Any": [
         { value: 'Any', label: '$Any' },
-        { value: '200', label: '$200' },
         { value: '300', label: '$300' },
         { value: '400', label: '$400' },
         { value: '500', label: '$500' },

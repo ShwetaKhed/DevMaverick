@@ -17,14 +17,17 @@ export class RecommendationComponent {
   items: Suburb[] = [];
   expandedIndex = 0;
   temp:any;
+  shouldShow = true;
   ngOnInit(): void {
     this.items = this.sharedService.selectedSuburb;
-    //this.createPieChart();
+  }
+  showItem(){
+    this.shouldShow = false;
   }
 
   createChart(index:number, median:Number, LGA:string, crime:number){
-    this.expandedIndex = index;
 
+    this.expandedIndex = index;
     if (this.chart != undefined)
     {
       this.chart.destroy();
@@ -43,6 +46,13 @@ export class RecommendationComponent {
       options: {
         indexAxis: 'y',
         aspectRatio:3,
+        plugins:{
+          title: {
+            display: true,
+            text: 'Weekly Rental Price Comparison',
+
+          },
+        },
         scales: {
           x: {
             beginAtZero: true
@@ -65,7 +75,15 @@ export class RecommendationComponent {
         }]
       },
       options: {
-        aspectRatio:3
+        aspectRatio:3,
+        plugins:{
+          title: {
+            display: true,
+            text: 'Yearly Offence Count Report (Highest VS Selected Suburb)',
+
+          },
+        }
+
       }
     });
 

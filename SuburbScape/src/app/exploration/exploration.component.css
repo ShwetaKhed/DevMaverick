@@ -265,6 +265,13 @@ i {
 	border-bottom: 1px solid white;
 }
 
+footer {
+  background-color: rgb(29, 4, 100);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
 
 
 

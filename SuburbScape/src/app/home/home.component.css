@@ -32,6 +32,13 @@
 	}
 }
 
+.container1 {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+
 .hero-container {
 	box-sizing: border-box;
 	height: auto;
@@ -262,6 +269,13 @@ i {
   left: 50%;
   top: 1200px;
   transform: translateX(-50%);
+}
+
+footer {
+  background-color: rgb(29, 4, 100);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
 
 

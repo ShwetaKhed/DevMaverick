@@ -59,12 +59,7 @@ export class HomeComponent {
   counter2: number = 0;
   lastScrollPosition = 0;
   showAnimation = false;
-  images = [
-    { id: 1, url: 'assets/home.jpg' },
-    { id: 2, url: 'path-to-image2.jpg' },
-    { id: 3, url: 'path-to-image3.jpg' },
-    // ... add more images
-  ];
+  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
   @ViewChild('counterElement') counterElement!: ElementRef;
   @ViewChild('counterElement1') counterElement1!: ElementRef;
@@ -90,13 +85,10 @@ export class HomeComponent {
   }
 
   scrollDown() {
-    this.counter = 0;
-    this.counter1 = 0;
-    this.counter2 = 0;
     const yOffset = window.innerHeight;
     this.renderer.setProperty(document.documentElement, 'scrollTop', yOffset);
     this.counterElement.nativeElement.classList.add('animated', 'fadeInDownBig');
-    interval(100)
+    interval(200)
       .subscribe(() => {
         if (this.counter < 73) {
           this.counter++;
@@ -105,7 +97,7 @@ export class HomeComponent {
 
     this.counterElement1.nativeElement.classList.add('animated', 'fadeInDownBig');
 
-    interval(100)
+    interval(200)
       .subscribe(() => {
         if (this.counter1 < 61) {
           this.counter1++;
@@ -114,7 +106,7 @@ export class HomeComponent {
 
       this.counterElement2.nativeElement.classList.add('animated', 'fadeInDownBig');
 
-    interval(100)
+    interval(200)
       .subscribe(() => {
         if (this.counter2 < 52) {
           this.counter2++;
@@ -128,12 +120,9 @@ export class HomeComponent {
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event) {
-    this.counter = 0;
-    this.counter1 = 0;
-    this.counter2 = 0;
     this.lastScrollPosition = window.scrollY;
     this.counterElement.nativeElement.classList.add('animated', 'fadeInDownBig');
-    interval(100)
+    interval(200)
       .subscribe(() => {
         if (this.counter < 73) {
           this.counter++;
@@ -141,7 +130,7 @@ export class HomeComponent {
       });
       this.counterElement1.nativeElement.classList.add('animated', 'fadeInDownBig');
 
-      interval(100)
+      interval(200)
         .subscribe(() => {
           if (this.counter1 < 61) {
             this.counter1++;
@@ -151,7 +140,7 @@ export class HomeComponent {
 
       this.counterElement2.nativeElement.classList.add('animated', 'fadeInDownBig');
 
-      interval(100)
+      interval(200)
         .subscribe(() => {
           if (this.counter2 < 52) {
             this.counter2++;
