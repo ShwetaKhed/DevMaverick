@@ -7,81 +7,61 @@
     <app-navbar></app-navbar>
       </div>
 </section>
-<button mat-raised-button style=" height: 40px; margin-top: 30px; margin-left: 30px;
-width: 120px; background-color: rgb(17, 17, 82); color: white; "
- routerLink="/explore">
- <mat-icon>arrow_back</mat-icon>
-Back
-</button>
-<div class="heading">
-<span > Recommended Regional Suburbs</span>
-<br>&nbsp;<br>
-<mat-divider style="width: 75%; margin-left: 170px;"></mat-divider>
+<div class="heading" >
+  <br>
+<span > Recommended Victorian Regional Suburbs</span></div>
+<mat-divider style="width: 75%; margin-top: 10px; margin-left: 170px;"></mat-divider>
  <br>
  <section style="margin-left: 50px; "  >
   <div class="container">
-    <div class="col-sm-6" style="margin-top: 10px;" >
-      <cdk-accordion class="example-accordion">
-        <cdk-accordion-item
-          *ngFor="let item of items; let index = index;"
-          #accordionItem="cdkAccordionItem"
-          class="example-accordion-item"
-          role="button"
-          tabindex="0"
-          [attr.id]="'accordion-header-' + index"
-          [attr.aria-expanded]="accordionItem.expanded"
-          [attr.aria-controls]="'accordion-body-' + index">
-          <div class="example-accordion-item-header" (click)="createChart(index, item.Median, item.LGA, item.Offence_Count); accordionItem.toggle(); ">
-            <span style="font-size: 20px;">{{ item.LGA }} </span>
-            <span class="example-accordion-item-description">
-              {{ accordionItem.expanded ? '-' : '+' }}
-            </span>
-          </div>
-          <div class = "example-accordion-item-body"
-          role="region"
-          [style.display]="accordionItem.expanded ? '' : 'none'"
-          [attr.id]="'accordion-body-' + index"
-          [attr.aria-labelledby]="'accordion-header-' + index">
-            <mat-divider style="width: 100%;"></mat-divider><br>
-             <div style="font-size: 15px; margin-left: 63px;">{{item.Description}} </div><br>
-             <mat-divider style="width: 100%;"></mat-divider>
-             <br>
-             <span style="font-size: 15px;">Median Rent </span><br>
-             <div style="font-size: 15px; ">{{item.Median}} </div><br>
-             <mat-divider style="width: 100%;"></mat-divider>
-             <br>
-             <span style="font-size: 15px;">Reported Offences </span><br>
-             <div style="font-size: 15px; ">{{item.Offence_Count}} </div><br>
+    <div class="col-sm-6" style="margin-left: 200px; " >
 
-
-          </div>
-        </cdk-accordion-item>
-      </cdk-accordion>
-      </div>
-      <div class="col-sm-6" [style.margin-top]="getRandomMargin()"  >
-        <div>
-
-
-        </div>
-
-        <canvas style="margin-left: 10px;" id="MyChart" >{{ chart }}</canvas> <br>
-
-        <canvas style="margin-left: 10px;" id="MyChart1" >{{ piechart }}</canvas> <br>
-      </div>
-
-
+  </div>
 
   </div>
 </section>
+<div>
+  <div class="container">
+    <div class="col-sm-6" style="margin-top: 10px; margin-left: 100px; " >
+      <mat-form-field style=" width: 300px;">
+        <mat-label>Please select region</mat-label>
+        <mat-select required="true" id="suburb" name="suburb" [(ngModel)]="suburb" style="background-color: transparent;">
+          <mat-option *ngFor="let option of suburb_list" [value]="option.value">{{ option.label }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="col-sm-1" style="margin-top: 10px; margin-left: 65px; margin-bottom: 20px;" >
+        <button mat-raised-button style="background-color: rgb(17, 17, 82); color: white;
+        width: 140px;" (click)="go()">
+                 Go
+                </button>
+      </div>
+      <div *ngIf="showDiv">
+        <span style="font-size: 15px;">{{ this.desc}} </span><br>
+        <mat-divider style="width: 100%;"></mat-divider>
+        <br>
+        <span style="font-size: 15px;">Median Rent </span><br>
+        <span style="font-size: 15px;"> {{rent}} AUD per week</span><br>
+        <mat-divider style="width: 100%;"></mat-divider>
+        <br>
+        <span style="font-size: 15px;">Reported Offences </span><br>
+        <span style="font-size: 15px;"> {{crime}} </span><br>
+      </div>
+    </div>
+      <div class="col-sm-6"  style="height: 450px;">
+        <canvas style="margin-left: 10px;" id="MyChart" >{{ chart }}</canvas> <br>
+        <canvas style="margin-left: 10px;" id="MyChart1" >{{ piechart }}</canvas> <br>
+      </div>
+  </div>
+</div>
 
 <div style="height: 20px;">
   &nbsp;
 </div>
 
-<footer>
-  <p>&copy; 2023 SuburbScape. <br>All rights reserved.</p>
-</footer>
 
+<footer >
+  <p>&copy; 2023 SuburbScape. <br>TA04</p>
+</footer>
 
 
 

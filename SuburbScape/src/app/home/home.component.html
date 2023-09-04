@@ -4,9 +4,9 @@
 
 <section class="hero image-as-background" style="background-image: url('assets/home.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
   <div class="hero-container">
-    <app-navbar></app-navbar>
-    <p class="hero-title animate fadeInLeft delay-600">
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Why Regional Victoria?
+    <app-navbar ></app-navbar>
+    <p class="hero-title animate fadeInLeft delay-600" style="margin-left: 80px;">
+      Discover New Beginning in Regional <br> &nbsp;Victoria
       </p>
 
 
@@ -24,15 +24,47 @@
         <span style="margin-left: 580px; margin-top: 200px;" (click)="scrollDown()"></span></div>
       </div>
 </section>
-<div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); margin-bottom: 20px;"></div>
-<div class="heading">
+<div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); "></div>
+
+<div style="background-color: #f4f4f4;">
   <br><br>
-<span > What people love about regional victoria?</span>
- </div>
- <mat-divider style="width: 75%; margin-left: 200px;"></mat-divider>
+<div class="container1" style="margin-left: 50px;">
+  <div class="col-sm-4">
+    <div class="heading">
+      <br>
+      <span > Our Moto</span>
+     </div>
+     <mat-divider style="width: 100%; margin-left: 35px;  margin-right: 35px"></mat-divider>
+     <br>
+     <h3 style="text-align: center; margin-left: 30px;">
+      "We aim to empower Victorian residents to make well-informed decisions about relocation,
+      thereby improving their living standards and promoting financial security."</h3>
+      <br>
+      <div class="container1" >
+        <div class="col-sm-5" style="margin-left: 50px;">
+          <div class="heading">
+            <br>
+            <span >Intended Audience</span>
+           </div>
+
+
+        </div>
+        <div class="col-sm-5">
+        <img src = "assets/age.svg" style="height: 200px; margin-top: -50px;">
+        </div>
+      </div>
+  </div>
+  <div class="col-sm-7">
+    <div class="heading" style="margin-left: 100px;">
+      <br>
+    <span > What people love about regional victoria?</span>
+     </div>
+     <mat-divider style="width: 75%; margin-left: 130px;"></mat-divider>
+     <br>
+     <p style="text-align: center; font-size: 15px; margin-bottom: 30px; margin-left: 120px;">
+      We asked people to rank which factors influenced their decision to move regionally.</p>
  <br>
- <p style="text-align: center; font-size: 20px; margin-bottom: 30px;">We asked people to rank which factors influenced their decision to move regionally.</p>
- <div class="container">
+ <div class="container" style="margin-left: 70px;">
   <div class="row">
     <div class="col-md-4" >
       <h1><span class="counter" style="color: #00bce4; font-size: 40px;" [@counterAnimation]="'enter'" #counterElement>{{ counter }} %</span></h1>
@@ -45,56 +77,63 @@
     <div class="col-md-4">
       <h1><span class="counter" style="color: red; font-size: 40px;" [@counterAnimation2]="'enter'" #counterElement2>{{ counter2 }} %</span></h1>
       <h3>said they are satisfied with affordable <br>housing</h3>
-
+      <br>
+      <div class="blue-box" style="margin-left: 140px;" (click)="scrollToTop()">
+        <mat-icon style="color: white;">arrow_upward</mat-icon>
+     </div>
     </div>
   </div>
 </div>
-<br>
-<mat-divider style="width: 75%; margin-left: 200px;"></mat-divider>
-
+  </div>
+</div>
+</div>
 <div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100);">
   <div class="scroll-down-arrow" style="align-content: center;">
     <span style="margin-left: 580px; margin-top: 200px;" (click)="scrollLater()"></span>
   </div>
-<span ></span>
+
  </div>
+ <div style="background-color: #f4f4f4;">
  <div class="heading">
   <br><br>
-<span > Why people are moving to regional Victoria?</span>
-
+<span > Why SuburbScape?</span>
  </div>
  <mat-divider style="width: 75%; margin-left: 200px;"></mat-divider>
  <br>
- <div class="container" >
-  <div class="row" >
-    <div class="col-md-4" >
-      <img src="assets/case1.jpg" style="height: 300px; margin-left: 100px;">
-    </div>
-    <div class="col-md-6">
-      <h3 style="text-align: left; margin-left: 20px;">In the remote township of Nhill in western Victoria, Karen-Burmese refugees now make up 10 per cent per cent of the town’s population and 18 per cent of the workforce –
-        boosting the town’s economy and receiving a warm welcome from the local residents.</h3>
-
-        <h3 style="text-align: center; margin-left: 20px; color: rgb(116, 112, 112);">
-          “Nhill is a good place for us Karen,” says Hal Loo. “Coming here gave me the opportunity to see my dream of working with cars and machines come true.”
-        </h3>
-        <a mat-raised-button href="https://www.amnesty.org.au/country-towns-unlikely-refugee-success-story/" target="_blank"  style=" cursor: pointer;  margin-left: 110px;
-        margin-top: 20px; background-color:rgb(17, 17, 82);
-        color: #e7eae9; width: 300px;">
-        Read More
-
-      </a>
-    </div>
+ <p style="text-align: center; font-size: 17px; margin-bottom: 30px; margin-left: 50px;">
+ Our platform not only aids users in discovering budget-friendly
+ regions within Regional Victoria but is also committed to enhancing
+ the experience by incorporating interactive features as below</p>
+ <br>
+ <div class="container1" style="margin-left: 100px;">
+  <div class="col-sm-2" [ngClass]="{'animate fadeInLeft delay-600': applyClass}" style="margin-left: 50px;">
+    <img src = "assets/Maps.png" style="height: 250px; margin-top: -120px;">
+    <img src = "assets/transport.png" style="height: 250px; margin-top: -70px;">
 
   </div>
+  <div class="col-sm-2" [ngClass]="{'animate fadeInLeft delay-800': applyClass}"  style="margin-left: 40px;">
+    <img src = "assets/community.png" style="height: 250px;">
+
+  </div>
+  <div class="col-sm-2" [ngClass]="{'animate fadeInLeft delay-1000': applyClass}"  style="margin-left: 40px;">
+
+    <img src = "assets/compare_suburbs.png" style="height: 250px;">
+
+  </div>
+  <div class="col-sm-2" [ngClass]="{'animate fadeInLeft delay-1200': applyClass}"  style="margin-left: 120px;">
+    <img src = "assets/school.png" style="height: 250px; margin-top: -120px;">
+    <img src = "assets/content_based.png" style="height: 250px; margin-top: -70px;">
+    <div class="blue-box" style="margin-left: 260px;  margin-top: -70px;" (click)="scrollToTop()">
+      <mat-icon style="color: white;">arrow_upward</mat-icon>
+   </div>
+  </div>
+
 </div>
-<div style="height: 30px;"></div>
+  </div>
+
 <footer>
-  <p>&copy; 2023 SuburbScape. <br>All rights reserved.</p>
+  <p>&copy; 2023 SuburbScape. <br>TA04</p>
 </footer>
-
-
-
-
 
 
 

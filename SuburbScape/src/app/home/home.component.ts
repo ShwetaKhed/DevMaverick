@@ -33,6 +33,7 @@ import { interval } from 'rxjs';
           transform: 'translateY(0)'
         }))
       ])
+
     ]),
     trigger('counterAnimation2', [
       state('void', style({
@@ -59,7 +60,7 @@ export class HomeComponent {
   counter2: number = 0;
   lastScrollPosition = 0;
   showAnimation = false;
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  applyClass = false;
 
   @ViewChild('counterElement') counterElement!: ElementRef;
   @ViewChild('counterElement1') counterElement1!: ElementRef;
@@ -68,7 +69,6 @@ export class HomeComponent {
 
   ngOnInit(): void {
     this.doHero();
-
 
   }
   doHero(): void {
@@ -85,7 +85,7 @@ export class HomeComponent {
   }
 
   scrollDown() {
-
+    this.applyClass = false;
     const yOffset = window.innerHeight;
     console.log(yOffset);
     this.renderer.setProperty(document.documentElement, 'scrollTop', yOffset);
@@ -119,9 +119,10 @@ export class HomeComponent {
   scrollLater() {
     const yOffset = window.scrollY;
     window.scrollTo({
-      top: yOffset + 400,
+      top: yOffset + 540,
       behavior: "smooth"
     });
+    this.applyClass = true;
   }
 
   explore(){
@@ -130,6 +131,7 @@ export class HomeComponent {
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event) {
+
     this.lastScrollPosition = window.scrollY;
     this.counterElement.nativeElement.classList.add('animated', 'fadeInDownBig');
     interval(200)
@@ -158,11 +160,21 @@ export class HomeComponent {
         });
 
         if ( this.lastScrollPosition == 650){
-        const triggerPosition = 800; // Adjust the position as needed
+        const triggerPosition = 800;
         const yOffset = window.pageYOffset || document.documentElement.scrollTop;
         this.showAnimation = yOffset > triggerPosition;
         }
+        if ( this.lastScrollPosition == 1000){
+          this.applyClass = true;
+        }
+
   }
 
+  scrollToTop(){
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // You can change this to 'auto' for instant scrolling
+    });
+  }
 
 }

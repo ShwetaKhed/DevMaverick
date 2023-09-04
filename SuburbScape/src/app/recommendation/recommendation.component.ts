@@ -15,19 +15,32 @@ export class RecommendationComponent {
   public chart: any;
   public piechart: any;
   items: Suburb[] = [];
+  suburb = "";
   expandedIndex = 0;
+  showDiv = false;
   temp:any;
   shouldShow = true;
+  desc = "";
+  crime = 0;
+  rent = 0;
+  suburb_list = [
+    { value: '', label: '' }
+
+  ];
   ngOnInit(): void {
     this.items = this.sharedService.selectedSuburb;
+    this.suburb_list.pop();
+    for (var i = 0; i< this.sharedService.selectedSuburb.length; i++){
+      this.suburb_list.push( { value: this.sharedService.selectedSuburb[0].LGA,
+        label: this.sharedService.selectedSuburb[i].LGA })
+    }
+
   }
   showItem(){
     this.shouldShow = false;
   }
 
-  createChart(index:number, median:Number, LGA:string, crime:number){
-
-    this.expandedIndex = index;
+  createChart( median:Number, LGA:string, crime:number){
     if (this.chart != undefined)
     {
       this.chart.destroy();
@@ -89,31 +102,18 @@ export class RecommendationComponent {
 
   }
 
-  getRandomMargin(){
-    if (this.expandedIndex == 0 || this.expandedIndex == 1){
-      return `30px`;
-    }
-    if (this.expandedIndex < 8 ){
-    const randomMargin = 25 * this.expandedIndex + 100;
-    return `${randomMargin}px`;
-    }
-    else if (this.expandedIndex > 7  && this.expandedIndex < 18)
-    {
-      const randomMargin = 30 * this.expandedIndex + 300;
-      return `${randomMargin}px`;
-    }
-    else if (this.expandedIndex >= 18  && this.expandedIndex <= 30)
-    {
-      const randomMargin = 40 * this.expandedIndex + 400;
-      return `${randomMargin}px`;
-    }
-    else if (this.expandedIndex >= 31  && this.expandedIndex <= 48)
-    {
-      const randomMargin = 40 * this.expandedIndex + 500;
-      return `${randomMargin}px`;
-    }
-    return `20px`;
+  go(){
 
+    this.showDiv = true;
+    for (var i = 0; i< this.sharedService.selectedSuburb.length; i++){
+      if (this.suburb == this.sharedService.selectedSuburb[i].LGA)
+      {
+          this.desc = this.sharedService.selectedSuburb[i].Description;
+          this.crime = this.sharedService.selectedSuburb[i].Rate_per_100000_population
+          this.rent = this.sharedService.selectedSuburb[i].Median
+      }
+    }
+    this.createChart(this.rent, this.suburb, this.crime  );
   }
 
 }
