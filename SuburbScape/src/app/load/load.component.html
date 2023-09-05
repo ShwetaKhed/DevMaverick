@@ -1,0 +1,28 @@
+<div class="container" >
+  <div class="col-sm-5">
+    <div style="margin-top: 200px; margin-left: 200px;">
+      <h1>SuburbScape</h1>
+      <h3>
+        "A website that allows users to explore regional Victoria"
+      </h3>
+    </div>
+  </div>
+  <div class="col-sm-5">
+  <img src="assets/home.jpg" style="height: 200px; margin-top: 150px; margin-left: 30px;">
+  <br>&nbsp;
+    <h4 style = "margin-left: 70px;">**Input you password to continue</h4>
+    <mat-card-actions style="margin: 50px;">
+      <mat-form-field style = "margin-left: 45px;">
+        <mat-label>Login Password</mat-label>
+        <input type = "password" matInput required="true"  required [(ngModel)]="password" id="password" name="password" >
+        <mat-hint>** Team Name</mat-hint>
+      </mat-form-field> <br>
+
+
+    <button style = "margin-left: 135px; background-color: rgb(17, 17, 82); color: white; " mat-button  (click)="onLogin()"
+                              mat-raised-button>
+                       Login Now
+                      </button>
+  </mat-card-actions>
+  </div>
+  </div>

@@ -10,7 +10,7 @@ import { ExplorationComponent } from './exploration/exploration.component';
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { SuburbDetailsComponent } from './suburb-details/suburb-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatButtonModule } from '@angular/material/button';
@@ -25,6 +25,7 @@ import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http'
 import { AboutComponent } from './about/about.component';
 import { ChartComponent } from './chart/chart.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { LoadComponent } from './load/load.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     RecommendationComponent,
     SuburbDetailsComponent,
     AboutComponent,
-    ChartComponent
+    ChartComponent,
+    LoadComponent
   ],
   imports: [
     BrowserModule,
@@ -56,6 +58,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     HttpClientModule,
     MatProgressSpinnerModule,
     MatSnackBarModule,
+    MatInputModule
 
 
   ],

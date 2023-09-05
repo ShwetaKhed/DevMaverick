@@ -5,10 +5,15 @@ import { ExplorationComponent } from './exploration/exploration.component';
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { AboutComponent } from './about/about.component';
 import { ChartComponent } from './chart/chart.component';
+import { LoadComponent } from './load/load.component';
 
 const routes: Routes = [
   {
     path: '',
+    component: LoadComponent
+  },
+  {
+    path: 'home',
     component: HomeComponent
   },
   {
