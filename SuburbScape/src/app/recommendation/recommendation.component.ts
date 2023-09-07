@@ -15,10 +15,13 @@ export class RecommendationComponent {
   public chart: any;
   public piechart: any;
   items: Suburb[] = [];
-  suburb = "";
+  suburb: string = '';
   expandedIndex = 0;
   showDiv = false;
   temp:any;
+  data = [''];
+  labels = [''];
+  labels_pieChart = ['']
   shouldShow = true;
   desc = "";
   crime = 0;
@@ -31,11 +34,14 @@ export class RecommendationComponent {
     this.items = this.sharedService.selectedSuburb;
     this.suburb_list.pop();
     for (var i = 0; i< this.sharedService.selectedSuburb.length; i++){
-      this.suburb_list.push( { value: this.sharedService.selectedSuburb[0].LGA,
+      this.suburb_list.push( { value: this.sharedService.selectedSuburb[i].LGA,
         label: this.sharedService.selectedSuburb[i].LGA })
     }
-
-  }
+    this.suburb =  this.sharedService.selectedSuburb[0].LGA;
+    this.createChart(this.sharedService.selectedSuburb[0].Median,
+      this.sharedService.selectedSuburb[0].LGA, this.sharedService.selectedSuburb[0].Offence_Count)
+      this.go()
+    }
   showItem(){
     this.shouldShow = false;
   }
@@ -46,14 +52,14 @@ export class RecommendationComponent {
       this.chart.destroy();
     }
 
-    this.chart = new Chart("MyChart", {
+    this.chart = new Chart("MyChart2", {
       type: 'bar',
       data: {
-        labels: [this.sharedService.suburbWithHighestRent , LGA],
+        labels: this.labels,
         datasets: [{
-          data: [this.sharedService.highestRent, median],
+          data: [this.sharedService.highestRent,this.sharedService.avgRent ,median],
           label: "Rent comparison (Highest Rent  vs Selected Suburb Rent)",
-          backgroundColor: ['#FF5733', '#36A2EB']
+          backgroundColor: ['#FF5733', '#36A2EB', '#FFBF00']
         }]
       },
       options: {
@@ -63,7 +69,6 @@ export class RecommendationComponent {
           title: {
             display: true,
             text: 'Weekly Rental Price Comparison',
-
           },
         },
         scales: {
@@ -80,11 +85,11 @@ export class RecommendationComponent {
     this.piechart = new Chart("MyChart1", {
       type: 'pie',
       data: {
-        labels: [this.sharedService.suburbWithHighestCrime , LGA],
+        labels: this.labels_pieChart,
         datasets: [{
-          data: [this.sharedService.highestCrime, crime],
+          data: this.data,
           label: "Crime Rate comparison (Highest Crime Rate vs Selected Suburb Crime Rate)",
-          backgroundColor: ['#FF5733', '#36A2EB']
+          backgroundColor: ['#FF5733', '#36A2EB', '#FFBF00']
         }]
       },
       options: {
@@ -93,17 +98,13 @@ export class RecommendationComponent {
           title: {
             display: true,
             text: 'Yearly Offence Count Report (Highest VS Selected Suburb)',
-
           },
         }
-
       }
     });
-
   }
 
   go(){
-
     this.showDiv = true;
     for (var i = 0; i< this.sharedService.selectedSuburb.length; i++){
       if (this.suburb == this.sharedService.selectedSuburb[i].LGA)
@@ -113,7 +114,42 @@ export class RecommendationComponent {
           this.rent = this.sharedService.selectedSuburb[i].Median
       }
     }
-    this.createChart(this.rent, this.suburb, this.crime  );
+    if (this.suburb == "Surf Coast"){
+      this.labels = [
+        String(this.sharedService.suburbWithAvgRent),
+        String(this.suburb)]
+      this.createChart(this.rent, this.suburb, this.crime);
+    }
+    else if (this.suburb == "Ballarat")
+    {
+      this.labels = [
+        String(this.sharedService.suburbWithHighestRent),
+        String(this.suburb)]
+      this.createChart(this.rent, this.suburb, this.crime);
+    }
+    else
+    {
+      if (this.suburb == "Baw Baw")
+      {
+        this.labels_pieChart = [String(this.sharedService.suburbWithHighestCrime), String(this.suburb)]
+        this.data = [String(this.sharedService.highestCrime), String(this.crime)]
+      }
+      else if (this.suburb == "Latrobe")
+      {
+        this.labels_pieChart = [String(this.sharedService.suburbWithAvgCrime), String(this.suburb)]
+        this.data = [String(this.sharedService.avgCrime), String(this.crime)]
+      }
+      else {
+        this.labels_pieChart = [String(this.sharedService.suburbWithHighestCrime), String(this.suburb),
+          String(this.sharedService.suburbWithAvgCrime)]
+        this.data = [String(this.sharedService.highestCrime), String(this.crime), String (this.sharedService.avgCrime)]
+      }
+    this.labels = [String(this.sharedService.suburbWithHighestRent) ,
+      String(this.sharedService.suburbWithAvgRent),
+      String(this.suburb)]
+    this.createChart(this.rent, this.suburb, this.crime);
+    }
   }
+
 
 }

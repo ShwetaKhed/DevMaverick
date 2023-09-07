@@ -22,20 +22,21 @@
 </section>
 <div>
   <div class="container">
-    <div class="col-sm-6" style="margin-top: 10px; margin-left: 100px; " >
-      <mat-form-field style=" width: 300px;">
+    <div class="col-sm-6" style="margin-top: 10px; margin-left: 80px; " >
+      <mat-form-field style=" width: 300px; margin-left: 140px;">
         <mat-label>Please select region</mat-label>
-        <mat-select required="true" id="suburb" name="suburb" [(ngModel)]="suburb" style="background-color: transparent;">
+        <mat-select required="true" id="suburb" name="suburb" [(ngModel)]="suburb"
+        style="background-color: transparent; ">
           <mat-option *ngFor="let option of suburb_list" [value]="option.value">{{ option.label }}</mat-option>
         </mat-select>
       </mat-form-field>
       <div class="col-sm-1" style="margin-top: 10px; margin-left: 65px; margin-bottom: 20px;" >
         <button mat-raised-button style="background-color: rgb(17, 17, 82); color: white;
-        width: 140px;" (click)="go()">
-                 Go
+        width: 140px; margin-left: 138px;" (click)="go()">
+                 View Details
                 </button>
       </div>
-      <div *ngIf="showDiv">
+      <div *ngIf="showDiv" style="margin-top: 50px; align-items: center; text-align: center;">
         <span style="font-size: 15px;">{{ this.desc}} </span><br>
         <mat-divider style="width: 100%;"></mat-divider>
         <br>
@@ -43,12 +44,13 @@
         <span style="font-size: 15px;"> {{rent}} AUD per week</span><br>
         <mat-divider style="width: 100%;"></mat-divider>
         <br>
-        <span style="font-size: 15px;">Reported Offences </span><br>
+        <span style="font-size: 15px;">Reported Offences per 10000 people</span><br>
+        *These are the number of counts reported per year.
         <span style="font-size: 15px;"> {{crime}} </span><br>
       </div>
     </div>
       <div class="col-sm-6"  style="height: 450px;">
-        <canvas style="margin-left: 10px;" id="MyChart" >{{ chart }}</canvas> <br>
+        <canvas style="margin-left: 10px;" id="MyChart2" >{{ chart }}</canvas> <br>
         <canvas style="margin-left: 10px;" id="MyChart1" >{{ piechart }}</canvas> <br>
       </div>
   </div>

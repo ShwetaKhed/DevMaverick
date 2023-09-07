@@ -22,16 +22,22 @@ export class ChartComponent {
       // sorted data by rent
       const sortedDataByRent = this.suburbList.slice();
       sortedDataByRent.sort((a, b) => b.Median - a.Median);
-      console.log(sortedDataByRent);
+
       this.sharedService.highestRent = sortedDataByRent[0].Median;
       this.sharedService.suburbWithHighestRent = sortedDataByRent[0].LGA;
 
+      this.sharedService.avgRent  = sortedDataByRent[26].Median;
+      this.sharedService.suburbWithAvgRent = sortedDataByRent[26].LGA;
+
       // sorted data by crime
       const sortedDataByCrime = this.suburbList.slice();
-      sortedDataByCrime.sort((a, b) => b.Offence_Count - a.Offence_Count);
-      console.log(sortedDataByCrime);
-      this.sharedService.highestCrime = sortedDataByCrime[0].Offence_Count;
+      sortedDataByCrime.sort((a, b) => b.Rate_per_100000_population - a.Rate_per_100000_population);
+
+      this.sharedService.highestCrime = sortedDataByCrime[0].Rate_per_100000_population;
       this.sharedService.suburbWithHighestCrime = sortedDataByCrime[0].LGA;
+
+      this.sharedService.avgCrime  = sortedDataByCrime[23].Rate_per_100000_population;
+      this.sharedService.suburbWithAvgCrime = sortedDataByCrime[23].LGA;
 
       this.suburbList = this.suburbList.slice(0, 8)
       this.suburbList.forEach(median => {

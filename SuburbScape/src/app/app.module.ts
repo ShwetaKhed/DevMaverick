@@ -26,6 +26,7 @@ import { AboutComponent } from './about/about.component';
 import { ChartComponent } from './chart/chart.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { LoadComponent } from './load/load.component';
+import {MatDialog, MatDialogRef, MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { LoadComponent } from './load/load.component';
     HttpClientModule,
     MatProgressSpinnerModule,
     MatSnackBarModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule
 
 
   ],

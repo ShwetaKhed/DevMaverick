@@ -12,6 +12,10 @@ export class SharedService {
   suburbWithHighestRent : String = "";
   highestCrime: number = 0;
   suburbWithHighestCrime : String = "";
+  avgRent: number = 0;
+  suburbWithAvgRent: String = "";
+  avgCrime: number = 0;
+  suburbWithAvgCrime : String = "";
 
   constructor() { }
 }

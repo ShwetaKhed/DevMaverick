@@ -4,6 +4,9 @@ import { HttpClient } from '@angular/common/http';
 import { Suburb } from '../models/suburb.model';
 import { SharedService } from '../shared.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import {MatDialog, MatDialogRef, MatDialogModule} from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+
 
 @Component({
   selector: 'app-exploration',
@@ -27,7 +30,8 @@ export class ExplorationComponent {
   option1 = [ { value: 'Any', label: 'Any' }];
 
   constructor(private router: Router, private http: HttpClient,
-     private sharedService: SharedService, private snackBar: MatSnackBar) {
+     private sharedService: SharedService, private snackBar: MatSnackBar,
+     public dialog: MatDialog) {
       this.http.get<any>('https://devmaverick.azurewebsites.net/api/data').subscribe((response) => {
         console.log(response);
         this.suburbList = response;
@@ -64,9 +68,6 @@ export class ExplorationComponent {
       this.sharedService.selectedSuburb.push(this.suburbList[i]);
     }
    }
-
-
-
    this.router.navigate(['/recommend']);
   }
 
@@ -115,10 +116,12 @@ export class ExplorationComponent {
 
   showSnackbar(message: string): void {
     this.snackBar.open(message, 'Dismiss', {
-      duration: 3000, // Display duration in milliseconds
-      verticalPosition: 'bottom', // Position of the snackbar
-      horizontalPosition: 'center', // Position of the snackbar
+      duration: 3000,
+      verticalPosition: 'bottom',
+      horizontalPosition: 'center',
     });
   }
 
 }
+
+
