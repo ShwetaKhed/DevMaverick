@@ -3,12 +3,12 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 # Azure SQL connection
-#https://devmaverick.azurewebsites.net/api/data
-server = 'maverick.database.windows.net'
-database = 'dev' 
+#https://dev04backend.azurewebsites.net/api/data
+server = 'devm.database.windows.net'
+database = 'devm' 
 username = 'ta04'
 password = 'Zty912815'
-driver = '{ODBC Driver 18 for SQL Server}'  
+driver = '{ODBC Driver 18 for SQL Server}'   
 
 @app.route('/')
 def hello_world():
