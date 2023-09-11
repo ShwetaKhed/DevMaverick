@@ -32,7 +32,7 @@ export class ExplorationComponent {
   constructor(private router: Router, private http: HttpClient,
      private sharedService: SharedService, private snackBar: MatSnackBar,
      public dialog: MatDialog) {
-      this.http.get<any>('https://devmaverick.azurewebsites.net/api/data').subscribe((response) => {
+      this.http.get<any>('https://dev04backend.azurewebsites.net/api/data').subscribe((response) => {
         console.log(response);
         this.suburbList = response;
         });
