@@ -17,8 +17,9 @@ export class MapComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     // Leaflet map view
     this.map = L.map('leafletMap').setView([-36, 144.9631], 6.4);
+    console.log(this.map)
 
-    // Basic Layer 
+    // Basic Layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
     }).addTo(this.map);
@@ -32,26 +33,24 @@ export class MapComponent implements OnInit, AfterViewInit {
       'Loddon Mallee': 'purple',
     };
 
-    // json data 
+    // json data
     this.http.get<any>('assets/regional_vic.json').subscribe(geojsonData => {
       L.geoJSON(geojsonData, {
         style: function(feature) {
           if (feature && feature.properties) {
             const region = feature.properties.Region;
             const fillColor = regionColors[region] || 'gray';
-
             return {
               fillColor: fillColor,
               weight: 1,
               opacity: 1,
-              color: 'black',
-              fillOpacity: 0.7
+              color: 'grey',
+              fillOpacity: 0
             };
           }
-        
           return {};
         },
-        
+
         onEachFeature: function(feature, layer) {
           if (feature && feature.properties && feature.properties.LGA && feature.properties['Weekly Median Rent']) {
             const rent = parseInt(feature.properties['Weekly Median Rent']);

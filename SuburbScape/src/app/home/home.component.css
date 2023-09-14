@@ -14,7 +14,6 @@
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-
 	@media screen and (min-width:640px) {
 		background-position: 50% 0;
 	}
@@ -45,8 +44,6 @@
 	padding: 30px 50px;
 	position: relative;
 	z-index: 2;
-
-
   -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
     transition-timing-function: cubic-bezier(0.7,0,0.3,1);
     -webkit-transition-duration: 1.2s;
@@ -73,11 +70,11 @@
 	color: white;
 	letter-spacing: 1px;
   line-height: 1.1;
-  margin-top: 100px;
+  margin-top: 20px;
   text-align: center;
   width: 85%;
   @media screen and (min-width:640px) {
-		font-size: 3.5vw;
+		font-size: 3.1vw;
 	}
 }
 

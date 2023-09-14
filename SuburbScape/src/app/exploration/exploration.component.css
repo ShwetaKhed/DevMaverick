@@ -2,7 +2,7 @@
   font-family: "Cambria", sans-serif;
   font-size: 25px;
   background-color: transparent;
-  height: 12vh;  text-align: center; color: rgb(8, 8, 8);
+  height: 9vh;  text-align: center; color: rgb(8, 8, 8);
 }
 
 .hero {
@@ -272,10 +272,463 @@ footer {
   padding: 10px 0;
 }
 
+/* Adjust the styles as needed */
+.circle-container {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(203, 234, 32);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(18, 17, 17);
+  font-size: 16px;
+}
+
+.number {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.example-action-buttons {
+  padding-bottom: 20px;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 8px;
+}
 
 
+svg {
+  background-color: #FAB67F;
+  width:100%;
+  height:150px;
+}
+
+/* People */
+
+g#blue1,
+g#blue2,
+g#green1,
+g#orange1,
+g#orange-background1,
+g#orange-background2 {
+  animation-fill-mode: backwards;
+  transform-origin: 50% 100%;
+}
 
 
+g#blue1 {
+  opacity: 0;
+  animation: appear .4s ease-in-out,
+    scale-up .4s ease-in-out;
+  animation-fill-mode: forwards;
+}
 
+g#green1 {
+  opacity: 0;
+  animation: appear .4s ease-in-out .6s,
+    scale-up .4s ease-in-out .6s;
+  animation-fill-mode: forwards;
+}
 
+g#orange1 {
+  opacity: 0;
+  animation: appear .4s ease-in-out 1.2s,
+    scale-up .4s ease-in-out 1.2s;
+  animation-fill-mode: forwards;
+}
 
+g#blue2 {
+  opacity: 0;
+  animation: appear .4s ease-in-out 1.8s,
+    scale-up .4s ease-in-out 1.8s;
+  animation-fill-mode: forwards;
+}
+
+g#orange-background1, g#orange-background2 {
+  opacity: 0;
+  animation: appear .4s ease-in-out 2.2s,
+    scale .4s ease-in-out 2.2s;
+  animation-fill-mode: forwards;
+}
+
+g#people {
+  animation: disappear .3s ease-in 6.5s;
+  animation-fill-mode: forwards;
+}
+
+/* Clouds */
+
+g#clouds {
+  opacity: 1;
+}
+
+g.clouds1,
+g.clouds2,
+g.clouds3,
+g.clouds4,
+g.clouds5,
+g.clouds6,
+g.clouds7 {
+  transform-origin: 50% 50%;
+}
+
+g.clouds1 {
+  opacity: 0;
+  animation: appear .4s ease-in-out 4.6s,
+    scale .4s ease-in-out 4.6s,
+    scale-plane .4s ease-in-out 8.2s,
+    cloud-away-1 .6s ease-in-out 9.6s;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+
+g.clouds2 {
+  opacity: 0;
+  animation: appear .4s ease-in-out 4.2s,
+    scale .4s ease-in-out 4.2s,
+    cloud-enlarge .3s ease-in-out 8.2s,
+    cloud-away-2 .6s ease-in-out 9.6s;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+
+g.clouds3 {
+  opacity: 0;
+  animation: appear .4s ease-in-out 3.8s,
+    scale .4s ease-in-out 3.6s,
+    disappear .4s ease-in-out 7.8s;
+  animation-fill-mode: forwards;
+}
+
+g.clouds4 {
+  opacity: 0;
+  animation: appear .4s ease-in-out 3.4s,
+    scale .4s ease-in-out 3s,
+    disappear .4s ease-in-out 7.4s;
+  animation-fill-mode: forwards;
+}
+
+g.clouds5,
+g.clouds6,
+g.clouds7 {
+  opacity: 0;
+  animation: appear .4s ease-in-out 3s,
+    scale .4s ease-in-out 3s,
+    disappear .4s ease-in-out 7s;
+  animation-fill-mode: forwards;
+}
+
+/* Plane */
+
+g#plane {
+  opacity: 0;
+  transform-origin: 50% 50%;
+  animation: appear .4s ease-in-out 5.8s,
+    move-plane .4s ease-in-out 5.8s,
+    scale-plane .4s ease-in-out 8.2s;
+  animation-fill-mode: forwards;
+}
+
+g#plane-orange {
+  transform: translate(450px, 250px);
+  opacity: 0;
+  animation: appear .4s ease-in-out 9s;
+  animation-fill-mode: forwards;
+}
+
+g#plane-blue {
+  transform: translate(50px, 50px);
+  opacity: 0;
+  animation: appear .4s ease-in-out 9.4s;
+  animation-fill-mode: forwards;
+}
+
+g#planes-all {
+  animation: planes-away .5s ease-in 11s;
+  animation-fill-mode: forwards;
+}
+
+/* Phone */
+
+g#phone-group {
+  opacity: 0;
+  transform: scale(.8) translate(150px, 20px);
+  animation: appear .4s ease-in-out 11.8s,
+    disappear .4s ease-in-out 16.4s;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+
+g#phone-lines {
+  opacity: 0;
+  animation: appear .4s ease-in-out 12.2s,
+    scale .4s ease-in-out 12.2s,
+    rotate-and-scale 2s ease-in-out 13s,
+    scale-and-fade 1.5s ease-in-out 15s;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+
+#phone-circle {
+  animation: scale .4s ease-in 13.8s,
+    scale-and-fade 1s ease-in-out 15s;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+
+/* Earth */
+
+g#earth {
+  opacity: 0;
+  animation: appear .4s ease-in-out 16.8s,
+    scale .4s ease-in-out 16.8s;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+
+g#person1 {
+   opacity: 0;
+   animation: appear .3s ease-in-out 17.2s;
+   animation-fill-mode: forwards;
+}
+
+g#person2 {
+   opacity: 0;
+   animation: appear .3s ease-in-out 17.5s;
+   animation-fill-mode: forwards;
+}
+
+g#person3 {
+   opacity: 0;
+   animation: appear .3s ease-in-out 17.8s;
+   animation-fill-mode: forwards;
+}
+
+g#person4 {
+   opacity: 0;
+   animation: appear .3s ease-in-out 18.1s;
+   animation-fill-mode: forwards;
+}
+
+g#person5 {
+   opacity: 0;
+   animation: appear .3s ease-in-out 18.4s;
+   animation-fill-mode: forwards;
+}
+
+g#person6 {
+   opacity: 0;
+   animation: appear .3s ease-in-out 18.7s;
+   animation-fill-mode: forwards;
+}
+
+g#star1 {
+  opacity: 0;
+  animation: appear .2s ease-in-out 17.8s,
+    scale .2s ease-in-out 17.8s;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+
+g#star2 {
+  opacity: 0;
+  animation: appear .2s ease-in-out 18.7s,
+    scale .2s ease-in-out 18.7s;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+
+g#star3 {
+  opacity: 0;
+  animation: appear .2s ease-in-out 19s,
+    scale .2s ease-in-out 19s;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+
+g#star4 {
+  opacity: 0;
+  animation: appear .2s ease-in-out 19.3s,
+    scale .2s ease-in-out 19.3s;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+}
+
+g#earth-lines1 {
+  opacity: 0;
+  animation: appear .2s ease-in-out 19.6s 5,
+    disappear .2s ease-in-out 21s;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+}
+
+g#earth-lines2 {
+  opacity: 0;
+  animation: appear .2s ease-in-out 21s 5,
+    disappear .2s ease-in-out 22s;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+}
+
+g#earth-all {
+  animation: disappear .4s ease-in-out 22.4s,
+    move-up .4s ease-in 22.4s;
+  animation-fill-mode: forwards;
+}
+
+/* Speech bubbles */
+
+g#bubbles {
+  transform: translate(100px, 60px);
+}
+
+#bubble-orange {
+  opacity: 0;
+  animation: appear .3s ease-in-out 23.5s,
+    scale-up .3s ease-in-out 23.5s;
+  transform-origin: 50% 100%;
+  animation-fill-mode: forwards;
+}
+
+#bubble-black {
+  opacity: 0;
+  animation: appear .3s ease-in-out 23.9s,
+    scale-up .3s ease-in-out 23.9s;
+  transform-origin: 50% 100%;
+  animation-fill-mode: forwards;
+}
+
+#question {
+  opacity: 0;
+  animation: appear .2s ease-in-out 24.2s,
+    scale-up .2s ease-in-out 24.2s;
+  transform-origin: 50% 100%;
+  animation-fill-mode: forwards;
+}
+
+#exclamation {
+  opacity: 0;
+  animation: appear .2s ease-in-out 24.5s,
+    scale-up .2s ease-in-out 24.5s;
+  transform-origin: 50% 100%;
+  animation-fill-mode: forwards;
+}
+
+#bubble-s1 {
+  opacity: 0;
+  animation: appear .2s ease-in-out 24.2s,
+    scale-up .2s ease-in-out 24.2;
+  transform-origin: 50% 100%;
+  animation-fill-mode: forwards;
+}
+
+#bubble-s2 {
+  opacity: 0;
+  animation: appear .2s ease-in-out 24.5s,
+    scale-up .2s ease-in-out 24.5;
+  transform-origin: 50% 100%;
+  animation-fill-mode: forwards;
+}
+
+#bubble-s3 {
+  opacity: 0;
+  animation: appear .2s ease-in-out 24.8s,
+    scale-up .2s ease-in-out 24.8;
+  transform-origin: 50% 100%;
+  animation-fill-mode: forwards;
+}
+
+#bubble-s4 {
+  opacity: 0;
+  animation: appear .2s ease-in-out 25.1s,
+    scale-up .2s ease-in-out 25.1;
+  transform-origin: 50% 100%;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes disappear {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes scale-up {
+   0% { transform: scaleY(1); }
+  30% { transform: scaleY(.95); }
+  70% { transform: scaleY(1.05); }
+  100% { transform: scaleY(1); }
+}
+
+@keyframes scale {
+  0% { transform: scale(1); }
+  30% { transform: scale(.95); }
+  70% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes scale-plane {
+  0% { transform: translate(0, 0) scale(1); }
+  70% { transform: scale(1.45); }
+  100% { transform: translate(0, 100px) scale(1.4); }
+}
+
+@keyframes move-plane {
+  0% { transform: translate(-200px, 200px); }
+  90% { transform: translate(8px, -8px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes cloud-enlarge {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(260px, 130px) scale(1.7); }
+}
+
+@keyframes cloud-away-1 {
+  0% { transform: translate(0, 100px) scale(1.4); }
+  100% { transform: translate(-200px, 200px) scale(0); }
+}
+
+@keyframes cloud-away-2 {
+  0% { transform: translate(260px, 130px) scale(1.7); }
+  100% { transform: translate(-200px, 200px) scale(0); }
+}
+
+@keyframes planes-away {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(400px, -400px); }
+}
+
+@keyframes rotate-and-scale {
+  0% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.7) rotate(360deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes scale-and-fade {
+  0% { transform: scale(1) rotate(0deg); opacity: 1; }
+  100% { transform: scale(2) rotate(180deg); opacity: 0; }
+}
+
+@keyframes move-up {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-400px); }
+}

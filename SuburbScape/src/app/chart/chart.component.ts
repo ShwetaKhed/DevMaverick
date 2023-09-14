@@ -17,7 +17,7 @@ export class ChartComponent {
   delayed = false;
 
   ngOnInit(): void {
-    this.http.get<any>('https://devmaverick.azurewebsites.net/api/data').subscribe((response) => {
+    this.http.get<any>('https://dev04backend.azurewebsites.net/api/data').subscribe((response) => {
       this.suburbList = response;
       // sorted data by rent
       const sortedDataByRent = this.suburbList.slice();

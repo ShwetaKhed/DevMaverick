@@ -2,19 +2,22 @@
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
-<section class="hero image-as-background" style="background-image: url('assets/home.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
+<section class="hero image-as-background" style="background-image: url('assets/alpine.jpeg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
   <div class="hero-container">
     <app-navbar ></app-navbar>
-    <p class="hero-title animate fadeInLeft delay-600" style="margin-left: 80px;">
-      Discover New Beginning in Regional <br> &nbsp;Victoria
-      </p>
+    <mat-card style=" background-color: rgba(0,0,0,.6); margin-top: 50px;
+    margin-left: 50px; margin-right: 50px;" class="animate fadeInLeft delay-600 ">
+      <p class="hero-title " style="margin-left: 80px;">
+        Discover a new beginning with unparalleled affordability
+        in the beautiful landscapes of Regional Victoria.
+        </p>
+        <p class="hero-subtitle2">
+          "Explore affordable housing, serene lifestyle & build stronger connections"<br>
+          &nbsp;
+         </p>
 
-
-      <p class="hero-subtitle2 animate fadeInLeft delay-1000">
-       "Explore affordable housing, serene lifestyle & build stronger connections"
-      </p>
-
-      <button mat-raised-button style="margin-top: 50px; margin-left: 450px; height: 50px; width: 280px;"
+    </mat-card>
+    <button mat-raised-button style="margin-top: 50px; margin-left: 450px; height: 50px; width: 280px;"
       (click)="explore()">
       <mat-icon>explore</mat-icon>
        Explore Regional Victoria
@@ -40,19 +43,7 @@
       "We aim to empower Victorian residents to make well-informed decisions about relocation,
       thereby improving their living standards and promoting financial security."</h3>
       <br>
-      <div class="container1" >
-        <div class="col-sm-5" style="margin-left: 50px;">
-          <div class="heading">
-            <br>
-            <span >Intended Audience</span>
-           </div>
-
-
-        </div>
-        <div class="col-sm-5">
-        <img src = "assets/age.svg" style="height: 200px; margin-top: -50px;">
-        </div>
-      </div>
+      <img src = "assets/Logo2.png" style = "height: 120px; margin-left: 58px;">
   </div>
   <div class="col-sm-7">
     <div class="heading" style="margin-left: 100px;">
@@ -89,7 +80,7 @@
 </div>
 <div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100);">
   <div class="scroll-down-arrow" style="align-content: center;">
-    <span style="margin-left: 580px; margin-top: 200px;" (click)="scrollLater()"></span>
+    <span style="margin-left: 600px; margin-top: 200px;" (click)="scrollLater()"></span>
   </div>
 
  </div>
@@ -132,7 +123,7 @@
   </div>
 
 <footer>
-  <p>&copy; 2023 SuburbScape. <br>TA04</p>
+  <p>&copy; 2023 SuburbScape.</p>
 </footer>
 
 

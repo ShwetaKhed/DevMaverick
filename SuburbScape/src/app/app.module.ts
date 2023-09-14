@@ -26,8 +26,10 @@ import { AboutComponent } from './about/about.component';
 import { ChartComponent } from './chart/chart.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { LoadComponent } from './load/load.component';
-import {MatDialog, MatDialogRef, MatDialogModule} from '@angular/material/dialog';
 import { MapComponent } from './map/map.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -62,8 +64,10 @@ import { MapComponent } from './map/map.component';
     MatProgressSpinnerModule,
     MatSnackBarModule,
     MatInputModule,
-    MatDialogModule
+    MatCheckboxModule,
+    MatRadioModule,
 
+    MatExpansionModule
 
   ],
   providers: [],
