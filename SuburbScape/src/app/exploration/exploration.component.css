@@ -1,8 +1,18 @@
+
+
+
 .heading{
   font-family: "Cambria", sans-serif;
   font-size: 25px;
   background-color: transparent;
   height: 9vh;  text-align: center; color: rgb(8, 8, 8);
+}
+
+.general{
+  font-family: "Cambria", sans-serif;
+  background-color: transparent;
+  color: rgb(8, 8, 8);
+  margin-left: 20px;
 }
 
 .hero {
@@ -732,3 +742,20 @@ g#bubbles {
   0% { transform: translateY(0); }
   100% { transform: translateY(-400px); }
 }
+
+.arrow-container {
+  margin-left: 160px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.blue-box {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(29, 4, 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
