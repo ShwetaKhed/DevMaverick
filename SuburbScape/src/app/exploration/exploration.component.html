@@ -46,7 +46,7 @@
             id="occ" name="occ" [(ngModel)]="minRent" style="background-color: transparent;">
               <mat-option *ngFor="let option of occList" [value]="option.value">{{ option.label }}</mat-option>
             </mat-select>
-          </mat-form-field>
+          </mat-form-field><br>
           <button mat-raised-button style="background-color: rgb(17, 17, 82); color: white;
           margin-left: 100px; margin-top: 0px;width: 140px;" (click)="searchSuburb()">
                    Search
