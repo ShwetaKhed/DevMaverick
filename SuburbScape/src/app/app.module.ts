@@ -1,14 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ExplorationComponent } from './exploration/exploration.component';
-import { RecommendationComponent } from './recommendation/recommendation.component';
-import { SuburbDetailsComponent } from './suburb-details/suburb-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -22,11 +18,8 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
-import { AboutComponent } from './about/about.component';
-import { ChartComponent } from './chart/chart.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { LoadComponent } from './load/load.component';
-import { MapComponent } from './map/map.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
@@ -36,15 +29,9 @@ import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent,
     HomeComponent,
     ExplorationComponent,
-    RecommendationComponent,
-    SuburbDetailsComponent,
-    AboutComponent,
-    ChartComponent,
-    LoadComponent,
-    MapComponent
+    LoadComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +53,6 @@ import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
     MatInputModule,
     MatCheckboxModule,
     MatRadioModule,
-
     MatExpansionModule
 
   ],
