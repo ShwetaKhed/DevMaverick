@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ExplorationComponent } from './exploration/exploration.component';
 import { LoadComponent } from './load/load.component';
+import { RecommendComponent } from './recommend/recommend.component';
 
 const routes: Routes = [
   {
@@ -15,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'explore',
-    component: ExplorationComponent
+    component: RecommendComponent
   }
 
 ];

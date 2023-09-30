@@ -23,6 +23,16 @@ import { LoadComponent } from './load/load.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
+import { RecommendComponent } from './recommend/recommend.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {
+  CdkDrag,
+  CdkDragDrop,
+  CdkDragPlaceholder,
+  CdkDropList,
+  moveItemInArray,
+} from '@angular/cdk/drag-drop';
+import { CustomSnackbarComponent } from './custom-snackbar/custom-snackbar.component';
 
 
 @NgModule({
@@ -31,7 +41,9 @@ import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
     NavbarComponent,
     HomeComponent,
     ExplorationComponent,
-    LoadComponent
+    LoadComponent,
+    RecommendComponent,
+    CustomSnackbarComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +65,11 @@ import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
     MatInputModule,
     MatCheckboxModule,
     MatRadioModule,
-    MatExpansionModule
+    MatExpansionModule,
+    CdkDropList,
+    CdkDrag,
+    CdkDragPlaceholder,
+    MatProgressBarModule
 
   ],
   providers: [],

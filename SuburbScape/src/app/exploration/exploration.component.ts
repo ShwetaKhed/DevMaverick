@@ -10,7 +10,6 @@ import { employment } from '../models/employment.model';
 import { community } from '../models/community.model';
 
 
-
 @Component({
   selector: 'app-exploration',
   templateUrl: './exploration.component.html',
@@ -66,6 +65,7 @@ export class ExplorationComponent implements AfterViewInit {
     { value: '', label: '' }
   ];
   dataDictJobs: string[] = [];
+
 
   constructor(private router: Router, private http: HttpClient,
     private sharedService: SharedService, private snackBar: MatSnackBar) {
@@ -287,7 +287,7 @@ export class ExplorationComponent implements AfterViewInit {
     this.updateMap(true);
     const yOffset = window.scrollY;
     window.scrollTo({
-      top: yOffset + 400,
+      top: yOffset + 600,
       behavior: "smooth"
     });
     if (this.chart != undefined)

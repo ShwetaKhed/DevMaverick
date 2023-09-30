@@ -1,0 +1,310 @@
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<section class="hero image-as-background" style="background-image: url('assets/home.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
+  <div class="hero-container">
+    <app-navbar></app-navbar>
+      </div>
+</section>
+   <section style="background-image: url('assets/Base.png?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
+    <div class="heading"  *ngIf = !checked2>
+      <br>
+    <span >Discover the regions</span><br>
+    <span style=" font-size: 15px;">You select your needs and we will provide a list of recommended regions</span>
+     </div>
+    <div *ngIf = !checked2>
+    <br> &nbsp;
+    <div class="container">
+      <div class="col-sm-5"  style="margin-left: 15%">
+        <div class="bs-vertical-wizard">
+          <ul>
+            <li [class]="getClassname(completedCondition)">
+                <p style="text-align: center; ">Step 1 <i class="ico fa fa-check ico-green"></i>
+                    <span class="desc">Please select your weekly rental budget
+                      <i class="fa fa-question-circle" title="This is a tooltip message"></i></span>
+                </p>
+                <mat-divider></mat-divider>
+            </li>
+
+            <li [class]="getClassname1(completedCondition1)">
+              <p style="text-align: center; ">Step 2 <i class="ico fa fa-lock ico-muted"  *ngIf=!icheck></i>
+                <i class="ico fa fa-check ico-green"  *ngIf=icheck></i>
+                  <span class="desc">Select your profession.(Select N/A if not applicable)
+                    <i class="fa fa-question-circle" title="This is a tooltip message"></i>
+                  </span>
+              </p>
+              <mat-divider></mat-divider>
+          </li>
+          <li [class]="getClassname2(completedCondition2)">
+            <p  style="text-align: center; ">Step 3 <i class="ico fa fa-lock ico-muted" *ngIf=!checked3></i>
+              <i class="ico fa fa-check ico-green"  *ngIf=checked3></i>
+                <span class="desc">    Rearrange the preferences <br>
+                  (1 being the highest priority and 4 being the lowest)
+                  <i class="fa fa-question-circle" title="This is a tooltip message"></i></span>
+            </p>
+            <mat-divider></mat-divider>
+        </li>
+        <li [class]="getClassname2(completedCondition2)">
+          <p  style="text-align: center; ">Step 4 <i class="ico fa fa-lock ico-muted" *ngIf=!checked3></i>
+            <i class="ico fa fa-check ico-green"  *ngIf=checked3></i>
+              <span class="desc">Search/ Reset</span>
+          </p>
+          <mat-divider></mat-divider>
+      </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-5">
+        <div [class]="getClassname(completedCondition)">
+        <div class="container" style="margin-left: 5%; ">
+          <div class="col-sm-5">
+
+            <mat-form-field style="  width: 140px;">
+              <mat-label>Min</mat-label>
+              <mat-select required="true" (selectionChange)="onOptionSelected($event)"
+              id="minRent" name="minRent" [(ngModel)]="minRent" style="background-color: transparent;">
+                <mat-option *ngFor="let option of options" [value]="option.value">{{ option.label }}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-sm-7">
+            <mat-form-field style="width: 140px; margin-left: 0px;">
+              <mat-label>Max</mat-label>
+              <mat-select required="true"  id="maxRent" name="maxRent"
+              [(ngModel)]="maxRent" style="background-color: transparent;"
+              (selectionChange)="onMaxOptionSelected()">
+                <mat-option *ngFor="let option of option1" [value]="option.value">{{ option.label }}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+
+        </div>
+       <mat-form-field style="width: 280px; margin-left: 50px; margin-bottom: 3px;" *ngIf=checked>
+        <mat-label >Professions</mat-label>
+        <mat-select required="true"
+        id="occ" name="occ" [(ngModel)]="occ" style="background-color: transparent;"
+        (selectionChange)="onProfSelected()">
+          <mat-option *ngFor="let option of occList" [value]="option.value">{{ option.label }}</mat-option>
+        </mat-select>
+      </mat-form-field><br>
+
+      <div style = "margin-left: 60px;" cdkDropList class="example-list"
+      (cdkDropListDropped)="drop($event)"  *ngIf=checked1>
+        <div class="example-box" *ngFor="let item of items" cdkDrag >
+          {{item.title}}
+        </div>
+      </div>
+      <br> &nbsp;
+
+      <button mat-raised-button style="background-color: rgb(17, 17, 82); color: white;
+       margin-left: 20px; margin-top: 7px;width: 140px;" *ngIf=checked1 (click)="reset()">
+              Reset
+      </button>
+      <button mat-raised-button style="background-color: rgb(208, 94, 37); color: white;
+       margin-left: 20px; margin-top: 7px;width: 140px;" *ngIf=checked1 (click)="search()">
+              Search
+      </button>
+      </div>
+      <div class="col-sm-2" style="margin-left: -55px; margin-top: 2%;">
+        <div *ngIf=checked1 style=" height: 124px; margin-top: 140px; margin-left: -125px; width: 144px">
+        <img  src="assets/reorder.gif" *ngIf=checked1 style="height: 120px; ">
+
+        </div>
+      </div>
+      </div>
+      <br>
+    </div>
+  </section>
+  <section *ngIf=checked3 style="background-color: #D3D3D3">
+    <div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); "></div>
+    <div class="container" style="margin-left: 100px; background-color: #D3D3D3">
+      <div class="col-sm-5" style="margin-top: 50px; background-color: rgb(52, 52, 49);">
+        <img [src]="imageUrl" style = "height: 270px; width: 475px">
+        <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 20px;">
+          Based on your preferences we have arrived at
+         </p>
+         <p class="hero-subtitle" style="margin-left: 20px;">
+          {{this.suburb}}
+         </p>
+         <div class="horizontal-line"></div>
+
+         <p class="hero-subtitle2"  style="font-size: 1vw; margin-left: 20px; width: 400px">
+          {{this.desc}}<br><br>
+
+         </p>
+         <button mat-raised-button style="margin-top: 20px; margin-left: 100px; height: 50px; width: 280px;"
+          (click)="scrollDown()">
+           Explore this region >>
+          </button>
+      </div>
+
+      <div class="col-sm-6" style=" margin-top: 50px;  background-color: #D3D3D3;">
+        <div id="leafletMap"
+        style="height: 300px; width: 450px;  margin-top: 30px; margin-left: 50px;" >
+      </div>
+      <p class="hero-subtitle2"  style="font-size: 1vw;  width: 500px; color: black; margin-left: 50px;">
+        **Highlighted regions in this map show {{this.suburb}} & similar suburbs. <br>
+        Choose from dropdown below to explore other suburbs.
+        </p>
+      <mat-form-field style="width: 280px;  margin-bottom: 3px; margin-top: 30px; margin-left: 50px;" *ngIf=checked>
+        <mat-label >Explore Other Similar Suburbs</mat-label>
+        <mat-select
+        id="sub" name="sub" [(ngModel)]="sub" style="background-color: transparent;"
+        (selectionChange)="onSuburbSelected()">
+          <mat-option *ngFor="let option of subList" [value]="option.value">{{ option.label }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-raised-button
+      style="margin-left: 40px; height: 50px; width: 140px; margin-top: -20px; background-color: rgb(29, 4, 100); color: white;"
+      (click)="resetMap()">
+      Reset Map
+      </button>
+      <div class="blue-box" style="margin-left: 520px;" (click)="scrollToTop()">
+        <mat-icon style="color: white;">arrow_upward</mat-icon>
+     </div>
+      </div>
+    </div>
+    &nbsp;&nbsp;
+    <div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); "></div>
+    <div class="container" style=" background-color: #D3D3D3">
+        <div class="col-sm-7" style="margin-top: 20px; background-color: white; margin-left: 40px;">
+          <p *ngIf = checked3 class = "hero-subtitle2"
+          style="color: black; font-size: 1vw; margin-top: 30px; margin-left: 20px; margin-right: 20px;">
+            As of 2023, top three professions in this region that offer
+            significant employment opportunities.<br>
+              </p> <br>
+              <div style="height: 240px;">
+                <canvas style="margin-left: 40px; " id="Chartx" >{{ chart }}</canvas> <br>
+              </div>
+              <p *ngIf = checked3 class = "hero-subtitle2"
+                  style="color: black; font-size: 1vw; margin-top: 30px; margin-left: 20px; ">
+                    Do you currently live in Victoria?<br>
+                    * You can compare your rent with the recommended suburb rent
+                      </p> <br>
+              <div class="container" style="margin-top: 10px;">
+                <div class="col-sm-5">
+                      <mat-form-field style="width: 250px;   margin-top: 5px; margin-left: 20px;" *ngIf=checked>
+                        <mat-label >Select LGA to compare</mat-label>
+                        <mat-select
+                        id="sub1" name="sub1" [(ngModel)]="sub1" style="background-color: transparent;"
+                        (selectionChange)="compareRent()">
+                          <mat-option *ngFor="let option of subListAll" [value]="option.value">{{ option.label }}</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+
+                </div>
+                <div class="col-sm-5">
+                  <canvas style="margin-left: 10px; " id="Charty" >{{ piechart }}</canvas> <br>
+                </div></div>
+        </div>
+        <div class="col-sm-5" style="margin-top: 20px; background-color: rgb(52, 52, 49);">
+          <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 40px; margin-top:20px">
+            At a glance
+           </p>
+           <p class="hero-subtitle" style="margin-left: 40px;">
+            {{this.suburb}}
+           </p>
+           <div class="horizontal-line"></div>
+           <div class="container" style="margin-top: 10px;">
+            <div class="col-sm-2" style="margin-left: 40px;">
+              <div class="circular-image">
+                <img src="assets/house.png">
+            </div>
+           </div>
+           <div class="col-sm-4" style="margin-left: 0px;">
+            <p class="hero-subtitle2" style="font-size: 1vw;  ">
+              Median Rent per week<br>
+            </p>
+            <p class="hero-subtitle2" style="font-size: 1.4vw;  ">
+              {{this.rent}} AUD </p>
+         </div>
+        </div>
+        <div class="container" style="margin-top: 20px;">
+          <div class="col-sm-2" style="margin-left: 40px;">
+            <div class="circular-image">
+              <img src="assets/vehicle.png">
+          </div>
+         </div>
+         <div class="col-sm-6" style="margin-left: 0px;">
+          <p class="hero-subtitle2" style="font-size: 1vw;  ">
+           Drive to Melbourne<br>
+          </p>
+          <p class="hero-subtitle2" style="font-size: 1.4vw;  ">
+            {{this.distance}} Kms /  {{this.time}} minutes </p>
+       </div>
+      </div>
+      <div class="container" style="margin-top: 20px;">
+        <div class="col-sm-2" style="margin-left: 40px;">
+          <div class="circular-image">
+            <img src="assets/crime.png">
+        </div>
+       </div>
+       <div class="col-sm-6" style="margin-left: 0px;">
+        <p class="hero-subtitle2" style="font-size: 1vw;  ">
+         Crimes per 1000 people<br>
+        </p>
+        <p class="hero-subtitle2" style="font-size: 1.4vw;  ">
+          {{this.crime}} </p>
+     </div>
+    </div>
+
+    <div class="container" style="margin-top: 20px;">
+      <div class="col-sm-2" style="margin-left: 40px;">
+        <div class="circular-image">
+          <img src="assets/school.png">
+      </div>
+     </div>
+     <div class="col-sm-6" style="margin-left: 0px;">
+      <p class="hero-subtitle2" style="font-size: 1vw;  ">
+       Schools & Kindergartens<br>
+      </p>
+      <p class="hero-subtitle2" style="font-size: 1.4vw;  ">
+        {{this.schools}} </p>
+   </div>
+  </div>
+  <div class="container" style="margin-top: 20px;">
+    <div class="col-sm-2" style="margin-left: 40px;">
+      <div class="circular-image">
+        <img src="assets/hospital-bed.png">
+    </div>
+   </div>
+   <div class="col-sm-6" style="margin-left: 0px;">
+    <p class="hero-subtitle2" style="font-size: 1vw;  ">
+    Hospitals in the region<br>
+    </p>
+    <p class="hero-subtitle2" style="font-size: 1.4vw;  ">
+      {{this.hospital}} </p>
+ </div>
+</div>
+
+           <button mat-raised-button style="margin-top: 20px; margin-left: 100px; height: 50px; width: 280px;"
+            (click)="scrollToTop()">
+             Back to Search
+            </button><br><br>
+        </div>
+    </div>
+    &nbsp;&nbsp;
+
+  </section>
+
+<section *ngIf=checked2>
+  <div class="heading" >
+    <br>
+  <span *ngIf=checked2>
+    Please Wait<br> Your Recommendation is loading</span><br></div><br>
+  <mat-progress-bar *ngIf=checked2 mode="indeterminate"
+  style="width: 550px; margin-left: 30%;margin-top: 20px;  ">
+  </mat-progress-bar>
+   <br>
+   <div *ngIf=checked2 style="height: 363px;"></div>
+
+</section>
+
+
+
+<footer >
+  <p>&copy; 2023 SuburbScape.</p>
+</footer>
+
+

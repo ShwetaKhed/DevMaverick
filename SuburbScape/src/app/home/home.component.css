@@ -294,14 +294,20 @@ footer {
   align-items: center;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 
+body {
+	font-family: Montserrat,sans-serif;
 
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
 
-
-
-
-
-
+  >h1{
+    text-align:center;
+    margin-bottom: 30px;
+  }
+}
 
 
 
