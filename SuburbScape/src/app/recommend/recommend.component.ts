@@ -117,7 +117,11 @@ export class RecommendComponent {
          for (var i = 0; i < response2.length; i++){
           this.subListAll.push({ value: response2[i].LGA, label: response2[i].LGA, rent: response2[i].Rent});
          }
+         this.subListAll.sort((a, b) => {
+          return a.value.localeCompare(b.value);
+        });
        });
+
      }
 
   drop(event: CdkDragDrop<{title: string; }[]>) {
@@ -366,6 +370,7 @@ export class RecommendComponent {
        this.time = this.top_Suburb[0].time;
        this.hospital = this.top_Suburb[0].hospital;
        this.crime = this.top_Suburb[0].Rate_per_100000_population/100000 * 1000;
+       this.subListAll = this.subListAll.filter(item => item.value !== this.suburb);
   });
 
     }, 3500);
@@ -413,7 +418,6 @@ export class RecommendComponent {
       });
 
     const dataDict: Record<string, number> = {};
-    dataDict["Managers"] = this.top_Suburb[0].Managers;
     dataDict["Professionals"] = this.top_Suburb[0].Professionals;
     dataDict["Clerical/ administrative workers"] =  this.top_Suburb[0].Clerical;
     dataDict["Community/ personal service workers"] =
@@ -489,20 +493,19 @@ export class RecommendComponent {
 
   onSuburbSelected()
   {
-    console.log(this.sub);
     for (var i = 0; i <  this.top3.length; i++ )
     {
       if ( this.top3[i].LGA == this.sub){
-        this.suburb = this.top3[i].LGA;
+       this.suburb = this.top3[i].LGA;
        this.desc = this.top3[i].Description;
        this.rent = this.top3[i].Median;
        this.imageUrl = "assets/" + this.top3[i].LGA + ".png";
-       this.schools = this.top_Suburb[0].school;
-       this.distance = this.top_Suburb[0].distance;
-       this.time = this.top_Suburb[0].time;
-       this.hospital = this.top_Suburb[0].hospital;
-       this.crime = this.top_Suburb[0].Rate_per_100000_population;
-
+       this.schools = this.top3[i].school;
+       this.distance = this.top3[i].distance;
+       this.time = this.top3[i].time;
+       this.hospital = this.top3[i].hospital;
+       this.crime = this.top3[i].Rate_per_100000_population;
+       this.subListAll = this.subListAll.filter(item => item.value !== this.suburb);
       }
     }
 
@@ -516,6 +519,10 @@ export class RecommendComponent {
       {
         break;
       }
+    }
+    if (this.piechart != undefined)
+    {
+      this.piechart.destroy();
     }
     this.piechart = new Chart("Charty", {
       type: 'pie',

@@ -20,7 +20,7 @@
             <li [class]="getClassname(completedCondition)">
                 <p style="text-align: center; ">Step 1 <i class="ico fa fa-check ico-green"></i>
                     <span class="desc">Please select your weekly rental budget
-                      <i class="fa fa-question-circle" title="This is a tooltip message"></i></span>
+                      <i class="fa fa-question-circle" title="We will only show LGAs with median rent between your minimum and maximum rental budget."></i></span>
                 </p>
                 <mat-divider></mat-divider>
             </li>
@@ -29,7 +29,7 @@
               <p style="text-align: center; ">Step 2 <i class="ico fa fa-lock ico-muted"  *ngIf=!icheck></i>
                 <i class="ico fa fa-check ico-green"  *ngIf=icheck></i>
                   <span class="desc">Select your profession.(Select N/A if not applicable)
-                    <i class="fa fa-question-circle" title="This is a tooltip message"></i>
+                    <i class="fa fa-question-circle" title="We will look for LGAs where your profession accounts for more than 10% of total job opportunities."></i>
                   </span>
               </p>
               <mat-divider></mat-divider>
@@ -39,7 +39,7 @@
               <i class="ico fa fa-check ico-green"  *ngIf=checked3></i>
                 <span class="desc">    Rearrange the preferences <br>
                   (1 being the highest priority and 4 being the lowest)
-                  <i class="fa fa-question-circle" title="This is a tooltip message"></i></span>
+                  <i class="fa fa-question-circle" title="By ranking these preferences, our recommendation system will look for LGAs that suit your priorities!"></i></span>
             </p>
             <mat-divider></mat-divider>
         </li>
@@ -133,9 +133,10 @@
           {{this.desc}}<br><br>
 
          </p>
-         <button mat-raised-button style="margin-top: 20px; margin-left: 100px; height: 50px; width: 280px;"
+         <button mat-raised-button style="margin-top: 20px; margin-left: 100px; height: 50px; width: 280px;
+         background-color: #149c83; color: white;"
           (click)="scrollDown()">
-           Explore this region >>
+           Explore further >>
           </button>
       </div>
 
@@ -146,6 +147,7 @@
       <p class="hero-subtitle2"  style="font-size: 1vw;  width: 500px; color: black; margin-left: 50px;">
         **Highlighted regions in this map show {{this.suburb}} & similar suburbs. <br>
         Choose from dropdown below to explore other suburbs.
+        <i class="fa fa-question-circle" title="By ranking these preferences, our recommendation system will look for LGAs that suit your priorities!"></i>
         </p>
       <mat-form-field style="width: 280px;  margin-bottom: 3px; margin-top: 30px; margin-left: 50px;" *ngIf=checked>
         <mat-label >Explore Other Similar Suburbs</mat-label>
@@ -156,7 +158,7 @@
         </mat-select>
       </mat-form-field>
       <button mat-raised-button
-      style="margin-left: 40px; height: 50px; width: 140px; margin-top: -20px; background-color: rgb(29, 4, 100); color: white;"
+      style="margin-left: 40px; height: 50px; width: 140px; margin-top: -20px; background-color: #149c83; color: white;"
       (click)="resetMap()">
       Reset Map
       </button>
@@ -277,11 +279,15 @@
       {{this.hospital}} </p>
  </div>
 </div>
-
-           <button mat-raised-button style="margin-top: 20px; margin-left: 100px; height: 50px; width: 280px;"
-            (click)="scrollToTop()">
-             Back to Search
-            </button><br><br>
+<div class="horizontal-line" style="margin-top: 10px;"></div>
+<p class="hero-subtitle2" style="font-size: 1vw; margin-left: 20px; ">
+  Not Satisfied with your Recommendation ? <br>
+ </p>
+<button mat-raised-button
+style="margin-top: 20px; margin-left: 100px; height: 50px; width: 280px; background-color: #149c83; color: white;"
+    (click)="scrollToTop()">
+    Search Again
+  </button><br><br>
         </div>
     </div>
     &nbsp;&nbsp;
