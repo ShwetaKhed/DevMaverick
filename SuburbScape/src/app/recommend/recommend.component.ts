@@ -35,6 +35,7 @@ export class RecommendComponent {
   checked1: Boolean = false;
   checked2: Boolean = false;
   checked3: Boolean = false;
+
   preselectedSuburb: Suburb[] = [];
   public chart: any;
   public piechart: any;
@@ -313,7 +314,7 @@ export class RecommendComponent {
     this.sharedService.selectedSuburb.sort((a, b) => b.Technicians - a.Technicians);
     this.top3 = this.sharedService.selectedSuburb.slice(0, 3);
    } else {
-    this.top3 = this.sharedService.selectedSuburb;
+    this.top3 = this.sharedService.selectedSuburb.slice(0, 3);
    }
    for (var i = 0; i< this.items.length; i++){
     if (this.items[i].title.split(' ')[0] == "Schools")
@@ -467,6 +468,7 @@ export class RecommendComponent {
     this.icheck = false;
     this.maxRent = 0;
     this.minRent = 0;
+    this.checked3 = false;
     this.completedCondition = true;
     this.completedCondition1 = true;
     this.completedCondition2 = true;

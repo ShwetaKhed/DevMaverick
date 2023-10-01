@@ -97,11 +97,11 @@
       </div>
       <br> &nbsp;
 
-      <button mat-raised-button style="background-color: rgb(17, 17, 82); color: white;
+      <button mat-raised-button style="background-color: rgb(49 49 148 / 85%); color: white;
        margin-left: 20px; margin-top: 7px;width: 140px;" *ngIf=checked1 (click)="reset()">
               Reset
       </button>
-      <button mat-raised-button style="background-color: rgb(208, 94, 37); color: white;
+      <button mat-raised-button style="background-color: rgb(178 72 18 / 97%); color: white;
        margin-left: 20px; margin-top: 7px;width: 140px;" *ngIf=checked1 (click)="search()">
               Search
       </button>
@@ -116,9 +116,9 @@
       <br>
     </div>
   </section>
-  <section *ngIf=checked3 style="background-color: #D3D3D3">
+  <section *ngIf=checked3 style=" background-color: rgba(255, 255, 255, 0.897); background-image: url('assets/Base.png?&dpr=2&fit=crop&fm=jpg&h=2000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
     <div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); "></div>
-    <div class="container" style="margin-left: 100px; background-color: #D3D3D3">
+    <div class="container" style="margin-left: 100px; ">
       <div class="col-sm-5" style="margin-top: 50px; background-color: rgb(52, 52, 49);">
         <img [src]="imageUrl" style = "height: 270px; width: 475px">
         <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 20px;">
@@ -134,13 +134,13 @@
 
          </p>
          <button mat-raised-button style="margin-top: 20px; margin-left: 100px; height: 50px; width: 280px;
-         background-color: #149c83; color: white;"
+         background-color: rgb(49 49 148 / 85%); color: white;"
           (click)="scrollDown()">
            Explore further >>
           </button>
       </div>
 
-      <div class="col-sm-6" style=" margin-top: 50px;  background-color: #D3D3D3;">
+      <div class="col-sm-6" style=" margin-top: 50px;  ">
         <div id="leafletMap"
         style="height: 300px; width: 450px;  margin-top: 30px; margin-left: 50px;" >
       </div>
@@ -149,6 +149,7 @@
         Choose from dropdown below to explore other suburbs.
         <i class="fa fa-question-circle" title="By ranking these preferences, our recommendation system will look for LGAs that suit your priorities!"></i>
         </p>
+
       <mat-form-field style="width: 280px;  margin-bottom: 3px; margin-top: 30px; margin-left: 50px;" *ngIf=checked>
         <mat-label >Explore Other Similar Suburbs</mat-label>
         <mat-select
@@ -158,7 +159,7 @@
         </mat-select>
       </mat-form-field>
       <button mat-raised-button
-      style="margin-left: 40px; height: 50px; width: 140px; margin-top: -20px; background-color: #149c83; color: white;"
+      style="margin-left: 40px; height: 50px; width: 140px; margin-top: -20px; background-color: rgb(49 49 148 / 85%); color: white;"
       (click)="resetMap()">
       Reset Map
       </button>
@@ -168,8 +169,10 @@
       </div>
     </div>
     &nbsp;&nbsp;
+  </section>
+  <section *ngIf=checked3 style="background-image: url('assets/Base.png?&dpr=2&fit=crop&fm=jpg&h=2000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
     <div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); "></div>
-    <div class="container" style=" background-color: #D3D3D3">
+    <div class="container" >
         <div class="col-sm-7" style="margin-top: 20px; background-color: white; margin-left: 40px;">
           <p *ngIf = checked3 class = "hero-subtitle2"
           style="color: black; font-size: 1vw; margin-top: 30px; margin-left: 20px; margin-right: 20px;">
@@ -179,6 +182,7 @@
               <div style="height: 240px;">
                 <canvas style="margin-left: 40px; " id="Chartx" >{{ chart }}</canvas> <br>
               </div>
+              <mat-divider></mat-divider>
               <p *ngIf = checked3 class = "hero-subtitle2"
                   style="color: black; font-size: 1vw; margin-top: 30px; margin-left: 20px; ">
                     Do you currently live in Victoria?<br>
@@ -279,12 +283,12 @@
       {{this.hospital}} </p>
  </div>
 </div>
-<div class="horizontal-line" style="margin-top: 10px;"></div>
+<div class="horizontal-line" style="margin-top: 30px;"></div>
 <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 20px; ">
   Not Satisfied with your Recommendation ? <br>
  </p>
 <button mat-raised-button
-style="margin-top: 20px; margin-left: 100px; height: 50px; width: 280px; background-color: #149c83; color: white;"
+style="margin-top: 20px; margin-left: 100px; height: 50px; width: 280px; background-color: rgb(49 49 148 / 85%); color: white;"
     (click)="scrollToTop()">
     Search Again
   </button><br><br>
