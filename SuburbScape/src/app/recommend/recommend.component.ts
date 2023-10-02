@@ -419,6 +419,7 @@ export class RecommendComponent {
       });
 
     const dataDict: Record<string, number> = {};
+    dataDict["Managers"] = this.top_Suburb[0].Managers;
     dataDict["Professionals"] = this.top_Suburb[0].Professionals;
     dataDict["Clerical/ administrative workers"] =  this.top_Suburb[0].Clerical;
     dataDict["Community/ personal service workers"] =
@@ -429,6 +430,7 @@ export class RecommendComponent {
     dataDict["Technicians/ trades workers"] = this.top_Suburb[0].Technicians;
 
     const dataEntries = Object.entries(dataDict);
+    console.log(dataEntries)
     dataEntries.sort((a, b) => b[1] - a[1]);
     const top3 = dataEntries.slice(0, 3);
     const top3Names = top3.map(entry => entry[0]);
@@ -495,6 +497,7 @@ export class RecommendComponent {
 
   onSuburbSelected()
   {
+    const dataDict: Record<string, number> = {};
     for (var i = 0; i <  this.top3.length; i++ )
     {
       if ( this.top3[i].LGA == this.sub){
@@ -508,8 +511,59 @@ export class RecommendComponent {
        this.hospital = this.top3[i].hospital;
        this.crime = this.top3[i].Rate_per_100000_population;
        this.subListAll = this.subListAll.filter(item => item.value !== this.suburb);
-      }
+
+
+    dataDict["Managers"] = this.top3[i].Managers;
+    dataDict["Professionals"] = this.top3[i].Professionals;
+    dataDict["Clerical/ administrative workers"] =  this.top3[i].Clerical;
+    dataDict["Community/ personal service workers"] =
+    this.top3[i].Community;
+    dataDict["Labourers"] =  this.top3[i].Labourers;
+    dataDict["Machinery operators/ drivers"] = this.top3[i].Drivers;
+    dataDict["Sales workers"] = this.top3[i].Sales;
+    dataDict["Technicians/ trades workers"] = this.top3[i].Technicians;
+  }
+}
+
+    console.log(dataDict);
+    const dataEntries = Object.entries(dataDict);
+    dataEntries.sort((a, b) => b[1] - a[1]);
+    const top3 = dataEntries.slice(0, 3);
+    const top3Names = top3.map(entry => entry[0]);
+    const top3Values = top3.map(entry => entry[1]);
+
+    if (this.chart != undefined)
+    {
+      this.chart.destroy();
     }
+
+    this.chart = new Chart("Chartx", {
+      type: 'bar',
+      data: {
+        labels: top3Names,
+        datasets: [{
+          data: top3Values,
+          label: "Top Employment Opportunities",
+          backgroundColor: ['#FF5733', '#36A2EB', '#FFBF00']
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        plugins:{
+          title: {
+            display: true,
+            text: 'Employment Opportunities Comparision',
+          },
+        },
+        scales: {
+          x: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+
+
 
   }
 
