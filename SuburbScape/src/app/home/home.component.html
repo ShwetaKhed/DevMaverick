@@ -15,116 +15,179 @@
           "Explore affordable housing, serene lifestyle & build stronger connections"<br>
           &nbsp;
          </p>
+         <button mat-raised-button
+         style="margin-top: 0px; margin-left: 400px; height: 50px; width: 280px;
+         margin-bottom: 10px; "
+         (click)="explore()">
+         <mat-icon>explore</mat-icon>
+          Explore Regional Victoria
+         </button>
 
     </mat-card>
-    <button mat-raised-button style="margin-top: 50px; margin-left: 450px; height: 50px; width: 280px;"
-      (click)="explore()">
-      <mat-icon>explore</mat-icon>
-       Explore Regional Victoria
-      </button>
-      <br>&nbsp;<br>
-      <div class="scroll-down-arrow" style="align-content: center;">
-        <span style="margin-left: 580px; margin-top: 200px;" (click)="scrollDown()"></span></div>
-      </div>
+
+    <div class="scroll-down-arrow" style="align-content: center;">
+      <span style="margin-left: 580px; margin-top: 200px;" (click)="scrollDown()"></span>
+    </div>
+    <mat-card style=" background-color: rgba(0,0,0,.6); margin-top: -10px;
+    margin-left: 850px; margin-right: 50px; width: 280" >
+    <p class="hero-subtitle2" style="font-size: 1vw;">
+         Discover<br>
+      &nbsp;
+     </p>
+    <button mat-raised-button
+    style=" margin-top: 0px; margin-left: 20px;
+    width: 220px; margin-bottom: 10px;"
+    (click)="scrollDown()">
+     > Why Regional Victoria?
+    </button>
+    <button mat-raised-button
+    style=" margin-top: 5px; margin-left: 20px;
+    width: 220px; margin-bottom: 10px;"
+    (click)="scrollLater()">
+     > How SuburbScape Works?
+    </button>
+    </mat-card>
+       </div>
 </section>
 <div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); "></div>
+<div style="background-color: #edd7bc1c;">
+<div class="heading">
+  <br>
+  <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto;">
+     Our Moto</span>
+ </div>
 
-<div style="background-color: #f4f4f4;">
-  <br><br>
-<div class="container1" style="margin-left: 50px;">
-  <div class="col-sm-4">
-    <div class="heading">
-      <br>
-      <span > Our Moto</span>
-     </div>
-     <mat-divider style="width: 100%; margin-left: 35px;  margin-right: 35px"></mat-divider>
-     <br>
-     <h3 style="text-align: center; margin-left: 30px;">
-      "We aim to empower Victorian residents to make well-informed decisions about relocation,
-      thereby improving their living standards and promoting financial security."</h3>
-      <br>
-      <img src = "assets/Logo2.png" style = "height: 120px; margin-left: 58px;">
+ <mat-divider style="width: 60%; margin-left: 20%;  margin-right: 20%"></mat-divider>
+ <br>
+ <h3 style="text-align: center; margin-left: 30px;">
+  "We aim to empower Victorian residents to make well-informed decisions about relocation, <br>
+  thereby improving their living standards and promoting financial security."</h3>
+
+  <mat-divider style="width: 80%; margin-left: 130px;"></mat-divider>
+  <div class="heading" style="margin-left: 100px;  height: 8vh; ">
+    <br>
+    <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto;">
+      What people love about regional Victoria?
+    </span>
   </div>
-  <div class="col-sm-7">
-    <div class="heading" style="margin-left: 100px;">
-      <br>
-    <span > What people love about regional victoria?</span>
-     </div>
-     <mat-divider style="width: 75%; margin-left: 130px;"></mat-divider>
-     <br>
-     <p style="text-align: center; font-size: 15px; margin-bottom: 30px; margin-left: 120px;">
+     <p style="text-align: center; font-size: 15px; margin-bottom: 15px; margin-left: 120px;">
       We asked people to rank which factors influenced their decision to move regionally.</p>
- <br>
- <div class="container" style="margin-left: 70px;">
-  <div class="row">
-    <div class="col-md-4" >
-      <h1><span class="counter" style="color: #00bce4; font-size: 40px;" [@counterAnimation]="'enter'" #counterElement>{{ counter }} %</span></h1>
-      <h3>said regional areas offer better <br>lifestyle/amenity</h3>
-    </div>
-    <div class="col-md-4">
-      <h1><span class="counter" style="color: green; font-size: 40px;" [@counterAnimation1]="'enter'" #counterElement1>{{ counter1 }} %</span></h1>
-      <h3>said they loved being closer to the natural environment</h3>
-    </div>
-    <div class="col-md-4">
-      <h1><span class="counter" style="color: red; font-size: 40px;" [@counterAnimation2]="'enter'" #counterElement2>{{ counter2 }} %</span></h1>
-      <h3>said they are satisfied with affordable <br>housing</h3>
-      <br>
-      <div class="blue-box" style="margin-left: 140px;" (click)="scrollToTop()">
-        <mat-icon style="color: white;">arrow_upward</mat-icon>
-     </div>
-    </div>
+    <div class="container" style="margin-left: 70px;">
+      <div class="row">
+        <div class="col-md-4" >
+          <img src ="assets/amenities.png" height="70px" style="margin-bottom: 25px;">
+          <h1><span class="counter" style="color: #00bce4; font-size: 35px; margin-top: 25px;" [@counterAnimation]="'enter'" #counterElement>{{ counter }} %</span></h1>
+          <h3>said regional areas offer better <br>lifestyle/amenity</h3>
+        </div>
+        <div class="col-md-4">
+          <img src ="assets/life.png" height="70px" style="margin-bottom: 25px;">
+          <h1><span class="counter" style="color: green; font-size: 40px;" [@counterAnimation1]="'enter'" #counterElement1>{{ counter1 }} %</span></h1>
+          <h3>said they loved being closer to the natural environment</h3>
+        </div>
+        <div class="col-md-4">
+          <img src ="assets/affhouse.png" height="70px" style="margin-bottom: 25px;">
+          <h1><span class="counter" style="color: red; font-size: 40px;" [@counterAnimation2]="'enter'" #counterElement2>{{ counter2 }} %</span></h1>
+          <h3>said they are satisfied with affordable <br>housing</h3>
+          <br>
+          <div class="blue-box" style="margin-left: 270px;" (click)="scrollToTop()">
+            <mat-icon style="color: white;">arrow_upward</mat-icon>
+          </div>
+        </div>
+        </div>
+        </div>
+  <div style="height: 12vh; margin-top: -40px;  text-align: center; background-color: rgb(29, 4, 100);">
+          <div class="scroll-down-arrow" style="align-content: center;">
+            <span style="margin-left: 600px; margin-top: 200px;" (click)="scrollLater()"></span>
+          </div>
+
   </div>
 </div>
-  </div>
-</div>
-</div>
-<div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100);">
-  <div class="scroll-down-arrow" style="align-content: center;">
-    <span style="margin-left: 600px; margin-top: 200px;" (click)="scrollLater()"></span>
-  </div>
-
- </div>
- <div style="background-color: #f4f4f4;">
- <div class="heading">
-  <br><br>
-<span > Why SuburbScape?</span>
- </div>
- <mat-divider style="width: 75%; margin-left: 200px;"></mat-divider>
- <br>
- <p style="text-align: center; font-size: 17px; margin-bottom: 30px; margin-left: 50px;">
- Our platform not only aids users in discovering budget-friendly
- regions within Regional Victoria but is also committed to enhancing
- the experience by incorporating interactive features as below</p>
- <br>
- <div class="container1" style="margin-left: 100px;">
-  <div class="col-sm-2" [ngClass]="{'animate fadeInLeft delay-600': applyClass}" style="margin-left: 50px;">
-    <img src = "assets/Maps.png" style="height: 250px; margin-top: -120px;">
-    <img src = "assets/health.png" style="height: 220px; margin-top: -70px;">
-
-  </div>
-  <div class="col-sm-2" [ngClass]="{'animate fadeInLeft delay-800': applyClass}"  style="margin-left: 40px;">
-    <img src = "assets/community.png" style="height: 250px;">
-
-  </div>
-  <div class="col-sm-2" [ngClass]="{'animate fadeInLeft delay-1000': applyClass}"  style="margin-left: 40px;">
-
-    <img src = "assets/compare_suburbs.png" style="height: 250px;">
-
-  </div>
-  <div class="col-sm-2" [ngClass]="{'animate fadeInLeft delay-1200': applyClass}"  style="margin-left: 120px;">
-    <img src = "assets/school_logo.png" style="height: 250px; margin-top: -120px;">
-    <img src = "assets/content_based.png" style="height: 250px; margin-top: -70px;">
-    <div class="blue-box" style="margin-left: 260px;  margin-top: -70px;" (click)="scrollToTop()">
-      <mat-icon style="color: white;">arrow_upward</mat-icon>
+<div style="background-color: #edd7bc1c;">
+  <div class="heading" style=" height: 8vh; ">
+    <br>
+    <span >
+      How to use SuburbScape?</span>
    </div>
+
+   <h3 style="text-align: center; margin-left: 30px;">
+    "While finding a new suburb may not be an easy task, <br>we believe SuburbScape should make it easier."</h3>
+   <div class="container" style="margin-left: 60px; margin-top: 40px;">
+    <div class="row">
+      <div class="col-md-4" >
+        <mat-card style="height: 100px; position: relative; width: 350px;">
+          <div class="circle" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
+              <div class="number" style="color: white; text-align: center; font-weight: 200px;">1</div>
+          </div>
+          <h3 style="text-align: center; margin-left: 30px; margin-top: 50px;">
+            "Share your rental budget"</h3>
+
+      </mat-card>
+      </div>
+      <div class="col-md-4">
+        <mat-card style="height: 100px; position: relative; width: 350px; ">
+          <div class="circle" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
+              <div class="number" style="color: white; text-align: center; font-weight: 200px;">2</div>
+          </div>
+          <h3 style="text-align: center; margin-left: 30px; margin-top: 50px;">
+            "Select your profession"</h3>
+      </mat-card>
+      </div>
+      <div class="col-md-4">
+        <mat-card style="height: 100px; position: relative; width: 350px; ">
+          <div class="circle" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
+              <div class="number" style="color: white; text-align: center; font-weight: 200px;">3</div>
+          </div>
+          <h3 style="text-align: center; margin-left: 30px; margin-top: 50px;">
+            "Rank your preferences"</h3>
+      </mat-card>
+      </div>
+      </div>
+      </div>
+      <h3 style="text-align: center; margin-left: 30px; margin-top: -25px;">
+      "We consider everything you want and locate a neighborhood that fits your needs."
+    </h3>
+
+
+    <div class="heading" style="margin-top: 5px;">
+    </div>
+
+    <div class="container" style="margin-left: 40px; margin-top: -60px;">
+      <div class="row">
+        <div class="col-md-4" >
+          <div class="heading" style="margin-top: 5px; font-size: 19px;">
+          <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto;">
+            We choose a top suburb for you.</span></div>
+        </div>
+        <div class="col-md-4">
+          <div class="heading" style="margin-top: 5px;  font-size: 19px;">
+          <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto;">
+            We suggest options of suburb to choose from.</span></div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="heading" style="margin-top: 5px;  font-size: 19px;">
+          <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto;">
+            You can view details like schools, hospitals, distance to Melbourne.</span></div>
+          <br>
+          <div class="blue-box" style="margin-left: 350px; margin-top: -50px;" (click)="scrollToTop()">
+            <mat-icon style="color: white;">arrow_upward</mat-icon>
+          </div>
+        </div>
+        </div>
+        </div>
+        <button mat-raised-button
+         style="margin-top: -50px; margin-left: 480px; height: 50px; width: 280px;
+         margin-bottom: 10px; background-color: rgb(29, 4, 100); color: white;"
+         (click)="explore()">
+          Explore Regional Victoria Now
+         </button>
   </div>
 
-</div>
-  </div>
+  <footer>
+    <p>&copy; 2023 SuburbScape.</p>
+  </footer>
 
-<footer>
-  <p>&copy; 2023 SuburbScape.</p>
-</footer>
+
 
 
 

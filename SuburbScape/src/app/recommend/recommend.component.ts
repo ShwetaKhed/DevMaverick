@@ -211,7 +211,8 @@ export class RecommendComponent {
 
   showSnackbar(message: string): void {
     this.snackBar.open(message, 'Dismiss', {
-      duration: 3000,
+      duration: 30000,
+      panelClass: 'center-snackbar'
     });
   }
 

@@ -91,7 +91,7 @@ footer {
   font-family: "Cambria", sans-serif;
   font-size: 22px;
   background-color: transparent;
-  height: 9vh;  text-align: center; color: rgb(8, 8, 8);
+  height: 9vh;  text-align: left; color: rgb(8, 8, 8);
 }
 
 .container {
@@ -123,6 +123,11 @@ footer {
   font-size: 17px;
   font-weight: 400;
   letter-spacing: .8px;
+}
+
+.bs-vertical-wizard ul>li>p:current {
+  color: rgba(129, 129, 134, 0.208);
+
 }
 
 .bs-vertical-wizard ul>li>p:before {
@@ -190,7 +195,7 @@ footer {
 }
 
 .bs-vertical-wizard ul>li.current {
-  background-color: #fff;
+  background-color: rgba(129, 129, 134, 0.208);
 }
 
 .bs-vertical-wizard ul>li.current>p:before {
@@ -358,10 +363,10 @@ footer {
 	color: white;
 	letter-spacing: 1px;
   line-height: 1.1;
-  margin: 5px 0;
   width: 100%;
+  text-align: left;
   @media screen and (min-width:640px) {
-		font-size: 1.6vw;
+		font-size: 1.2vw;
 	}
 }
 
@@ -387,6 +392,27 @@ footer {
   height: 4px;
   background-color: #ced416;
 }
+
+.hero-title {
+	color: white;
+	letter-spacing: 1px;
+  line-height: 1.1;
+  margin-top: 10px;
+  text-align: center;
+  width: 85%;
+  @media screen and (min-width:640px) {
+		font-size: 2vw;
+	}
+}
+
+.center-snackbar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px; /* Adjust the bottom value to position the snackbar as needed */
+}
+
+
 
 
 

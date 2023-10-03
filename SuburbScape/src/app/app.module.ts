@@ -25,6 +25,8 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 import { RecommendComponent } from './recommend/recommend.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatListModule} from '@angular/material/list';
+import {Dialog, DialogModule, DialogRef} from '@angular/cdk/dialog';
 import {
   CdkDrag,
   CdkDragDrop,
@@ -69,10 +71,14 @@ import { CustomSnackbarComponent } from './custom-snackbar/custom-snackbar.compo
     CdkDropList,
     CdkDrag,
     CdkDragPlaceholder,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatListModule,
+    DialogModule
 
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

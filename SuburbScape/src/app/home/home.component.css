@@ -309,5 +309,67 @@ body {
   }
 }
 
+.vertical-line {
+  width: 2px;
+  height: 100px;
+  background-color: #fff;
+}
+
+.custom-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-left: 800px;
+  margin-right: 50px;
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.custom-card .vertical-line {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  width: 2px;
+  height: 150px;
+  background-color: #fff;
+}
+
+.custom-card p.hero-subtitle2 {
+  text-align: left;
+  margin-left: 75px;
+  position: relative;
+  top: -30px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(29, 4, 100);
+  border-radius: 50%;
+}
+
+.number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.yellow-underlined {
+  border-bottom: solid 10px #ffca0a;
+  line-height: .35em;
+  margin-top: 0.65em!important;
+  display: inline-block;
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+}
+
+
+
+
 
 

@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { interval } from 'rxjs';
+import {Dialog, DialogModule, DialogRef} from '@angular/cdk/dialog';
 
 @Component({
   selector: 'app-home',
@@ -88,7 +89,7 @@ export class HomeComponent {
     this.applyClass = false;
     const yOffset = window.innerHeight;
     console.log(yOffset);
-    this.renderer.setProperty(document.documentElement, 'scrollTop', yOffset);
+    this.renderer.setProperty(document.documentElement, 'scrollTop', yOffset + 65);
     this.counterElement.nativeElement.classList.add('animated', 'fadeInDownBig');
     interval(200)
       .subscribe(() => {
@@ -119,7 +120,7 @@ export class HomeComponent {
   scrollLater() {
     const yOffset = window.scrollY;
     window.scrollTo({
-      top: yOffset + 540,
+      top: yOffset + 1280,
       behavior: "smooth"
     });
     this.applyClass = true;
@@ -178,3 +179,4 @@ export class HomeComponent {
   }
 
 }
+
