@@ -361,8 +361,6 @@ footer {
 
 .hero-subtitle2 {
 	color: white;
-	letter-spacing: 1px;
-  line-height: 1.1;
   width: 100%;
   text-align: left;
   @media screen and (min-width:640px) {

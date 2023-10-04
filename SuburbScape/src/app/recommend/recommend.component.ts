@@ -250,10 +250,10 @@ export class RecommendComponent {
     setTimeout(() => {
       this.checked2 = false;
       this.checked3 = true;
-    }, 3000);
+    }, 10);
     setTimeout(() => {
       window.scrollTo({
-        top: yOffset + 630,
+        top: yOffset + 740,
         behavior: 'smooth'
       });
 
@@ -334,6 +334,8 @@ export class RecommendComponent {
    }
 
    this.subList =[ ];
+   // remove later
+   this.setMapDetails();
 
    this.http.get<any>('https://dev04backend.azurewebsites.net/api/score_data').subscribe((response) => {
         for (var i =0; i < this.top3.length; i++){
@@ -375,7 +377,7 @@ export class RecommendComponent {
        this.subListAll = this.subListAll.filter(item => item.value !== this.suburb);
   });
 
-    }, 3500);
+    }, 10);
 
   }
 

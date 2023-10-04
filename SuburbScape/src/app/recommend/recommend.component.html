@@ -124,10 +124,9 @@
       </div>
 </section>
 
-
 <section *ngIf=checked3 style=" background-color: rgba(255, 255, 255, 0.897); background-image: url('assets/Base.png?&dpr=2&fit=crop&fm=jpg&h=2000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
   <div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); "></div>
-  <div class="container" style="margin-left: 100px; ">
+  <div class="container" style="margin-left: 60px; ">
     <div class="col-sm-5" style="margin-top: 50px; background-color: rgb(52, 52, 49);">
       <img [src]="imageUrl" style = "height: 270px; width: 100%">
       <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 20px;">
@@ -147,180 +146,158 @@
         (click)="scrollDown()">
          Explore further >>
         </button>
+        <br>
     </div>
+    <div class="col-sm-7" style=" margin-top: 50px; background-color: white ">
+      <div class="heading" style="text-align: center; margin-top: 20px;">
+        <br>
+        <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto;
+        margin-bottom: 20px;">
+          At a glance</span>
+       </div>
+       <div class="container" style="margin-left: 30px; margin-top: 20px;">
+        <div class="row">
+          <div class="col-md-4" >
+            <mat-card style="height: 100px; position: relative; width: 180px;">
+              <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
+                <img src ="assets/house.png">
+              </div>
+              <h3 style="text-align: center; margin-top: 40px;">
+                <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto; ">
+                Median Rent / Week <br>
+              </span>
+                <mat-divider style="width: 80%; margin-left: 10%;"></mat-divider>
+                {{this.rent}} AUD
+              </h3>
+          </mat-card>
+          </div>
+          <div class="col-md-4">
+            <mat-card style="height: 100px; width: 180px; margin-left: 5px;">
+              <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
+                <img src ="assets/vehicle.png">
+              </div>
+              <h3 style="text-align: center; margin-top: 40px;">
+                <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto; ">
+                  Drive to Melbourne <br>
+                </span>
 
-    <div class="col-sm-6" style=" margin-top: 50px; background-color: white; ">
-      <div id="leafletMap"
-      style="height: 3px; width: 450px;  margin-top: 30px; margin-left: 50px;" >
-    </div>
-    <p class="hero-subtitle2"  style="font-size: 1vw;  width: 500px; color: black; margin-left: 50px;">
-      **Highlighted regions in this map show {{this.suburb}} & similar suburbs. <br>
-      Choose from dropdown below to explore other suburbs.
-      <i class="fa fa-question-circle" title="By ranking these preferences, our recommendation system will look for LGAs that suit your priorities!"></i>
-      </p>
+                <mat-divider style="width: 80%; margin-left: 10%;"></mat-divider>
+                {{this.distance}} Kms/ {{this.time}} minutes
+              </h3>
+          </mat-card>
+          </div>
+          <div class="col-md-4">
+            <mat-card style="height: 100px;margin-left: 5px;  width: 180px;">
+              <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
+                <img src ="assets/crime.png">
+              </div>
+              <h3 style="text-align: center; margin-top: 40px;">
+                <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto; ">
+                  Crimes/ 1000 people <br>
+                </span>
 
-    <mat-form-field style="width: 280px;  margin-bottom: 3px; margin-top: 30px; margin-left: 50px;" *ngIf=checked>
-      <mat-label >Explore Other Similar Suburbs</mat-label>
-      <mat-select
-      id="sub" name="sub" [(ngModel)]="sub" style="background-color: transparent;"
-      (selectionChange)="onSuburbSelected()">
-        <mat-option *ngFor="let option of subList" [value]="option.value">{{ option.label }}</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <button mat-raised-button
-    style="margin-left: 40px; height: 50px; width: 140px; margin-top: -20px; background-color: rgb(49 49 148 / 85%); color: white;"
-    (click)="resetMap()">
-    Reset Map
-    </button>
-    <div class="blue-box" style="margin-left: 520px;" (click)="scrollToTop()">
-      <mat-icon style="color: white;">arrow_upward</mat-icon>
-   </div>
+                <mat-divider style="width: 80%; margin-left: 10%;"></mat-divider>
+                {{this.crime}}
+              </h3>
+          </mat-card>
+
+          </div>
+        </div></div>
+        <div class="container" style=" margin-top: 50px;">
+          <div class="row">
+            <div class="col-md-4" >
+              <mat-card style="height: 100px; width: 180px; margin-left: 130px;">
+                <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
+                  <img src ="assets/school.png">
+                </div>
+                <h3 style="text-align: center; margin-top: 40px;">
+                  <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto; ">
+                    Schools & Kindergartens <br>
+                  </span>
+                  <mat-divider style="width: 80%; margin-left: 10%;"></mat-divider>
+                  {{this.schools}}
+                </h3>
+
+            </mat-card>
+            </div>
+            <div class="col-md-4" >
+              <mat-card style="height: 100px; width: 180px; margin-left: 120px;">
+                <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
+                  <img src ="assets/hospital-bed.png">
+                </div>
+                <h3 style="text-align: center; margin-top: 40px;">
+                  <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto; ">
+                    Hospital <br>
+                    </span>
+                  <mat-divider style="width: 80%; margin-left: 10%;"></mat-divider>
+                  {{this.hospital}}
+                </h3>
+
+            </mat-card>
+            </div>
+            </div></div>
+
+          <p class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 20px; color: black; margin-top: 20px;">
+            Not Satisfied with your Recommendation? <br>
+            Choose from dropdown below to explore other recommended suburbs.
+          </p>
+          <mat-form-field style="width: 280px;  margin-bottom: 3px; margin-top: 10px; margin-left: 50px;" *ngIf=checked>
+            <mat-label >Explore Other Similar Suburbs</mat-label>
+            <mat-select
+            id="sub" name="sub" [(ngModel)]="sub" style="background-color: transparent;"
+            (selectionChange)="onSuburbSelected()">
+              <mat-option *ngFor="let option of subList" [value]="option.value">{{ option.label }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="blue-box" style="margin-left: 620px; margin-top: -50px;" (click)="scrollToTop()">
+            <mat-icon style="color: white;">arrow_upward</mat-icon>
+         </div>
+         <br>
+
     </div>
-  </div>
-  &nbsp;&nbsp;
+    </div>
+    <br> &nbsp;
 </section>
 <section *ngIf=checked3 style="background-image: url('assets/Base.png?&dpr=2&fit=crop&fm=jpg&h=2000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
   <div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); "></div>
   <div class="container" >
-      <div class="col-sm-7" style="margin-top: 20px; background-color: white; margin-left: 40px;">
-        <p *ngIf = checked3 class = "hero-subtitle2"
-        style="color: black; font-size: 1vw; margin-top: 30px; margin-left: 20px; margin-right: 20px;">
-          As of 2023, top three professions in this region that offer
-          significant employment opportunities.<br>
-            </p> <br>
-            <div style="height: 240px;">
-              <canvas style="margin-left: 40px; " id="Chartx" >{{ chart }}</canvas> <br>
-            </div>
-            <mat-divider></mat-divider>
-            <p *ngIf = checked3 class = "hero-subtitle2"
-                style="color: black; font-size: 1vw; margin-top: 30px; margin-left: 20px; ">
-                  Do you currently live in Victoria?<br>
-                  * You can compare your rent with the recommended suburb rent
-                    </p> <br>
-            <div class="container" style="margin-top: 10px;">
-              <div class="col-sm-5">
-                    <mat-form-field style="width: 250px;   margin-top: 5px; margin-left: 20px;" *ngIf=checked>
-                      <mat-label >Select LGA to compare</mat-label>
-                      <mat-select
-                      id="sub1" name="sub1" [(ngModel)]="sub1" style="background-color: transparent;"
-                      (selectionChange)="compareRent()">
-                        <mat-option *ngFor="let option of subListAll" [value]="option.value">{{ option.label }}</mat-option>
-                      </mat-select>
-                    </mat-form-field>
-
-              </div>
-              <div class="col-sm-5">
-                <canvas style="margin-left: 10px; " id="Charty" >{{ piechart }}</canvas> <br>
-              </div></div>
-      </div>
-      <div class="col-sm-5" style="margin-top: 20px; background-color: rgb(52, 52, 49);">
-        <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 40px; margin-top:20px">
-          At a glance
-         </p>
-         <p class="hero-subtitle" style="margin-left: 40px;">
-          {{this.suburb}}
-         </p>
-         <div class="horizontal-line"></div>
-         <div class="container" style="margin-top: 10px;">
-          <div class="col-sm-2" style="margin-left: 40px;">
-            <div class="circular-image">
-              <img src="assets/house.png">
-          </div>
-         </div>
-         <div class="col-sm-4" style="margin-left: 0px;">
-          <p class="hero-subtitle2" style="font-size: 1vw;  ">
-            Median Rent per week<br>
-          </p>
-          <p class="hero-subtitle2" style="font-size: 1.4vw;  ">
-            {{this.rent}} AUD </p>
-       </div>
-      </div>
-      <div class="container" style="margin-top: 20px;">
-        <div class="col-sm-2" style="margin-left: 40px;">
-          <div class="circular-image">
-            <img src="assets/vehicle.png">
-        </div>
-       </div>
-       <div class="col-sm-6" style="margin-left: 0px;">
-        <p class="hero-subtitle2" style="font-size: 1vw;  ">
-         Drive to Melbourne<br>
+    <div class="col-sm-9">
+      <div id="leafletMap"
+      style="height: 600px; width: 100%;" >
+    </div>
+    </div>
+    <div class="col-sm-4" style="margin-top: 50px; background-color: rgb(52, 52, 49); margin-left: -30px;">
+      <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 40px; margin-top:20px">
+        As of 2023, top three professions in this region that <br>offer
+          significant employment opportunities.
+       </p>
+       <div class="horizontal-line" style=" width: 60%; margin-left: 35px;"></div>
+       <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 40px; margin-top:20px">
+        Do you currently live in Victoria?<br>
+        * You can compare your rent with the <br>recommended suburb rent
+       </p>
+       <div class="horizontal-line" style=" width: 60%; margin-left: 35px;"></div>
+       <mat-form-field style="width: 250px;   margin-top: 5px; margin-left: 60px;" *ngIf=checked>
+        <mat-label >Select LGA to compare</mat-label>
+        <mat-select
+        id="sub1" name="sub1" [(ngModel)]="sub1" style="background-color: transparent;"
+        (selectionChange)="compareRent()">
+          <mat-option *ngFor="let option of subListAll" [value]="option.value">{{ option.label }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 40px; ">
+        Not Satisfied with your Recommendation ? <br>
         </p>
-        <p class="hero-subtitle2" style="font-size: 1.4vw;  ">
-          {{this.distance}} Kms /  {{this.time}} minutes </p>
-     </div>
-    </div>
-    <div class="container" style="margin-top: 20px;">
-      <div class="col-sm-2" style="margin-left: 40px;">
-        <div class="circular-image">
-          <img src="assets/crime.png">
-      </div>
-     </div>
-     <div class="col-sm-6" style="margin-left: 0px;">
-      <p class="hero-subtitle2" style="font-size: 1vw;  ">
-       Crimes per 1000 people<br>
-      </p>
-      <p class="hero-subtitle2" style="font-size: 1.4vw;  ">
-        {{this.crime}} </p>
-   </div>
-  </div>
-
-  <div class="container" style="margin-top: 20px;">
-    <div class="col-sm-2" style="margin-left: 40px;">
-      <div class="circular-image">
-        <img src="assets/school.png">
-    </div>
-   </div>
-   <div class="col-sm-6" style="margin-left: 0px;">
-    <p class="hero-subtitle2" style="font-size: 1vw;  ">
-     Schools & Kindergartens<br>
-    </p>
-    <p class="hero-subtitle2" style="font-size: 1.4vw;  ">
-      {{this.schools}} </p>
- </div>
-</div>
-<div class="container" style="margin-top: 20px;">
-  <div class="col-sm-2" style="margin-left: 40px;">
-    <div class="circular-image">
-      <img src="assets/hospital-bed.png">
-  </div>
- </div>
- <div class="col-sm-6" style="margin-left: 0px;">
-  <p class="hero-subtitle2" style="font-size: 1vw;  ">
-  Hospitals in the region<br>
-  </p>
-  <p class="hero-subtitle2" style="font-size: 1.4vw;  ">
-    {{this.hospital}} </p>
-</div>
-</div>
-<div class="horizontal-line" style="margin-top: 30px;"></div>
-<p class="hero-subtitle2" style="font-size: 1vw; margin-left: 20px; ">
-Not Satisfied with your Recommendation ? <br>
-</p>
-<button mat-raised-button
-style="margin-top: 20px; margin-left: 100px; height: 50px; width: 280px; background-color: rgb(49 49 148 / 85%); color: white;"
-  (click)="scrollToTop()">
-  Search Again
-</button><br><br>
-      </div>
-  </div>
-  &nbsp;&nbsp;
-
+        <button mat-raised-button
+        style="margin-top: 20px; margin-left: 60px; height: 50px; width: 250px; background-color: rgb(49 49 148 / 85%); color: white;"
+          (click)="scrollToTop()">
+          Search Again
+        </button>
+    </div></div>
+    <br> &nbsp;
 </section>
 
-<section *ngIf=checked2 style="margin-top: 100px; margin-left: 160px; margin-bottom: 100px;">
-  <div class="heading" style="margin-left: -50px">
-  <span >
-    While you pack, we prep your preferred suburb
-  </span><br></div>
-
-
-</section>
 <footer >
-<p>&copy; 2023 SuburbScape.</p>
-</footer>
-
-
-
-
-
+  <p>&copy; 2023 SuburbScape.</p>
+  </footer>
 
