@@ -69,13 +69,13 @@ export class ExplorationComponent implements AfterViewInit {
 
   constructor(private router: Router, private http: HttpClient,
     private sharedService: SharedService, private snackBar: MatSnackBar) {
-     this.http.get<any>('https://dev04backend.azurewebsites.net/api/data').subscribe((response) => {
+     this.http.get<any>('https://dev04final.azurewebsites.net/api/data').subscribe((response) => {
        this.suburbList = response;
        });
-       this.http.get<any>('https://dev04backend.azurewebsites.net/api/emp_data').subscribe((resp) => {
+       this.http.get<any>('https://dev04final.azurewebsites.net/api/emp_data').subscribe((resp) => {
          this.employmentList = resp;
        });
-       this.http.get<any>('https://dev04backend.azurewebsites.net/api/pro_data').subscribe((response1) => {
+       this.http.get<any>('https://dev04final.azurewebsites.net/api/pro_data').subscribe((response1) => {
          this.communityList = response1;
        });
      }
