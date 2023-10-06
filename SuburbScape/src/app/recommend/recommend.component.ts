@@ -104,7 +104,7 @@ export class RecommendComponent {
 
   constructor(private router: Router, private http: HttpClient,
     private sharedService: SharedService, private snackBar: MatSnackBar) {
-     this.http.get<any>('https://dev04backend.azurewebsites.net/api/data').subscribe((response) => {
+     this.http.get<any>('https://dev04final.azurewebsites.net/api/data').subscribe((response) => {
        this.suburbList = response;
        });
        this.http.get<any>('https://dev04backend.azurewebsites.net/api/emp_data').subscribe((resp) => {
