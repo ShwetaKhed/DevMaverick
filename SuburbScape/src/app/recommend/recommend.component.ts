@@ -374,7 +374,7 @@ export class RecommendComponent {
        this.setMapDetails();
   });
 
-    }, 10);
+    }, 200);
 
   }
 
