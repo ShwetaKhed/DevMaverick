@@ -106,6 +106,7 @@ export class RecommendComponent {
   constructor(private router: Router, private http: HttpClient,
     private sharedService: SharedService, private snackBar: MatSnackBar,
     private matDialog: MatDialog) {
+
      this.http.get<any>('https://dev04final.azurewebsites.net/api/data').subscribe((response) => {
        this.suburbList = response;
        });
