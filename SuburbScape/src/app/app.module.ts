@@ -26,7 +26,9 @@ import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 import { RecommendComponent } from './recommend/recommend.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatListModule} from '@angular/material/list';
-import {Dialog, DialogModule, DialogRef} from '@angular/cdk/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
+
+
 import {
   CdkDrag,
   CdkDragDrop,
@@ -35,6 +37,7 @@ import {
   moveItemInArray,
 } from '@angular/cdk/drag-drop';
 import { CustomSnackbarComponent } from './custom-snackbar/custom-snackbar.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 
 @NgModule({
@@ -45,7 +48,8 @@ import { CustomSnackbarComponent } from './custom-snackbar/custom-snackbar.compo
     ExplorationComponent,
     LoadComponent,
     RecommendComponent,
-    CustomSnackbarComponent
+    CustomSnackbarComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -73,8 +77,7 @@ import { CustomSnackbarComponent } from './custom-snackbar/custom-snackbar.compo
     CdkDragPlaceholder,
     MatProgressBarModule,
     MatListModule,
-    DialogModule
-
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

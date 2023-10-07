@@ -1,0 +1,5576 @@
+[
+ {
+   "school": "Alberton Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 146.6666,
+   "Lat": -38.61771
+ },
+ {
+   "school": "Allansford and District Primary School",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.59039,
+   "Lat": -38.38628
+ },
+ {
+   "school": "Avoca Primary School",
+   "LGA": "PYRENEES",
+   "Lon": 143.47565,
+   "Lat": -37.0845
+ },
+ {
+   "school": "Avenel Primary School",
+   "LGA": "STRATHBOGIE",
+   "Lon": 145.23472,
+   "Lat": -36.90137
+ },
+ {
+   "school": "Belmont Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3421,
+   "Lat": -38.17067
+ },
+ {
+   "school": "Bacchus Marsh Primary School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.44312,
+   "Lat": -37.67303
+ },
+ {
+   "school": "Ballarat Primary School (Dana Street)",
+   "LGA": "BALLARAT",
+   "Lon": 143.85394,
+   "Lat": -37.56401
+ },
+ {
+   "school": "Wodonga Primary School",
+   "LGA": "WODONGA",
+   "Lon": 146.88982,
+   "Lat": -36.12921
+ },
+ {
+   "school": "Beaufort Primary School",
+   "LGA": "PYRENEES",
+   "Lon": 143.38172,
+   "Lat": -37.43852
+ },
+ {
+   "school": "Cudgee Primary School",
+   "LGA": "MOYNE",
+   "Lon": 142.65084,
+   "Lat": -38.34794
+ },
+ {
+   "school": "Cavendish Primary School",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.03989,
+   "Lat": -37.53087
+ },
+ {
+   "school": "Colac Primary School",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.59834,
+   "Lat": -38.33722
+ },
+ {
+   "school": "Castlemaine Primary School",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.22233,
+   "Lat": -37.0666
+ },
+ {
+   "school": "Campbells Creek Primary School",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.20466,
+   "Lat": -37.09293
+ },
+ {
+   "school": "Creswick Primary School",
+   "LGA": "HEPBURN",
+   "Lon": 143.89156,
+   "Lat": -37.42411
+ },
+ {
+   "school": "California Gully Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.24986,
+   "Lat": -36.73321
+ },
+ {
+   "school": "Warrnambool West Primary School",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.4668,
+   "Lat": -38.36634
+ },
+ {
+   "school": "Echuca Primary School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.74746,
+   "Lat": -36.1282
+ },
+ {
+   "school": "Eaglehawk Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.25426,
+   "Lat": -36.72058
+ },
+ {
+   "school": "Elphinstone Primary School",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.3329,
+   "Lat": -37.105
+ },
+ {
+   "school": "Gisborne Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.58844,
+   "Lat": -37.49086
+ },
+ {
+   "school": "Wandiligong Primary School",
+   "LGA": "ALPINE",
+   "Lon": 146.98292,
+   "Lat": -36.76886
+ },
+ {
+   "school": "Grovedale Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.34776,
+   "Lat": -38.19764
+ },
+ {
+   "school": "Hamilton (Gray Street) Primary School",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.02138,
+   "Lat": -37.74491
+ },
+ {
+   "school": "Heathcote Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.70685,
+   "Lat": -36.92401
+ },
+ {
+   "school": "Highton Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.31708,
+   "Lat": -38.17216
+ },
+ {
+   "school": "Huntly Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.3344,
+   "Lat": -36.66254
+ },
+ {
+   "school": "Bellbrae Primary School",
+   "LGA": "SURF COAST",
+   "Lon": 144.263,
+   "Lat": -38.33364
+ },
+ {
+   "school": "Chiltern Primary School",
+   "LGA": "INDIGO",
+   "Lon": 146.6066,
+   "Lat": -36.14707
+ },
+ {
+   "school": "Kyneton Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.46269,
+   "Lat": -37.24889
+ },
+ {
+   "school": "Romsey Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.74538,
+   "Lat": -37.35418
+ },
+ {
+   "school": "Shelford Primary School",
+   "LGA": "GOLDEN PLAINS",
+   "Lon": 143.98214,
+   "Lat": -38.01399
+ },
+ {
+   "school": "Lockwood South Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.15675,
+   "Lat": -36.8416
+ },
+ {
+   "school": "Marong Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.13537,
+   "Lat": -36.73568
+ },
+ {
+   "school": "Mount Macedon Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.58413,
+   "Lat": -37.40479
+ },
+ {
+   "school": "Mount Clear Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.86837,
+   "Lat": -37.60474
+ },
+ {
+   "school": "Newstead Primary School",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.06719,
+   "Lat": -37.10592
+ },
+ {
+   "school": "Newlyn Primary School",
+   "LGA": "HEPBURN",
+   "Lon": 143.98443,
+   "Lat": -37.41202
+ },
+ {
+   "school": "New Gisborne Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.59658,
+   "Lat": -37.46289
+ },
+ {
+   "school": "Beeac Primary School",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.64428,
+   "Lat": -38.19397
+ },
+ {
+   "school": "Penshurst Primary School",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.29133,
+   "Lat": -37.87918
+ },
+ {
+   "school": "Myrniong Primary School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.34632,
+   "Lat": -37.61972
+ },
+ {
+   "school": "Portland Primary School",
+   "LGA": "GLENELG",
+   "Lon": 141.59941,
+   "Lat": -38.3473
+ },
+ {
+   "school": "Stawell Primary School",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 142.77378,
+   "Lat": -37.05613
+ },
+ {
+   "school": "Rutherglen Primary School",
+   "LGA": "INDIGO",
+   "Lon": 146.46061,
+   "Lat": -36.05621
+ },
+ {
+   "school": "Riddells Creek Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.67978,
+   "Lat": -37.46122
+ },
+ {
+   "school": "Rokewood Primary School",
+   "LGA": "GOLDEN PLAINS",
+   "Lon": 143.72281,
+   "Lat": -37.90366
+ },
+ {
+   "school": "Geelong East Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.38277,
+   "Lat": -38.17551
+ },
+ {
+   "school": "Sale Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.07364,
+   "Lat": -38.1083
+ },
+ {
+   "school": "Skipton Primary School",
+   "LGA": "CORANGAMITE",
+   "Lon": 143.36816,
+   "Lat": -37.68686
+ },
+ {
+   "school": "Stratford Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.08539,
+   "Lat": -37.96725
+ },
+ {
+   "school": "Taradale Primary School",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.35106,
+   "Lat": -37.14131
+ },
+ {
+   "school": "Koroit And District Primary School",
+   "LGA": "MOYNE",
+   "Lon": 142.3687,
+   "Lat": -38.29244
+ },
+ {
+   "school": "Tylden Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.40878,
+   "Lat": -37.32497
+ },
+ {
+   "school": "Wangaratta Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.32942,
+   "Lat": -36.35528
+ },
+ {
+   "school": "Wahgunyah Primary School",
+   "LGA": "INDIGO",
+   "Lon": 146.39792,
+   "Lat": -36.01365
+ },
+ {
+   "school": "Woodend Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.53294,
+   "Lat": -37.35342
+ },
+ {
+   "school": "Woodford Primary School",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.4845,
+   "Lat": -38.31681
+ },
+ {
+   "school": "Winters Flat Primary School",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.20749,
+   "Lat": -37.07016
+ },
+ {
+   "school": "Wooragee Primary School",
+   "LGA": "INDIGO",
+   "Lon": 146.73088,
+   "Lat": -36.29048
+ },
+ {
+   "school": "Wallan Primary School",
+   "LGA": "MITCHELL",
+   "Lon": 144.97504,
+   "Lat": -37.41146
+ },
+ {
+   "school": "Woolsthorpe Primary School",
+   "LGA": "MOYNE",
+   "Lon": 142.43176,
+   "Lat": -38.18741
+ },
+ {
+   "school": "Yandoit Primary School",
+   "LGA": "HEPBURN",
+   "Lon": 144.08844,
+   "Lat": -37.214
+ },
+ {
+   "school": "Yarram Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 146.67532,
+   "Lat": -38.55853
+ },
+ {
+   "school": "Pleasant Street Primary School (Ballarat)",
+   "LGA": "BALLARAT",
+   "Lon": 143.8385,
+   "Lat": -37.55633
+ },
+ {
+   "school": "Yea Primary School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.4283,
+   "Lat": -37.21273
+ },
+ {
+   "school": "Lancefield Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.72642,
+   "Lat": -37.27495
+ },
+ {
+   "school": "Coimadai Primary School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.47831,
+   "Lat": -37.61379
+ },
+ {
+   "school": "Birregurra Primary School",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.78651,
+   "Lat": -38.34046
+ },
+ {
+   "school": "Milawa Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.43248,
+   "Lat": -36.44454
+ },
+ {
+   "school": "Lockwood Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.16156,
+   "Lat": -36.80258
+ },
+ {
+   "school": "Bealiba Primary School",
+   "LGA": "CENTRAL GOLDFIELDS",
+   "Lon": 143.5519,
+   "Lat": -36.78994
+ },
+ {
+   "school": "Bairnsdale Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.62323,
+   "Lat": -37.82742
+ },
+ {
+   "school": "Gordon Primary School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.10505,
+   "Lat": -37.58385
+ },
+ {
+   "school": "Hepburn Primary School",
+   "LGA": "HEPBURN",
+   "Lon": 144.13276,
+   "Lat": -37.30972
+ },
+ {
+   "school": "Lara Lake Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.39564,
+   "Lat": -38.0304
+ },
+ {
+   "school": "Rosedale Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 146.7739,
+   "Lat": -38.1546
+ },
+ {
+   "school": "Bright P-12 College",
+   "LGA": "ALPINE",
+   "Lon": 146.96093,
+   "Lat": -36.7331
+ },
+ {
+   "school": "Rochester Primary School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.698,
+   "Lat": -36.3546
+ },
+ {
+   "school": "Ararat Primary School",
+   "LGA": "ARARAT",
+   "Lon": 142.93731,
+   "Lat": -37.28594
+ },
+ {
+   "school": "Jamieson Primary School",
+   "LGA": "MANSFIELD",
+   "Lon": 146.14,
+   "Lat": -37.30126
+ },
+ {
+   "school": "Omeo Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.59308,
+   "Lat": -37.10022
+ },
+ {
+   "school": "Harrietville Primary School",
+   "LGA": "ALPINE",
+   "Lon": 147.06494,
+   "Lat": -36.88771
+ },
+ {
+   "school": "Lake Bolac College",
+   "LGA": "ARARAT",
+   "Lon": 142.8379,
+   "Lat": -37.72024
+ },
+ {
+   "school": "Toongabbie Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.62518,
+   "Lat": -38.05697
+ },
+ {
+   "school": "Waubra Primary School",
+   "LGA": "PYRENEES",
+   "Lon": 143.63446,
+   "Lat": -37.35384
+ },
+ {
+   "school": "Great Western Primary School",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 142.85173,
+   "Lat": -37.14851
+ },
+ {
+   "school": "Maffra Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 146.97677,
+   "Lat": -37.964
+ },
+ {
+   "school": "Broken Creek Primary School",
+   "LGA": "BENALLA",
+   "Lon": 145.88923,
+   "Lat": -36.42328
+ },
+ {
+   "school": "Lal Lal Primary School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.01071,
+   "Lat": -37.67672
+ },
+ {
+   "school": "Cobden Primary School",
+   "LGA": "CORANGAMITE",
+   "Lon": 143.07812,
+   "Lat": -38.32712
+ },
+ {
+   "school": "St Leonards Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.71475,
+   "Lat": -38.17184
+ },
+ {
+   "school": "Bendigo Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.26524,
+   "Lat": -36.75702
+ },
+ {
+   "school": "Darraweit Guim Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.89357,
+   "Lat": -37.40103
+ },
+ {
+   "school": "Linton Primary School",
+   "LGA": "GOLDEN PLAINS",
+   "Lon": 143.56131,
+   "Lat": -37.68407
+ },
+ {
+   "school": "Invermay Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.87458,
+   "Lat": -37.52053
+ },
+ {
+   "school": "Mitta Mitta Primary School",
+   "LGA": "TOWONG",
+   "Lon": 147.37948,
+   "Lat": -36.53341
+ },
+ {
+   "school": "Alexandra Primary School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.7117,
+   "Lat": -37.19257
+ },
+ {
+   "school": "Bannockburn P-12 College",
+   "LGA": "GOLDEN PLAINS",
+   "Lon": 144.16067,
+   "Lat": -38.042
+ },
+ {
+   "school": "Talbot Primary School",
+   "LGA": "CENTRAL GOLDFIELDS",
+   "Lon": 143.7036,
+   "Lat": -37.16865
+ },
+ {
+   "school": "Kangaroo Flat Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.23409,
+   "Lat": -36.78768
+ },
+ {
+   "school": "Hesket Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.61978,
+   "Lat": -37.34781
+ },
+ {
+   "school": "Axedale Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.50146,
+   "Lat": -36.78623
+ },
+ {
+   "school": "Tarnagulla Primary School",
+   "LGA": "LODDON",
+   "Lon": 143.8284,
+   "Lat": -36.77126
+ },
+ {
+   "school": "Carisbrook Primary School",
+   "LGA": "CENTRAL GOLDFIELDS",
+   "Lon": 143.81266,
+   "Lat": -37.05206
+ },
+ {
+   "school": "Dartmoor Primary School",
+   "LGA": "GLENELG",
+   "Lon": 141.27673,
+   "Lat": -37.92302
+ },
+ {
+   "school": "Inglewood Primary School",
+   "LGA": "LODDON",
+   "Lon": 143.87045,
+   "Lat": -36.57394
+ },
+ {
+   "school": "Chewton Primary School",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.26116,
+   "Lat": -37.08233
+ },
+ {
+   "school": "Bolinda Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.7454,
+   "Lat": -37.43373
+ },
+ {
+   "school": "Napoleons Primary School",
+   "LGA": "GOLDEN PLAINS",
+   "Lon": 143.82646,
+   "Lat": -37.67863
+ },
+ {
+   "school": "Haddon Primary School",
+   "LGA": "GOLDEN PLAINS",
+   "Lon": 143.72171,
+   "Lat": -37.58864
+ },
+ {
+   "school": "Panmure Primary School",
+   "LGA": "MOYNE",
+   "Lon": 142.73253,
+   "Lat": -38.32935
+ },
+ {
+   "school": "Alfredton Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.8021,
+   "Lat": -37.5548
+ },
+ {
+   "school": "Bridgewater Primary School",
+   "LGA": "LODDON",
+   "Lon": 143.94592,
+   "Lat": -36.6031
+ },
+ {
+   "school": "Yackandandah Primary School",
+   "LGA": "INDIGO",
+   "Lon": 146.83646,
+   "Lat": -36.3121
+ },
+ {
+   "school": "Nagambie Primary School",
+   "LGA": "STRATHBOGIE",
+   "Lon": 145.15723,
+   "Lat": -36.78759
+ },
+ {
+   "school": "Heyfield Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 146.78494,
+   "Lat": -37.98211
+ },
+ {
+   "school": "Mansfield Primary School",
+   "LGA": "MANSFIELD",
+   "Lon": 146.08482,
+   "Lat": -37.05559
+ },
+ {
+   "school": "Middle Indigo Primary School",
+   "LGA": "INDIGO",
+   "Lon": 146.72484,
+   "Lat": -36.15601
+ },
+ {
+   "school": "Briagolong Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.06784,
+   "Lat": -37.8428
+ },
+ {
+   "school": "Lindenow Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.45327,
+   "Lat": -37.80088
+ },
+ {
+   "school": "Broadford Primary School",
+   "LGA": "MITCHELL",
+   "Lon": 145.0463,
+   "Lat": -37.20257
+ },
+ {
+   "school": "Murchison Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.21429,
+   "Lat": -36.61718
+ },
+ {
+   "school": "Glen Park Primary School",
+   "LGA": "MOORABOOL",
+   "Lon": 143.9348,
+   "Lat": -37.52478
+ },
+ {
+   "school": "Concongella Primary School",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 142.82232,
+   "Lat": -37.04956
+ },
+ {
+   "school": "Bruthen Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.83349,
+   "Lat": -37.70421
+ },
+ {
+   "school": "Swan Hill Primary School",
+   "LGA": "SWAN HILL",
+   "Lon": 143.54325,
+   "Lat": -35.34691
+ },
+ {
+   "school": "Porepunkah Primary School",
+   "LGA": "ALPINE",
+   "Lon": 146.91102,
+   "Lat": -36.69949
+ },
+ {
+   "school": "Leopold Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.46437,
+   "Lat": -38.18726
+ },
+ {
+   "school": "Inverleigh Primary School",
+   "LGA": "GOLDEN PLAINS",
+   "Lon": 144.05469,
+   "Lat": -38.10094
+ },
+ {
+   "school": "Trawalla Primary School",
+   "LGA": "PYRENEES",
+   "Lon": 143.46986,
+   "Lat": -37.43773
+ },
+ {
+   "school": "Quarry Hill Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.27998,
+   "Lat": -36.77512
+ },
+ {
+   "school": "Sebastopol Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.84472,
+   "Lat": -37.59643
+ },
+ {
+   "school": "Woodside Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 146.87674,
+   "Lat": -38.52633
+ },
+ {
+   "school": "Noorat Primary School",
+   "LGA": "CORANGAMITE",
+   "Lon": 142.92873,
+   "Lat": -38.19075
+ },
+ {
+   "school": "Queenscliff Primary School",
+   "LGA": "QUEENSCLIFFE",
+   "Lon": 144.65621,
+   "Lat": -38.26722
+ },
+ {
+   "school": "Portland North Primary School",
+   "LGA": "GLENELG",
+   "Lon": 141.57233,
+   "Lat": -38.31764
+ },
+ {
+   "school": "Timor Primary School",
+   "LGA": "CENTRAL GOLDFIELDS",
+   "Lon": 143.71199,
+   "Lat": -36.98422
+ },
+ {
+   "school": "Apsley Primary School",
+   "LGA": "WEST WIMMERA",
+   "Lon": 141.08249,
+   "Lat": -36.97371
+ },
+ {
+   "school": "Strathfieldsaye Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.35291,
+   "Lat": -36.80436
+ },
+ {
+   "school": "Tooborac Primary School",
+   "LGA": "MITCHELL",
+   "Lon": 144.79814,
+   "Lat": -37.03978
+ },
+ {
+   "school": "Lucknow Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.63075,
+   "Lat": -37.81267
+ },
+ {
+   "school": "Upper Plenty Primary School",
+   "LGA": "MITCHELL",
+   "Lon": 145.05787,
+   "Lat": -37.42371
+ },
+ {
+   "school": "Maldon Primary School",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.06581,
+   "Lat": -36.99504
+ },
+ {
+   "school": "Moyston Primary School",
+   "LGA": "ARARAT",
+   "Lon": 142.76785,
+   "Lat": -37.30166
+ },
+ {
+   "school": "Buninyong Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.88625,
+   "Lat": -37.65423
+ },
+ {
+   "school": "Marysville Primary School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.74894,
+   "Lat": -37.51198
+ },
+ {
+   "school": "Langley Primary School",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.48966,
+   "Lat": -37.17118
+ },
+ {
+   "school": "Wandong Primary School",
+   "LGA": "MITCHELL",
+   "Lon": 145.02786,
+   "Lat": -37.3603
+ },
+ {
+   "school": "Cowes Primary School",
+   "LGA": "BASS COAST",
+   "Lon": 145.24131,
+   "Lat": -38.45628
+ },
+ {
+   "school": "Bullarto Primary School",
+   "LGA": "HEPBURN",
+   "Lon": 144.21822,
+   "Lat": -37.40538
+ },
+ {
+   "school": "Lismore Primary School",
+   "LGA": "CORANGAMITE",
+   "Lon": 143.3393,
+   "Lat": -37.9546
+ },
+ {
+   "school": "Specimen Hill Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.24834,
+   "Lat": -36.76187
+ },
+ {
+   "school": "Bolwarra Primary School",
+   "LGA": "GLENELG",
+   "Lon": 141.6138,
+   "Lat": -38.28161
+ },
+ {
+   "school": "Navarre Primary School",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 143.11134,
+   "Lat": -36.90074
+ },
+ {
+   "school": "Warracknabeal Primary School",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.39126,
+   "Lat": -36.25788
+ },
+ {
+   "school": "Moyhu Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.38309,
+   "Lat": -36.59317
+ },
+ {
+   "school": "Natte Yallock Primary School",
+   "LGA": "PYRENEES",
+   "Lon": 143.468,
+   "Lat": -36.94213
+ },
+ {
+   "school": "Tallangatta Primary School",
+   "LGA": "TOWONG",
+   "Lon": 147.1742,
+   "Lat": -36.2148
+ },
+ {
+   "school": "Kialla Central Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.43115,
+   "Lat": -36.4527
+ },
+ {
+   "school": "San Remo Primary School",
+   "LGA": "BASS COAST",
+   "Lon": 145.36945,
+   "Lat": -38.52385
+ },
+ {
+   "school": "Dimboola Primary School",
+   "LGA": "HINDMARSH",
+   "Lon": 142.0304,
+   "Lat": -36.45336
+ },
+ {
+   "school": "Whorouly Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.58665,
+   "Lat": -36.50544
+ },
+ {
+   "school": "Merrijig Primary School",
+   "LGA": "MANSFIELD",
+   "Lon": 146.25688,
+   "Lat": -37.1028
+ },
+ {
+   "school": "Lethbridge Primary School",
+   "LGA": "GOLDEN PLAINS",
+   "Lon": 144.13456,
+   "Lat": -37.96906
+ },
+ {
+   "school": "Oxley Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.36064,
+   "Lat": -36.44156
+ },
+ {
+   "school": "Malmsbury Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.38694,
+   "Lat": -37.18732
+ },
+ {
+   "school": "Kerang Primary School",
+   "LGA": "GANNAWARRA",
+   "Lon": 143.92114,
+   "Lat": -35.73169
+ },
+ {
+   "school": "Drouin West Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.87172,
+   "Lat": -38.08711
+ },
+ {
+   "school": "Meredith Primary School",
+   "LGA": "GOLDEN PLAINS",
+   "Lon": 144.07781,
+   "Lat": -37.84271
+ },
+ {
+   "school": "Edi Upper Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.44881,
+   "Lat": -36.70647
+ },
+ {
+   "school": "Eaglehawk North Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.23727,
+   "Lat": -36.70707
+ },
+ {
+   "school": "Mooroopna Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.36029,
+   "Lat": -36.39136
+ },
+ {
+   "school": "Ballan Primary School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.2311,
+   "Lat": -37.60168
+ },
+ {
+   "school": "Mount Pleasant Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.85781,
+   "Lat": -37.57836
+ },
+ {
+   "school": "Tatura Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.22992,
+   "Lat": -36.44497
+ },
+ {
+   "school": "Toolamba Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.34418,
+   "Lat": -36.49052
+ },
+ {
+   "school": "Harston Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.14175,
+   "Lat": -36.46986
+ },
+ {
+   "school": "Osbornes Flat Primary School",
+   "LGA": "INDIGO",
+   "Lon": 146.89257,
+   "Lat": -36.31716
+ },
+ {
+   "school": "Donald Primary School",
+   "LGA": "BULOKE",
+   "Lon": 142.98463,
+   "Lat": -36.36721
+ },
+ {
+   "school": "Beveridge Primary School",
+   "LGA": "MITCHELL",
+   "Lon": 144.97776,
+   "Lat": -37.47206
+ },
+ {
+   "school": "Cape Clear Primary School",
+   "LGA": "GOLDEN PLAINS",
+   "Lon": 143.60821,
+   "Lat": -37.79196
+ },
+ {
+   "school": "Tallarook Primary School",
+   "LGA": "MITCHELL",
+   "Lon": 145.10067,
+   "Lat": -37.09676
+ },
+ {
+   "school": "Barnawartha Primary School",
+   "LGA": "INDIGO",
+   "Lon": 146.67589,
+   "Lat": -36.10131
+ },
+ {
+   "school": "Ashby Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3471,
+   "Lat": -38.13856
+ },
+ {
+   "school": "Elmore Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.60891,
+   "Lat": -36.4972
+ },
+ {
+   "school": "Dookie Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.68279,
+   "Lat": -36.33107
+ },
+ {
+   "school": "Natimuk Primary School",
+   "LGA": "HORSHAM",
+   "Lon": 141.9505,
+   "Lat": -36.74124
+ },
+ {
+   "school": "Murtoa College",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.47574,
+   "Lat": -36.6235
+ },
+ {
+   "school": "Big Hill Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.24247,
+   "Lat": -36.83058
+ },
+ {
+   "school": "Clunes Primary School",
+   "LGA": "HEPBURN",
+   "Lon": 143.79211,
+   "Lat": -37.29075
+ },
+ {
+   "school": "Marnoo Primary School",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 142.87035,
+   "Lat": -36.67685
+ },
+ {
+   "school": "Beechworth Primary School",
+   "LGA": "INDIGO",
+   "Lon": 146.69357,
+   "Lat": -36.35543
+ },
+ {
+   "school": "Ardmona Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.31307,
+   "Lat": -36.38546
+ },
+ {
+   "school": "Kilmore Primary School",
+   "LGA": "MITCHELL",
+   "Lon": 144.94752,
+   "Lat": -37.29577
+ },
+ {
+   "school": "Macarthur Primary School",
+   "LGA": "MOYNE",
+   "Lon": 142.00147,
+   "Lat": -38.03088
+ },
+ {
+   "school": "Barwon Heads Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.48704,
+   "Lat": -38.28119
+ },
+ {
+   "school": "Dunolly Primary School",
+   "LGA": "CENTRAL GOLDFIELDS",
+   "Lon": 143.73358,
+   "Lat": -36.85155
+ },
+ {
+   "school": "Springhurst Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.4681,
+   "Lat": -36.18467
+ },
+ {
+   "school": "Trentham District Primary School",
+   "LGA": "HEPBURN",
+   "Lon": 144.3281,
+   "Lat": -37.38797
+ },
+ {
+   "school": "Warrenheip Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.92743,
+   "Lat": -37.5741
+ },
+ {
+   "school": "Maiden Gully Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.2097,
+   "Lat": -36.74419
+ },
+ {
+   "school": "Rupanyup Primary School",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.62861,
+   "Lat": -36.63222
+ },
+ {
+   "school": "Goornong Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.50468,
+   "Lat": -36.617
+ },
+ {
+   "school": "Ceres Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.26673,
+   "Lat": -38.17355
+ },
+ {
+   "school": "Daylesford Primary School",
+   "LGA": "HEPBURN",
+   "Lon": 144.14156,
+   "Lat": -37.3451
+ },
+ {
+   "school": "Mooroopna North Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.29849,
+   "Lat": -36.32914
+ },
+ {
+   "school": "Swan Reach Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.86479,
+   "Lat": -37.82108
+ },
+ {
+   "school": "Amphitheatre Primary School",
+   "LGA": "PYRENEES",
+   "Lon": 143.39924,
+   "Lat": -37.18413
+ },
+ {
+   "school": "Deans Marsh Primary School",
+   "LGA": "SURF COAST",
+   "Lon": 143.88575,
+   "Lat": -38.39988
+ },
+ {
+   "school": "Drysdale Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.57175,
+   "Lat": -38.16916
+ },
+ {
+   "school": "St Arnaud Primary School",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 143.25754,
+   "Lat": -36.6102
+ },
+ {
+   "school": "Nullawarre and District Primary School",
+   "LGA": "MOYNE",
+   "Lon": 142.73443,
+   "Lat": -38.46676
+ },
+ {
+   "school": "Macedon Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.56268,
+   "Lat": -37.41869
+ },
+ {
+   "school": "Buxton Primary School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.70905,
+   "Lat": -37.4214
+ },
+ {
+   "school": "Moonambel Primary School",
+   "LGA": "PYRENEES",
+   "Lon": 143.32074,
+   "Lat": -36.98986
+ },
+ {
+   "school": "Longford Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.08841,
+   "Lat": -38.16956
+ },
+ {
+   "school": "Carraragarmungee Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.46086,
+   "Lat": -36.3289
+ },
+ {
+   "school": "Euroa Primary School",
+   "LGA": "STRATHBOGIE",
+   "Lon": 145.57208,
+   "Lat": -36.75596
+ },
+ {
+   "school": "Pyramid Hill College",
+   "LGA": "LODDON",
+   "Lon": 144.11368,
+   "Lat": -36.04736
+ },
+ {
+   "school": "Shepparton East Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.47925,
+   "Lat": -36.39993
+ },
+ {
+   "school": "Nicholson Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.74791,
+   "Lat": -37.81578
+ },
+ {
+   "school": "Kialla West Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.38946,
+   "Lat": -36.46601
+ },
+ {
+   "school": "Miners Rest Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.7947,
+   "Lat": -37.47788
+ },
+ {
+   "school": "Glenrowan Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.22234,
+   "Lat": -36.46019
+ },
+ {
+   "school": "Warrnambool Primary School",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.48257,
+   "Lat": -38.37728
+ },
+ {
+   "school": "Devenish Primary School",
+   "LGA": "BENALLA",
+   "Lon": 145.89434,
+   "Lat": -36.32654
+ },
+ {
+   "school": "Undera Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.21893,
+   "Lat": -36.27636
+ },
+ {
+   "school": "Dederang Primary School",
+   "LGA": "ALPINE",
+   "Lon": 147.01531,
+   "Lat": -36.46925
+ },
+ {
+   "school": "Eppalock Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.38773,
+   "Lat": -36.84177
+ },
+ {
+   "school": "Wendouree Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.82816,
+   "Lat": -37.53928
+ },
+ {
+   "school": "Lancaster Primary School",
+   "LGA": "CAMPASPE",
+   "Lon": 145.13282,
+   "Lat": -36.31325
+ },
+ {
+   "school": "Raywood Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.2048,
+   "Lat": -36.53947
+ },
+ {
+   "school": "Puckapunyal Primary School",
+   "LGA": "MITCHELL",
+   "Lon": 145.03351,
+   "Lat": -37.00263
+ },
+ {
+   "school": "Landsborough Primary School",
+   "LGA": "PYRENEES",
+   "Lon": 143.13591,
+   "Lat": -37.00586
+ },
+ {
+   "school": "Winton Primary School",
+   "LGA": "BENALLA",
+   "Lon": 146.08134,
+   "Lat": -36.51633
+ },
+ {
+   "school": "Merrigum Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.12966,
+   "Lat": -36.36932
+ },
+ {
+   "school": "Bethanga Primary School",
+   "LGA": "TOWONG",
+   "Lon": 147.09576,
+   "Lat": -36.12064
+ },
+ {
+   "school": "Newtown Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3372,
+   "Lat": -38.14577
+ },
+ {
+   "school": "Buchan Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 148.18082,
+   "Lat": -37.49774
+ },
+ {
+   "school": "Anakie Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.25511,
+   "Lat": -37.91267
+ },
+ {
+   "school": "Moolap Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.42431,
+   "Lat": -38.17096
+ },
+ {
+   "school": "Newham Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.59476,
+   "Lat": -37.31215
+ },
+ {
+   "school": "White Hills Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.30415,
+   "Lat": -36.72794
+ },
+ {
+   "school": "Mount Egerton Primary School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.10217,
+   "Lat": -37.62852
+ },
+ {
+   "school": "Drouin Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.85384,
+   "Lat": -38.13286
+ },
+ {
+   "school": "Wunghnu Primary School",
+   "LGA": "MOIRA",
+   "Lon": 145.4306,
+   "Lat": -36.15066
+ },
+ {
+   "school": "Maroona Primary School",
+   "LGA": "ARARAT",
+   "Lon": 142.85847,
+   "Lat": -37.4328
+ },
+ {
+   "school": "Jindivick Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.90113,
+   "Lat": -38.02762
+ },
+ {
+   "school": "Talgarno Primary School",
+   "LGA": "TOWONG",
+   "Lon": 147.15915,
+   "Lat": -36.0658
+ },
+ {
+   "school": "Bungaree Primary School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.0071,
+   "Lat": -37.55759
+ },
+ {
+   "school": "Cowwarr Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 146.69896,
+   "Lat": -38.0137
+ },
+ {
+   "school": "Camp Hill Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.27804,
+   "Lat": -36.75571
+ },
+ {
+   "school": "Pyalong Primary School",
+   "LGA": "MITCHELL",
+   "Lon": 144.85709,
+   "Lat": -37.11724
+ },
+ {
+   "school": "Winchelsea Primary School",
+   "LGA": "SURF COAST",
+   "Lon": 143.98428,
+   "Lat": -38.24449
+ },
+ {
+   "school": "Buln Buln Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.93817,
+   "Lat": -38.09935
+ },
+ {
+   "school": "Macarthur Street Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.85749,
+   "Lat": -37.55115
+ },
+ {
+   "school": "Elliminyt Primary School",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.5837,
+   "Lat": -38.36135
+ },
+ {
+   "school": "Hamilton North Primary School",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 141.99515,
+   "Lat": -37.72646
+ },
+ {
+   "school": "Mount Blowhard Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.78644,
+   "Lat": -37.42924
+ },
+ {
+   "school": "Creswick North Primary School",
+   "LGA": "HEPBURN",
+   "Lon": 143.89082,
+   "Lat": -37.40884
+ },
+ {
+   "school": "Black Hill Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.86978,
+   "Lat": -37.54984
+ },
+ {
+   "school": "Castlemaine North Primary School",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.21899,
+   "Lat": -37.05783
+ },
+ {
+   "school": "Casterton Primary School",
+   "LGA": "GLENELG",
+   "Lon": 141.4052,
+   "Lat": -37.58655
+ },
+ {
+   "school": "Nathalia Primary School",
+   "LGA": "MOIRA",
+   "Lon": 145.20589,
+   "Lat": -36.05752
+ },
+ {
+   "school": "Chilwell Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.34538,
+   "Lat": -38.15511
+ },
+ {
+   "school": "Teesdale Primary School",
+   "LGA": "GOLDEN PLAINS",
+   "Lon": 144.05459,
+   "Lat": -38.02923
+ },
+ {
+   "school": "Katamatite Primary School",
+   "LGA": "MOIRA",
+   "Lon": 145.6853,
+   "Lat": -36.07735
+ },
+ {
+   "school": "Buangor Primary School",
+   "LGA": "ARARAT",
+   "Lon": 143.17502,
+   "Lat": -37.36404
+ },
+ {
+   "school": "Leitchville Primary School",
+   "LGA": "GANNAWARRA",
+   "Lon": 144.30209,
+   "Lat": -35.90955
+ },
+ {
+   "school": "Little Bendigo Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.89506,
+   "Lat": -37.5429
+ },
+ {
+   "school": "Newington Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.83122,
+   "Lat": -37.56602
+ },
+ {
+   "school": "Warragul Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.92814,
+   "Lat": -38.15634
+ },
+ {
+   "school": "Traralgon South Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.54015,
+   "Lat": -38.29726
+ },
+ {
+   "school": "Coleraine Primary School",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 141.68404,
+   "Lat": -37.60184
+ },
+ {
+   "school": "Ripplebrook Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.75849,
+   "Lat": -38.20349
+ },
+ {
+   "school": "Numurkah Primary School",
+   "LGA": "MOIRA",
+   "Lon": 145.445,
+   "Lat": -36.09024
+ },
+ {
+   "school": "Moe (Albert Street) Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.26435,
+   "Lat": -38.17471
+ },
+ {
+   "school": "Geelong South Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.35857,
+   "Lat": -38.15694
+ },
+ {
+   "school": "Minyip Primary School",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.5841,
+   "Lat": -36.46271
+ },
+ {
+   "school": "Yarragon Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 146.06096,
+   "Lat": -38.20937
+ },
+ {
+   "school": "Tyers Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.47754,
+   "Lat": -38.14911
+ },
+ {
+   "school": "Trafalgar Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 146.15987,
+   "Lat": -38.21476
+ },
+ {
+   "school": "Kinglake Primary School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.35664,
+   "Lat": -37.52157
+ },
+ {
+   "school": "Ellinbank Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.93563,
+   "Lat": -38.24023
+ },
+ {
+   "school": "Tambo Upper Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.8452,
+   "Lat": -37.7662
+ },
+ {
+   "school": "Baranduda Primary School",
+   "LGA": "WODONGA",
+   "Lon": 146.94812,
+   "Lat": -36.18053
+ },
+ {
+   "school": "Tungamah Primary School",
+   "LGA": "MOIRA",
+   "Lon": 145.87947,
+   "Lat": -36.16131
+ },
+ {
+   "school": "Gunbower Primary School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.37232,
+   "Lat": -35.95463
+ },
+ {
+   "school": "Toora Primary School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 146.32799,
+   "Lat": -38.66352
+ },
+ {
+   "school": "Koondrook Primary School",
+   "LGA": "GANNAWARRA",
+   "Lon": 144.12987,
+   "Lat": -35.63487
+ },
+ {
+   "school": "Magpie Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.84327,
+   "Lat": -37.61571
+ },
+ {
+   "school": "Tawonga Primary School",
+   "LGA": "ALPINE",
+   "Lon": 147.14325,
+   "Lat": -36.6914
+ },
+ {
+   "school": "Narracan Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 146.23163,
+   "Lat": -38.26158
+ },
+ {
+   "school": "Drouin South Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.82682,
+   "Lat": -38.17057
+ },
+ {
+   "school": "Eskdale Primary School",
+   "LGA": "TOWONG",
+   "Lon": 147.25125,
+   "Lat": -36.46527
+ },
+ {
+   "school": "Darnum Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.9997,
+   "Lat": -38.18773
+ },
+ {
+   "school": "Paynesville Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.7147,
+   "Lat": -37.91128
+ },
+ {
+   "school": "Epsom Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.31269,
+   "Lat": -36.70505
+ },
+ {
+   "school": "Hazelwood North Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.44768,
+   "Lat": -38.26819
+ },
+ {
+   "school": "Mirboo North Primary School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 146.15109,
+   "Lat": -38.40049
+ },
+ {
+   "school": "Yinnar Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.32891,
+   "Lat": -38.32109
+ },
+ {
+   "school": "Neerim South Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.95536,
+   "Lat": -38.01531
+ },
+ {
+   "school": "Portarlington Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.65498,
+   "Lat": -38.11552
+ },
+ {
+   "school": "Labertouche Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.80494,
+   "Lat": -38.03767
+ },
+ {
+   "school": "Longwarry Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.76914,
+   "Lat": -38.1141
+ },
+ {
+   "school": "Wurruk Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.03995,
+   "Lat": -38.1068
+ },
+ {
+   "school": "Willow Grove Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 146.17734,
+   "Lat": -38.07139
+ },
+ {
+   "school": "Congupna Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.43428,
+   "Lat": -36.29987
+ },
+ {
+   "school": "Redesdale Mia Mia Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.53089,
+   "Lat": -37.01952
+ },
+ {
+   "school": "Boolarra Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.26887,
+   "Lat": -38.38287
+ },
+ {
+   "school": "Willaura Primary School",
+   "LGA": "ARARAT",
+   "Lon": 142.73946,
+   "Lat": -37.54469
+ },
+ {
+   "school": "Echuca East Primary School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.76111,
+   "Lat": -36.13405
+ },
+ {
+   "school": "Lakes Entrance Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.99424,
+   "Lat": -37.87598
+ },
+ {
+   "school": "Myrrhee Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.31825,
+   "Lat": -36.73819
+ },
+ {
+   "school": "Longwood Primary School",
+   "LGA": "STRATHBOGIE",
+   "Lon": 145.42206,
+   "Lat": -36.80793
+ },
+ {
+   "school": "Forrest Primary School",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.71442,
+   "Lat": -38.51629
+ },
+ {
+   "school": "Nilma Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.97429,
+   "Lat": -38.16574
+ },
+ {
+   "school": "Yinnar South Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.36481,
+   "Lat": -38.36891
+ },
+ {
+   "school": "Orbost Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 148.45772,
+   "Lat": -37.70791
+ },
+ {
+   "school": "Inverloch Primary School",
+   "LGA": "BASS COAST",
+   "Lon": 145.72862,
+   "Lat": -38.6312
+ },
+ {
+   "school": "Strathmerton Primary School",
+   "LGA": "MOIRA",
+   "Lon": 145.47884,
+   "Lat": -35.92402
+ },
+ {
+   "school": "Laharum Primary School",
+   "LGA": "HORSHAM",
+   "Lon": 142.32331,
+   "Lat": -36.94535
+ },
+ {
+   "school": "Walwa Primary School",
+   "LGA": "TOWONG",
+   "Lon": 147.73215,
+   "Lat": -35.96423
+ },
+ {
+   "school": "Tanjil South Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 146.2524,
+   "Lat": -38.11887
+ },
+ {
+   "school": "Pomonal Primary School",
+   "LGA": "ARARAT",
+   "Lon": 142.60873,
+   "Lat": -37.19344
+ },
+ {
+   "school": "Glengarry Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.57134,
+   "Lat": -38.12758
+ },
+ {
+   "school": "Loch Primary School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.70295,
+   "Lat": -38.36862
+ },
+ {
+   "school": "Mildura Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.16049,
+   "Lat": -34.19429
+ },
+ {
+   "school": "Newmerella Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 148.434,
+   "Lat": -37.73547
+ },
+ {
+   "school": "Lindenow South Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.4339,
+   "Lat": -37.82694
+ },
+ {
+   "school": "Thorpdale Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 146.17879,
+   "Lat": -38.28846
+ },
+ {
+   "school": "Leongatha Primary School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.95898,
+   "Lat": -38.47893
+ },
+ {
+   "school": "Jeparit Primary School",
+   "LGA": "HINDMARSH",
+   "Lon": 141.98405,
+   "Lat": -36.14134
+ },
+ {
+   "school": "Fish Creek and District Primary School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 146.08442,
+   "Lat": -38.69475
+ },
+ {
+   "school": "Metung Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.85246,
+   "Lat": -37.88296
+ },
+ {
+   "school": "Newhaven Primary School",
+   "LGA": "BASS COAST",
+   "Lon": 145.35686,
+   "Lat": -38.51315
+ },
+ {
+   "school": "Halls Gap Primary School",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 142.51743,
+   "Lat": -37.13748
+ },
+ {
+   "school": "Tallygaroopna Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.43632,
+   "Lat": -36.23861
+ },
+ {
+   "school": "Korumburra Primary School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.82564,
+   "Lat": -38.43513
+ },
+ {
+   "school": "Flowerdale Primary School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.29136,
+   "Lat": -37.31692
+ },
+ {
+   "school": "Ocean Grove Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.52185,
+   "Lat": -38.26399
+ },
+ {
+   "school": "Beulah Primary School",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.41826,
+   "Lat": -35.94494
+ },
+ {
+   "school": "Upper Sandy Creek Primary School",
+   "LGA": "INDIGO",
+   "Lon": 147.1129,
+   "Lat": -36.35518
+ },
+ {
+   "school": "Nichols Point Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.20464,
+   "Lat": -34.2088
+ },
+ {
+   "school": "Irymple Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.15908,
+   "Lat": -34.2266
+ },
+ {
+   "school": "Eagle Point Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.68022,
+   "Lat": -37.89245
+ },
+ {
+   "school": "Toolangi Primary School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.4725,
+   "Lat": -37.53537
+ },
+ {
+   "school": "Kinglake West Primary School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.2596,
+   "Lat": -37.4813
+ },
+ {
+   "school": "Lake Boga Primary School",
+   "LGA": "SWAN HILL",
+   "Lon": 143.63207,
+   "Lat": -35.46451
+ },
+ {
+   "school": "Middle Kinglake Primary School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.31568,
+   "Lat": -37.50521
+ },
+ {
+   "school": "Point Lonsdale Primary School",
+   "LGA": "QUEENSCLIFFE",
+   "Lon": 144.62113,
+   "Lat": -38.27443
+ },
+ {
+   "school": "Kongwak Primary School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.71286,
+   "Lat": -38.51511
+ },
+ {
+   "school": "Wallington Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.50685,
+   "Lat": -38.21788
+ },
+ {
+   "school": "Torquay P-6 College",
+   "LGA": "SURF COAST",
+   "Lon": 144.31231,
+   "Lat": -38.32177
+ },
+ {
+   "school": "Nyora Primary School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.67489,
+   "Lat": -38.33624
+ },
+ {
+   "school": "Ultima Primary School",
+   "LGA": "SWAN HILL",
+   "Lon": 143.26617,
+   "Lat": -35.47623
+ },
+ {
+   "school": "Marlo Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 148.53504,
+   "Lat": -37.79627
+ },
+ {
+   "school": "Koorlong Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.08485,
+   "Lat": -34.27806
+ },
+ {
+   "school": "Willowmavin Primary School",
+   "LGA": "MITCHELL",
+   "Lon": 144.88823,
+   "Lat": -37.25942
+ },
+ {
+   "school": "Carlisle River Primary School",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.39503,
+   "Lat": -38.56393
+ },
+ {
+   "school": "Spring Gully Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.28446,
+   "Lat": -36.79318
+ },
+ {
+   "school": "Mallacoota P-12 College",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 149.7543,
+   "Lat": -37.55943
+ },
+ {
+   "school": "The Lake Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.09314,
+   "Lat": -34.20592
+ },
+ {
+   "school": "Grey Street Primary School (Traralgon)",
+   "LGA": "LATROBE",
+   "Lon": 146.53712,
+   "Lat": -38.19305
+ },
+ {
+   "school": "Bona Vista Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.95991,
+   "Lat": -38.21052
+ },
+ {
+   "school": "Wonthaggi Primary School",
+   "LGA": "BASS COAST",
+   "Lon": 145.58864,
+   "Lat": -38.60795
+ },
+ {
+   "school": "Clifton Creek Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.65939,
+   "Lat": -37.70208
+ },
+ {
+   "school": "Kennington Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.3075,
+   "Lat": -36.7688
+ },
+ {
+   "school": "Grahamvale Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.43072,
+   "Lat": -36.3572
+ },
+ {
+   "school": "Irymple South Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.19062,
+   "Lat": -34.25249
+ },
+ {
+   "school": "Nanneella Estate Primary School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.77804,
+   "Lat": -36.31297
+ },
+ {
+   "school": "Wonthaggi North Primary School",
+   "LGA": "BASS COAST",
+   "Lon": 145.60023,
+   "Lat": -38.59882
+ },
+ {
+   "school": "Balliang East Primary School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.41535,
+   "Lat": -37.79498
+ },
+ {
+   "school": "Orrvale Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.44054,
+   "Lat": -36.41041
+ },
+ {
+   "school": "Underbool Primary School",
+   "LGA": "MILDURA",
+   "Lon": 141.81405,
+   "Lat": -35.17057
+ },
+ {
+   "school": "Murrabit Group School",
+   "LGA": "GANNAWARRA",
+   "Lon": 143.95075,
+   "Lat": -35.52884
+ },
+ {
+   "school": "Currawa Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.70379,
+   "Lat": -36.38475
+ },
+ {
+   "school": "Cann River P-12 College",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 149.15302,
+   "Lat": -37.5697
+ },
+ {
+   "school": "Eildon Primary School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.90676,
+   "Lat": -37.23397
+ },
+ {
+   "school": "Colbinabbin Primary School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.80166,
+   "Lat": -36.58988
+ },
+ {
+   "school": "Stanhope Primary School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.98802,
+   "Lat": -36.4481
+ },
+ {
+   "school": "Dhurringile Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.23979,
+   "Lat": -36.5432
+ },
+ {
+   "school": "Yallourn North Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.36222,
+   "Lat": -38.16321
+ },
+ {
+   "school": "Toorloo Arm Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 148.05097,
+   "Lat": -37.85254
+ },
+ {
+   "school": "Girgarre Primary School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.97376,
+   "Lat": -36.39811
+ },
+ {
+   "school": "Mildura West Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.15239,
+   "Lat": -34.17973
+ },
+ {
+   "school": "Red Cliffs Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.18531,
+   "Lat": -34.31157
+ },
+ {
+   "school": "Colac West Primary School",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.57975,
+   "Lat": -38.33642
+ },
+ {
+   "school": "Moriac Primary School",
+   "LGA": "SURF COAST",
+   "Lon": 144.17557,
+   "Lat": -38.24139
+ },
+ {
+   "school": "Red Cliffs East Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.21427,
+   "Lat": -34.30511
+ },
+ {
+   "school": "Airly Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.1139,
+   "Lat": -38.02571
+ },
+ {
+   "school": "Merrivale Primary School",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.45615,
+   "Lat": -38.37802
+ },
+ {
+   "school": "Manifold Heights Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.33292,
+   "Lat": -38.13597
+ },
+ {
+   "school": "Nungurner Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.88839,
+   "Lat": -37.86592
+ },
+ {
+   "school": "Cardross Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.14504,
+   "Lat": -34.28801
+ },
+ {
+   "school": "Lemnos Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.46246,
+   "Lat": -36.35805
+ },
+ {
+   "school": "Tarwin Lower Primary School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.86706,
+   "Lat": -38.70257
+ },
+ {
+   "school": "Seaspray Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.17062,
+   "Lat": -38.35649
+ },
+ {
+   "school": "Anglesea Primary School",
+   "LGA": "SURF COAST",
+   "Lon": 144.19184,
+   "Lat": -38.39678
+ },
+ {
+   "school": "Zeerust Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.40507,
+   "Lat": -36.2772
+ },
+ {
+   "school": "Cobains Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.13228,
+   "Lat": -38.07479
+ },
+ {
+   "school": "Mildura South Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.12679,
+   "Lat": -34.21348
+ },
+ {
+   "school": "Tate Street Primary School Geelong",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3792,
+   "Lat": -38.16605
+ },
+ {
+   "school": "Katandra West Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.56071,
+   "Lat": -36.22547
+ },
+ {
+   "school": "Wangaratta West Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.30442,
+   "Lat": -36.35413
+ },
+ {
+   "school": "Mount Beauty Primary School",
+   "LGA": "ALPINE",
+   "Lon": 147.17159,
+   "Lat": -36.7395
+ },
+ {
+   "school": "Newborough Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.29279,
+   "Lat": -38.18858
+ },
+ {
+   "school": "Traralgon (Stockdale Road) Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.52417,
+   "Lat": -38.18998
+ },
+ {
+   "school": "Gowrie Street Primary School Shepparton",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.39635,
+   "Lat": -36.3668
+ },
+ {
+   "school": "Moe (South Street) Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.26006,
+   "Lat": -38.18319
+ },
+ {
+   "school": "Roslyn Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.32982,
+   "Lat": -38.17401
+ },
+ {
+   "school": "St Georges Road Primary School Shepparton",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.40574,
+   "Lat": -36.39009
+ },
+ {
+   "school": "Newborough East Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.29376,
+   "Lat": -38.179
+ },
+ {
+   "school": "Herne Hill Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.33245,
+   "Lat": -38.12936
+ },
+ {
+   "school": "Katunga Primary School",
+   "LGA": "MOIRA",
+   "Lon": 145.45561,
+   "Lat": -35.99856
+ },
+ {
+   "school": "Ballarat North Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.86281,
+   "Lat": -37.5401
+ },
+ {
+   "school": "Bandiana Primary School",
+   "LGA": "WODONGA",
+   "Lon": 146.92714,
+   "Lat": -36.15296
+ },
+ {
+   "school": "Warragul North Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.93985,
+   "Lat": -38.14811
+ },
+ {
+   "school": "Horsham West and Haven Primary School",
+   "LGA": "HORSHAM",
+   "Lon": 142.17999,
+   "Lat": -36.71742
+ },
+ {
+   "school": "Traralgon (Kosciuszko Street) Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.51536,
+   "Lat": -38.19927
+ },
+ {
+   "school": "Traralgon (Liddiard Road) Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.55149,
+   "Lat": -38.20155
+ },
+ {
+   "school": "Ararat West Primary School",
+   "LGA": "ARARAT",
+   "Lon": 142.921,
+   "Lat": -37.27736
+ },
+ {
+   "school": "Bairnsdale West Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.6081,
+   "Lat": -37.82454
+ },
+ {
+   "school": "Kalianna Special School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.27865,
+   "Lat": -36.73783
+ },
+ {
+   "school": "Oberon Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.34199,
+   "Lat": -38.17944
+ },
+ {
+   "school": "Moe Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.24672,
+   "Lat": -38.18973
+ },
+ {
+   "school": "Bourchier Street Primary School Shepparton",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.41297,
+   "Lat": -36.36654
+ },
+ {
+   "school": "Swan Hill North Primary School",
+   "LGA": "SWAN HILL",
+   "Lon": 143.54607,
+   "Lat": -35.33179
+ },
+ {
+   "school": "Portland South Primary School",
+   "LGA": "GLENELG",
+   "Lon": 141.61062,
+   "Lat": -38.36527
+ },
+ {
+   "school": "Yarrunga Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.31718,
+   "Lat": -36.37256
+ },
+ {
+   "school": "Ballarat Specialist School",
+   "LGA": "BALLARAT",
+   "Lon": 143.8187,
+   "Lat": -37.55244
+ },
+ {
+   "school": "Orbost North Primary School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 148.466,
+   "Lat": -37.69779
+ },
+ {
+   "school": "Nelson Park School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3377,
+   "Lat": -38.11424
+ },
+ {
+   "school": "Warrnambool East Primary School",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.49958,
+   "Lat": -38.38959
+ },
+ {
+   "school": "Colac South West Primary School",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.57203,
+   "Lat": -38.34363
+ },
+ {
+   "school": "George Street Primary School - Hamilton",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.0344,
+   "Lat": -37.74662
+ },
+ {
+   "school": "Hamlyn Banks Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3271,
+   "Lat": -38.11776
+ },
+ {
+   "school": "Wodonga West Primary School",
+   "LGA": "WODONGA",
+   "Lon": 146.87671,
+   "Lat": -36.12241
+ },
+ {
+   "school": "Guthridge Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.08383,
+   "Lat": -38.0957
+ },
+ {
+   "school": "Rollins Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.32646,
+   "Lat": -38.10121
+ },
+ {
+   "school": "Bellaire Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.31977,
+   "Lat": -38.17959
+ },
+ {
+   "school": "Lara Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.41054,
+   "Lat": -38.01592
+ },
+ {
+   "school": "Simpson Primary School",
+   "LGA": "CORANGAMITE",
+   "Lon": 143.20788,
+   "Lat": -38.49862
+ },
+ {
+   "school": "Fyans Park Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.32686,
+   "Lat": -38.1538
+ },
+ {
+   "school": "Stawell West Primary School",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 142.77129,
+   "Lat": -37.06576
+ },
+ {
+   "school": "Forest Street Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.83543,
+   "Lat": -37.52319
+ },
+ {
+   "school": "Wilmot Road Primary School Shepparton",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.4059,
+   "Lat": -36.3985
+ },
+ {
+   "school": "Kerang South Primary School",
+   "LGA": "GANNAWARRA",
+   "Lon": 143.92716,
+   "Lat": -35.74123
+ },
+ {
+   "school": "Bell Park North Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.33602,
+   "Lat": -38.10589
+ },
+ {
+   "school": "Churchill Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.41542,
+   "Lat": -38.3111
+ },
+ {
+   "school": "Montpellier Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.31612,
+   "Lat": -38.16627
+ },
+ {
+   "school": "Morwell Park Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.42446,
+   "Lat": -38.22793
+ },
+ {
+   "school": "Wangala Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.33986,
+   "Lat": -38.18571
+ },
+ {
+   "school": "Ararat North Primary School",
+   "LGA": "ARARAT",
+   "Lon": 142.94005,
+   "Lat": -37.27465
+ },
+ {
+   "school": "Guthrie Street Primary School Shepparton",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.39097,
+   "Lat": -36.3985
+ },
+ {
+   "school": "Araluen Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.08906,
+   "Lat": -38.10805
+ },
+ {
+   "school": "Wodonga South Primary School",
+   "LGA": "WODONGA",
+   "Lon": 146.89399,
+   "Lat": -36.13962
+ },
+ {
+   "school": "Grovedale West Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.32895,
+   "Lat": -38.20828
+ },
+ {
+   "school": "Baringa Special School",
+   "LGA": "LATROBE",
+   "Lon": 146.2572,
+   "Lat": -38.19174
+ },
+ {
+   "school": "Mooroopna Park Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.34594,
+   "Lat": -36.3801
+ },
+ {
+   "school": "Churchill North Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.41695,
+   "Lat": -38.30464
+ },
+ {
+   "school": "Whittington Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.39501,
+   "Lat": -38.17815
+ },
+ {
+   "school": "Melrose Primary School",
+   "LGA": "WODONGA",
+   "Lon": 146.86142,
+   "Lat": -36.1305
+ },
+ {
+   "school": "Cobram and District Specialist School",
+   "LGA": "MOIRA",
+   "Lon": 145.65158,
+   "Lat": -35.92582
+ },
+ {
+   "school": "Verney Road School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.41529,
+   "Lat": -36.36744
+ },
+ {
+   "school": "Sale and District Specialist School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.07075,
+   "Lat": -38.08164
+ },
+ {
+   "school": "Sovereign Hill School",
+   "LGA": "BALLARAT",
+   "Lon": 143.86526,
+   "Lat": -37.57582
+ },
+ {
+   "school": "Mandama Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.32788,
+   "Lat": -38.2004
+ },
+ {
+   "school": "Bass Valley Primary School",
+   "LGA": "BASS COAST",
+   "Lon": 145.48877,
+   "Lat": -38.43123
+ },
+ {
+   "school": "Darley Primary School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.43691,
+   "Lat": -37.65528
+ },
+ {
+   "school": "Delacombe Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.81853,
+   "Lat": -37.58478
+ },
+ {
+   "school": "Appin Park Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.30071,
+   "Lat": -36.34159
+ },
+ {
+   "school": "Latrobe Special Developmental School",
+   "LGA": "LATROBE",
+   "Lon": 146.55136,
+   "Lat": -38.20403
+ },
+ {
+   "school": "Belvoir Wodonga Special Developmental School",
+   "LGA": "WODONGA",
+   "Lon": 146.85454,
+   "Lat": -36.12321
+ },
+ {
+   "school": "Wangaratta District Specialist School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.30016,
+   "Lat": -36.34379
+ },
+ {
+   "school": "Bundarra Primary School",
+   "LGA": "GLENELG",
+   "Lon": 141.59245,
+   "Lat": -38.36224
+ },
+ {
+   "school": "Loch Sport Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.56717,
+   "Lat": -38.05819
+ },
+ {
+   "school": "Colac Specialist School",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.58902,
+   "Lat": -38.34571
+ },
+ {
+   "school": "Mildura Specialist School",
+   "LGA": "MILDURA",
+   "Lon": 142.14364,
+   "Lat": -34.19988
+ },
+ {
+   "school": "Swan Hill Specialist School",
+   "LGA": "SWAN HILL",
+   "Lon": 143.54509,
+   "Lat": -35.34924
+ },
+ {
+   "school": "Skene Street School Stawell",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 142.78383,
+   "Lat": -37.05767
+ },
+ {
+   "school": "Horsham Special School",
+   "LGA": "HORSHAM",
+   "Lon": 142.18678,
+   "Lat": -36.70784
+ },
+ {
+   "school": "Hampden Specialist School",
+   "LGA": "CORANGAMITE",
+   "Lon": 143.06466,
+   "Lat": -38.32356
+ },
+ {
+   "school": "Merri River School",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.48177,
+   "Lat": -38.35498
+ },
+ {
+   "school": "Clifton Springs Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.55314,
+   "Lat": -38.16566
+ },
+ {
+   "school": "Portland Bay School",
+   "LGA": "GLENELG",
+   "Lon": 141.59756,
+   "Lat": -38.34633
+ },
+ {
+   "school": "Hamilton Parklands School",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.02246,
+   "Lat": -37.72686
+ },
+ {
+   "school": "Warragul & District Specialist School",
+   "LGA": "BAW BAW",
+   "Lon": 145.92506,
+   "Lat": -38.16489
+ },
+ {
+   "school": "Warracknabeal Special Developmental School",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.39075,
+   "Lat": -36.25761
+ },
+ {
+   "school": "Bendigo Special Developmental School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.24015,
+   "Lat": -36.79587
+ },
+ {
+   "school": "Echuca Twin Rivers Specialist School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.72461,
+   "Lat": -36.13829
+ },
+ {
+   "school": "Ranfurly Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.1339,
+   "Lat": -34.19367
+ },
+ {
+   "school": "Surfside Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.54166,
+   "Lat": -38.26145
+ },
+ {
+   "school": "Peranbin Primary College",
+   "LGA": "STRATHBOGIE",
+   "Lon": 145.71697,
+   "Lat": -36.63424
+ },
+ {
+   "school": "Barwon Valley School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.32804,
+   "Lat": -38.17878
+ },
+ {
+   "school": "Pentland Primary School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.42318,
+   "Lat": -37.65586
+ },
+ {
+   "school": "Derrinallum P-12 College",
+   "LGA": "CORANGAMITE",
+   "Lon": 143.21674,
+   "Lat": -37.93959
+ },
+ {
+   "school": "Mortlake P-12 College",
+   "LGA": "MOYNE",
+   "Lon": 142.80955,
+   "Lat": -38.08637
+ },
+ {
+   "school": "Branxholme-Wallacedale Community School",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 141.79872,
+   "Lat": -37.85635
+ },
+ {
+   "school": "Mount Duneed Regional Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.31968,
+   "Lat": -38.24124
+ },
+ {
+   "school": "Grasmere Primary School",
+   "LGA": "MOYNE",
+   "Lon": 142.52288,
+   "Lat": -38.28599
+ },
+ {
+   "school": "Narrawong District Primary School",
+   "LGA": "GLENELG",
+   "Lon": 141.71658,
+   "Lat": -38.25268
+ },
+ {
+   "school": "Canadian Lead Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.87591,
+   "Lat": -37.57297
+ },
+ {
+   "school": "Caledonian Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.89424,
+   "Lat": -37.55542
+ },
+ {
+   "school": "Tempy Primary School",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.42708,
+   "Lat": -35.34395
+ },
+ {
+   "school": "Rawson Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 146.39897,
+   "Lat": -37.95912
+ },
+ {
+   "school": "Bundalaguah Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.0121,
+   "Lat": -38.0235
+ },
+ {
+   "school": "Lardner and District Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.88035,
+   "Lat": -38.20464
+ },
+ {
+   "school": "Nambrok Denison Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 146.87481,
+   "Lat": -38.05399
+ },
+ {
+   "school": "Welshpool and District Primary School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 146.43111,
+   "Lat": -38.66552
+ },
+ {
+   "school": "Whitfield District Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.41206,
+   "Lat": -36.76558
+ },
+ {
+   "school": "Greta Valley Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.23636,
+   "Lat": -36.61784
+ },
+ {
+   "school": "Everton Primary School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.54454,
+   "Lat": -36.43532
+ },
+ {
+   "school": "Nangiloc Colignan and District Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.35779,
+   "Lat": -34.47385
+ },
+ {
+   "school": "Tyrrell College",
+   "LGA": "BULOKE",
+   "Lon": 142.85352,
+   "Lat": -35.50928
+ },
+ {
+   "school": "Harcourt Valley Primary School",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.25723,
+   "Lat": -37.00297
+ },
+ {
+   "school": "Beverford District Primary School",
+   "LGA": "SWAN HILL",
+   "Lon": 143.47891,
+   "Lat": -35.23248
+ },
+ {
+   "school": "Lucas Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.7804,
+   "Lat": -37.54796
+ },
+ {
+   "school": "Meeniyan Primary School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 146.01518,
+   "Lat": -38.57934
+ },
+ {
+   "school": "Powlett River Primary School",
+   "LGA": "BASS COAST",
+   "Lon": 145.5462,
+   "Lat": -38.56035
+ },
+ {
+   "school": "Edenhope College",
+   "LGA": "WEST WIMMERA",
+   "Lon": 141.29856,
+   "Lat": -37.03343
+ },
+ {
+   "school": "Murrayville Community College",
+   "LGA": "MILDURA",
+   "Lon": 141.17734,
+   "Lat": -35.26557
+ },
+ {
+   "school": "Hawkesdale P12 College",
+   "LGA": "MOYNE",
+   "Lon": 142.31917,
+   "Lat": -38.10698
+ },
+ {
+   "school": "Woorinen District Primary School",
+   "LGA": "SWAN HILL",
+   "Lon": 143.45374,
+   "Lat": -35.29041
+ },
+ {
+   "school": "Woady Yaloak Primary School",
+   "LGA": "GOLDEN PLAINS",
+   "Lon": 143.6843,
+   "Lat": -37.64352
+ },
+ {
+   "school": "Gormandale And District Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 146.70321,
+   "Lat": -38.29418
+ },
+ {
+   "school": "Newcomb Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.39495,
+   "Lat": -38.16516
+ },
+ {
+   "school": "Nyah District Primary School",
+   "LGA": "SWAN HILL",
+   "Lon": 143.34319,
+   "Lat": -35.18608
+ },
+ {
+   "school": "East Gippsland Specialist School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.599,
+   "Lat": -37.82871
+ },
+ {
+   "school": "South Gippsland Specialist School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.95729,
+   "Lat": -38.47819
+ },
+ {
+   "school": "Echuca Twin Rivers Primary School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.72467,
+   "Lat": -36.13772
+ },
+ {
+   "school": "Yuille Park P-8 Community College",
+   "LGA": "BALLARAT",
+   "Lon": 143.8204,
+   "Lat": -37.5275
+ },
+ {
+   "school": "Golden Square Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.2573,
+   "Lat": -36.7706
+ },
+ {
+   "school": "Lightning Reef Primary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.26844,
+   "Lat": -36.73692
+ },
+ {
+   "school": "Horsham Primary School",
+   "LGA": "HORSHAM",
+   "Lon": 142.21515,
+   "Lat": -36.71138
+ },
+ {
+   "school": "Torquay Coast Primary School",
+   "LGA": "SURF COAST",
+   "Lon": 144.33818,
+   "Lat": -38.30456
+ },
+ {
+   "school": "Armstrong Creek School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.36731,
+   "Lat": -38.23261
+ },
+ {
+   "school": "Hamlyn Views School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.33237,
+   "Lat": -38.12528
+ },
+ {
+   "school": "Aireys Inlet Primary School",
+   "LGA": "SURF COAST",
+   "Lon": 144.10997,
+   "Lat": -38.45737
+ },
+ {
+   "school": "Morwell Central Primary School",
+   "LGA": "LATROBE",
+   "Lon": 146.40764,
+   "Lat": -38.23167
+ },
+ {
+   "school": "Mirripoa Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.32848,
+   "Lat": -38.22492
+ },
+ {
+   "school": "Willowbank Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.6081,
+   "Lat": -37.50394
+ },
+ {
+   "school": "Alvie Primary School",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.50332,
+   "Lat": -38.2419
+ },
+ {
+   "school": "Apollo Bay P-12 College",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.66051,
+   "Lat": -38.75352
+ },
+ {
+   "school": "Boisdale Consolidated School",
+   "LGA": "WELLINGTON",
+   "Lon": 146.97947,
+   "Lat": -37.87959
+ },
+ {
+   "school": "Cobram Primary School",
+   "LGA": "MOIRA",
+   "Lon": 145.6511,
+   "Lat": -35.92511
+ },
+ {
+   "school": "Cohuna Consolidated School",
+   "LGA": "GANNAWARRA",
+   "Lon": 144.21342,
+   "Lat": -35.80632
+ },
+ {
+   "school": "Dunkeld Consolidated School",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.34037,
+   "Lat": -37.63898
+ },
+ {
+   "school": "East Loddon P-12 College",
+   "LGA": "LODDON",
+   "Lon": 144.14145,
+   "Lat": -36.37222
+ },
+ {
+   "school": "Foster Primary School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 146.202,
+   "Lat": -38.65734
+ },
+ {
+   "school": "Goroke P-12 College",
+   "LGA": "WEST WIMMERA",
+   "Lon": 141.48354,
+   "Lat": -36.71579
+ },
+ {
+   "school": "Heywood Consolidated School",
+   "LGA": "GLENELG",
+   "Lon": 141.61292,
+   "Lat": -38.12752
+ },
+ {
+   "school": "Kiewa Valley Primary School",
+   "LGA": "INDIGO",
+   "Lon": 147.03877,
+   "Lat": -36.25105
+ },
+ {
+   "school": "Lavers Hill K-12 College",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.38305,
+   "Lat": -38.68184
+ },
+ {
+   "school": "Lockington Consolidated School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.53664,
+   "Lat": -36.26577
+ },
+ {
+   "school": "Manangatang P-12 College",
+   "LGA": "SWAN HILL",
+   "Lon": 142.88488,
+   "Lat": -35.05623
+ },
+ {
+   "school": "Terang College",
+   "LGA": "CORANGAMITE",
+   "Lon": 142.92139,
+   "Lat": -38.24628
+ },
+ {
+   "school": "Merino Consolidated School",
+   "LGA": "GLENELG",
+   "Lon": 141.54831,
+   "Lat": -37.70637
+ },
+ {
+   "school": "Rushworth P-12 College",
+   "LGA": "CAMPASPE",
+   "Lon": 145.0144,
+   "Lat": -36.58332
+ },
+ {
+   "school": "Poowong Consolidated School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.7697,
+   "Lat": -38.34248
+ },
+ {
+   "school": "Port Fairy Consolidated School",
+   "LGA": "MOYNE",
+   "Lon": 142.22822,
+   "Lat": -38.38662
+ },
+ {
+   "school": "Tongala Primary School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.95652,
+   "Lat": -36.25215
+ },
+ {
+   "school": "Werrimull P-12 School",
+   "LGA": "MILDURA",
+   "Lon": 141.59384,
+   "Lat": -34.39041
+ },
+ {
+   "school": "Camperdown College",
+   "LGA": "CORANGAMITE",
+   "Lon": 143.14544,
+   "Lat": -38.23973
+ },
+ {
+   "school": "Timboon P-12 School",
+   "LGA": "CORANGAMITE",
+   "Lon": 142.97589,
+   "Lat": -38.48406
+ },
+ {
+   "school": "Wedderburn College",
+   "LGA": "LODDON",
+   "Lon": 143.61877,
+   "Lat": -36.41702
+ },
+ {
+   "school": "Cobden Technical School",
+   "LGA": "CORANGAMITE",
+   "Lon": 143.06361,
+   "Lat": -38.32404
+ },
+ {
+   "school": "Daylesford Secondary College",
+   "LGA": "HEPBURN",
+   "Lon": 144.15185,
+   "Lat": -37.33467
+ },
+ {
+   "school": "Grovedale College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.32744,
+   "Lat": -38.2104
+ },
+ {
+   "school": "Irymple Secondary College",
+   "LGA": "MILDURA",
+   "Lon": 142.1647,
+   "Lat": -34.23233
+ },
+ {
+   "school": "Crusoe 7-10 Secondary College",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.23367,
+   "Lat": -36.78865
+ },
+ {
+   "school": "Chaffey Secondary College",
+   "LGA": "MILDURA",
+   "Lon": 142.14798,
+   "Lat": -34.19573
+ },
+ {
+   "school": "Mount Clear College",
+   "LGA": "BALLARAT",
+   "Lon": 143.87667,
+   "Lat": -37.60796
+ },
+ {
+   "school": "Brauer Secondary College",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.45892,
+   "Lat": -38.35871
+ },
+ {
+   "school": "Weeroona College Bendigo",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.29798,
+   "Lat": -36.73893
+ },
+ {
+   "school": "Alexandra Secondary College",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.70148,
+   "Lat": -37.19449
+ },
+ {
+   "school": "Ballarat High School",
+   "LGA": "BALLARAT",
+   "Lon": 143.81821,
+   "Lat": -37.55452
+ },
+ {
+   "school": "Beaufort Secondary College",
+   "LGA": "PYRENEES",
+   "Lon": 143.38249,
+   "Lat": -37.43884
+ },
+ {
+   "school": "Beechworth Secondary College",
+   "LGA": "INDIGO",
+   "Lon": 146.69076,
+   "Lat": -36.34722
+ },
+ {
+   "school": "Belmont High School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.33056,
+   "Lat": -38.17565
+ },
+ {
+   "school": "Bendigo Senior Secondary College",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.27928,
+   "Lat": -36.7553
+ },
+ {
+   "school": "Outdoor School",
+   "LGA": "ALPINE",
+   "Lon": 147.22537,
+   "Lat": -36.80408
+ },
+ {
+   "school": "Broadford Secondary College",
+   "LGA": "MITCHELL",
+   "Lon": 145.04003,
+   "Lat": -37.20438
+ },
+ {
+   "school": "Casterton Secondary College",
+   "LGA": "GLENELG",
+   "Lon": 141.38749,
+   "Lat": -37.5888
+ },
+ {
+   "school": "Cobram Secondary College",
+   "LGA": "MOIRA",
+   "Lon": 145.65412,
+   "Lat": -35.9136
+ },
+ {
+   "school": "Cohuna Secondary College",
+   "LGA": "GANNAWARRA",
+   "Lon": 144.22642,
+   "Lat": -35.8135
+ },
+ {
+   "school": "Dimboola Memorial Secondary College",
+   "LGA": "HINDMARSH",
+   "Lon": 142.03441,
+   "Lat": -36.44984
+ },
+ {
+   "school": "Donald High School",
+   "LGA": "BULOKE",
+   "Lon": 142.97396,
+   "Lat": -36.37078
+ },
+ {
+   "school": "Drouin Secondary College",
+   "LGA": "BAW BAW",
+   "Lon": 145.85098,
+   "Lat": -38.14466
+ },
+ {
+   "school": "Eaglehawk Secondary College",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.26163,
+   "Lat": -36.72006
+ },
+ {
+   "school": "Euroa Secondary College",
+   "LGA": "STRATHBOGIE",
+   "Lon": 145.5648,
+   "Lat": -36.7582
+ },
+ {
+   "school": "Bendigo South East 7-10 Secondary College",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.29759,
+   "Lat": -36.77579
+ },
+ {
+   "school": "Foster Secondary College",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 146.19741,
+   "Lat": -38.65174
+ },
+ {
+   "school": "Geelong High School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.37373,
+   "Lat": -38.15303
+ },
+ {
+   "school": "North Geelong Secondary College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.34079,
+   "Lat": -38.10996
+ },
+ {
+   "school": "Gisborne Secondary College",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.58477,
+   "Lat": -37.49811
+ },
+ {
+   "school": "Greater Shepparton Secondary College",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.4154,
+   "Lat": -36.37207
+ },
+ {
+   "school": "Heywood District Secondary College",
+   "LGA": "GLENELG",
+   "Lon": 141.6205,
+   "Lat": -38.12927
+ },
+ {
+   "school": "Kerang Technical High School",
+   "LGA": "GANNAWARRA",
+   "Lon": 143.9138,
+   "Lat": -35.72565
+ },
+ {
+   "school": "Korumburra Secondary College",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.8039,
+   "Lat": -38.44387
+ },
+ {
+   "school": "Kyabram P-12 College",
+   "LGA": "CAMPASPE",
+   "Lon": 145.05621,
+   "Lat": -36.31748
+ },
+ {
+   "school": "Kyneton High School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.45817,
+   "Lat": -37.25133
+ },
+ {
+   "school": "Lorne P-12 College",
+   "LGA": "SURF COAST",
+   "Lon": 143.97389,
+   "Lat": -38.53918
+ },
+ {
+   "school": "Maffra Secondary College",
+   "LGA": "WELLINGTON",
+   "Lon": 146.98242,
+   "Lat": -37.96489
+ },
+ {
+   "school": "Mansfield Secondary College",
+   "LGA": "MANSFIELD",
+   "Lon": 146.08856,
+   "Lat": -37.06268
+ },
+ {
+   "school": "Matthew Flinders Girls Secondary College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.35321,
+   "Lat": -38.14959
+ },
+ {
+   "school": "Mildura Senior College",
+   "LGA": "MILDURA",
+   "Lon": 142.14539,
+   "Lat": -34.198
+ },
+ {
+   "school": "Mirboo North Secondary College",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 146.14882,
+   "Lat": -38.40018
+ },
+ {
+   "school": "Mount Beauty Secondary College",
+   "LGA": "ALPINE",
+   "Lon": 147.16728,
+   "Lat": -36.74031
+ },
+ {
+   "school": "Nathalia Secondary College",
+   "LGA": "MOIRA",
+   "Lon": 145.20844,
+   "Lat": -36.0599
+ },
+ {
+   "school": "Neerim District Secondary College",
+   "LGA": "BAW BAW",
+   "Lon": 145.95668,
+   "Lat": -38.01694
+ },
+ {
+   "school": "Newcomb Secondary College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3952,
+   "Lat": -38.17113
+ },
+ {
+   "school": "Numurkah Secondary College",
+   "LGA": "MOIRA",
+   "Lon": 145.44627,
+   "Lat": -36.07995
+ },
+ {
+   "school": "Oberon High School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.36414,
+   "Lat": -38.23176
+ },
+ {
+   "school": "Orbost Secondary College",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 148.46635,
+   "Lat": -37.70411
+ },
+ {
+   "school": "Ouyen P-12 College",
+   "LGA": "MILDURA",
+   "Lon": 142.32261,
+   "Lat": -35.06457
+ },
+ {
+   "school": "Bellarine Secondary College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.55753,
+   "Lat": -38.19066
+ },
+ {
+   "school": "Rainbow P-12 College",
+   "LGA": "HINDMARSH",
+   "Lon": 141.9967,
+   "Lat": -35.89447
+ },
+ {
+   "school": "Red Cliffs Secondary College",
+   "LGA": "MILDURA",
+   "Lon": 142.19545,
+   "Lat": -34.2988
+ },
+ {
+   "school": "Robinvale College",
+   "LGA": "SWAN HILL",
+   "Lon": 142.78155,
+   "Lat": -34.58889
+ },
+ {
+   "school": "Rochester Secondary College",
+   "LGA": "CAMPASPE",
+   "Lon": 144.6987,
+   "Lat": -36.35278
+ },
+ {
+   "school": "Rubicon Outdoor School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.82134,
+   "Lat": -37.29493
+ },
+ {
+   "school": "Rutherglen High School",
+   "LGA": "INDIGO",
+   "Lon": 146.4521,
+   "Lat": -36.06256
+ },
+ {
+   "school": "St Arnaud Secondary College",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 143.25094,
+   "Lat": -36.60955
+ },
+ {
+   "school": "Tallangatta Secondary College",
+   "LGA": "TOWONG",
+   "Lon": 147.17267,
+   "Lat": -36.22044
+ },
+ {
+   "school": "Trafalgar High School",
+   "LGA": "BAW BAW",
+   "Lon": 146.1583,
+   "Lat": -38.21457
+ },
+ {
+   "school": "Wangaratta High School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.30772,
+   "Lat": -36.3449
+ },
+ {
+   "school": "Warracknabeal Secondary College",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.3908,
+   "Lat": -36.25768
+ },
+ {
+   "school": "Bairnsdale Secondary College",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.605,
+   "Lat": -37.82871
+ },
+ {
+   "school": "Wodonga Senior Secondary College",
+   "LGA": "WODONGA",
+   "Lon": 146.88105,
+   "Lat": -36.12561
+ },
+ {
+   "school": "Yarram Secondary College",
+   "LGA": "WELLINGTON",
+   "Lon": 146.68541,
+   "Lat": -38.56743
+ },
+ {
+   "school": "Woodmans Hill Secondary College",
+   "LGA": "BALLARAT",
+   "Lon": 143.89228,
+   "Lat": -37.55912
+ },
+ {
+   "school": "Yea High School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.40854,
+   "Lat": -37.21501
+ },
+ {
+   "school": "Kurnai College",
+   "LGA": "LATROBE",
+   "Lon": 146.43279,
+   "Lat": -38.22879
+ },
+ {
+   "school": "Lakes Entrance Secondary College",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.99841,
+   "Lat": -37.87134
+ },
+ {
+   "school": "Stawell Secondary College",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 142.78979,
+   "Lat": -37.06195
+ },
+ {
+   "school": "Bass Coast College",
+   "LGA": "BASS COAST",
+   "Lon": 145.59788,
+   "Lat": -38.61094
+ },
+ {
+   "school": "Leongatha Secondary College",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.96124,
+   "Lat": -38.47869
+ },
+ {
+   "school": "Ararat Secondary College",
+   "LGA": "ARARAT",
+   "Lon": 142.92196,
+   "Lat": -37.286
+ },
+ {
+   "school": "Bacchus Marsh College",
+   "LGA": "MOORABOOL",
+   "Lon": 144.43306,
+   "Lat": -37.68563
+ },
+ {
+   "school": "Wallan Secondary College",
+   "LGA": "MITCHELL",
+   "Lon": 144.98147,
+   "Lat": -37.41839
+ },
+ {
+   "school": "Portland Secondary College",
+   "LGA": "GLENELG",
+   "Lon": 141.59482,
+   "Lat": -38.35882
+ },
+ {
+   "school": "Swan Hill College",
+   "LGA": "SWAN HILL",
+   "Lon": 143.55285,
+   "Lat": -35.33523
+ },
+ {
+   "school": "Traralgon College",
+   "LGA": "LATROBE",
+   "Lon": 146.51949,
+   "Lat": -38.19142
+ },
+ {
+   "school": "Warrnambool College",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.49968,
+   "Lat": -38.37672
+ },
+ {
+   "school": "Baimbridge College",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.01463,
+   "Lat": -37.73331
+ },
+ {
+   "school": "Horsham College",
+   "LGA": "HORSHAM",
+   "Lon": 142.1841,
+   "Lat": -36.71166
+ },
+ {
+   "school": "Western Heights Secondary College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.32806,
+   "Lat": -38.12391
+ },
+ {
+   "school": "Lowanna College",
+   "LGA": "LATROBE",
+   "Lon": 146.28598,
+   "Lat": -38.17668
+ },
+ {
+   "school": "Castlemaine Secondary College",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.22755,
+   "Lat": -37.05044
+ },
+ {
+   "school": "Warragul Regional College",
+   "LGA": "BAW BAW",
+   "Lon": 145.92549,
+   "Lat": -38.1652
+ },
+ {
+   "school": "Mount Rowan Secondary College",
+   "LGA": "BALLARAT",
+   "Lon": 143.83447,
+   "Lat": -37.51922
+ },
+ {
+   "school": "Charlton College",
+   "LGA": "BULOKE",
+   "Lon": 143.35963,
+   "Lat": -36.27031
+ },
+ {
+   "school": "Wycheproof P-12 College",
+   "LGA": "BULOKE",
+   "Lon": 143.2291,
+   "Lat": -36.0757
+ },
+ {
+   "school": "Birchip P-12 School",
+   "LGA": "BULOKE",
+   "Lon": 142.90994,
+   "Lat": -35.98438
+ },
+ {
+   "school": "Nhill College",
+   "LGA": "HINDMARSH",
+   "Lon": 141.65886,
+   "Lat": -36.3326
+ },
+ {
+   "school": "Sale College",
+   "LGA": "WELLINGTON",
+   "Lon": 147.06801,
+   "Lat": -38.10892
+ },
+ {
+   "school": "The Alpine School",
+   "LGA": "ALPINE",
+   "Lon": 147.24592,
+   "Lat": -37.02329
+ },
+ {
+   "school": "Lara Secondary College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.41157,
+   "Lat": -38.01818
+ },
+ {
+   "school": "Kaniva College",
+   "LGA": "WEST WIMMERA",
+   "Lon": 141.24485,
+   "Lat": -36.38272
+ },
+ {
+   "school": "Corryong College",
+   "LGA": "TOWONG",
+   "Lon": 147.91076,
+   "Lat": -36.19294
+ },
+ {
+   "school": "Maryborough Education Centre",
+   "LGA": "CENTRAL GOLDFIELDS",
+   "Lon": 143.72287,
+   "Lat": -37.04216
+ },
+ {
+   "school": "Wodonga Middle Years College",
+   "LGA": "WODONGA",
+   "Lon": 146.89056,
+   "Lat": -36.13084
+ },
+ {
+   "school": "Echuca College",
+   "LGA": "CAMPASPE",
+   "Lon": 144.73242,
+   "Lat": -36.13239
+ },
+ {
+   "school": "Bass Coast Specialist School",
+   "LGA": "BASS COAST",
+   "Lon": 145.59647,
+   "Lat": -38.60974
+ },
+ {
+   "school": "Colac Secondary College",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.5901,
+   "Lat": -38.3515
+ },
+ {
+   "school": "Balmoral K-12 Community College",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 141.82362,
+   "Lat": -37.23958
+ },
+ {
+   "school": "Myrtleford P-12 College",
+   "LGA": "ALPINE",
+   "Lon": 146.72614,
+   "Lat": -36.54889
+ },
+ {
+   "school": "Boort District P-12 School",
+   "LGA": "LODDON",
+   "Lon": 143.72695,
+   "Lat": -36.11022
+ },
+ {
+   "school": "Yarrawonga College P-12",
+   "LGA": "MOIRA",
+   "Lon": 146.00667,
+   "Lat": -36.02144
+ },
+ {
+   "school": "Seymour College",
+   "LGA": "MITCHELL",
+   "Lon": 145.14112,
+   "Lat": -37.02984
+ },
+ {
+   "school": "Merbein P-10 College",
+   "LGA": "MILDURA",
+   "Lon": 142.07131,
+   "Lat": -34.16937
+ },
+ {
+   "school": "Swifts Creek P-12 School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.72403,
+   "Lat": -37.26684
+ },
+ {
+   "school": "Phoenix P-12 Community College",
+   "LGA": "BALLARAT",
+   "Lon": 143.83351,
+   "Lat": -37.58661
+ },
+ {
+   "school": "Northern Bay P-12 College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.35571,
+   "Lat": -38.07841
+ },
+ {
+   "school": "Surf Coast Secondary College",
+   "LGA": "SURF COAST",
+   "Lon": 144.32386,
+   "Lat": -38.30419
+ },
+ {
+   "school": "Hopetoun P-12 College",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.36603,
+   "Lat": -35.73487
+ },
+ {
+   "school": "Benalla P-12 College",
+   "LGA": "BENALLA",
+   "Lon": 145.96385,
+   "Lat": -36.55337
+ },
+ {
+   "school": "St Patrick's College Ballarat",
+   "LGA": "BALLARAT",
+   "Lon": 143.83156,
+   "Lat": -37.55971
+ },
+ {
+   "school": "St Patrick's School",
+   "LGA": "BALLARAT",
+   "Lon": 143.84715,
+   "Lat": -37.5644
+ },
+ {
+   "school": "St Alipius' Parish School",
+   "LGA": "BALLARAT",
+   "Lon": 143.87401,
+   "Lat": -37.5617
+ },
+ {
+   "school": "Emmanuel College Warrnambool",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.47736,
+   "Lat": -38.37099
+ },
+ {
+   "school": "Loreto College",
+   "LGA": "BALLARAT",
+   "Lon": 143.82347,
+   "Lat": -37.55686
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "MANSFIELD",
+   "Lon": 146.08901,
+   "Lat": -37.05835
+ },
+ {
+   "school": "St Patrick's School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.32195,
+   "Lat": -36.35616
+ },
+ {
+   "school": "Assumption College",
+   "LGA": "MITCHELL",
+   "Lon": 144.94763,
+   "Lat": -37.30101
+ },
+ {
+   "school": "Catherine McAuley College",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.27336,
+   "Lat": -36.75344
+ },
+ {
+   "school": "Highview College",
+   "LGA": "CENTRAL GOLDFIELDS",
+   "Lon": 143.73642,
+   "Lat": -37.05354
+ },
+ {
+   "school": "St Augustine's School",
+   "LGA": "CENTRAL GOLDFIELDS",
+   "Lon": 143.7368,
+   "Lat": -37.05183
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.58563,
+   "Lat": -37.8414
+ },
+ {
+   "school": "St Aloysius' School",
+   "LGA": "BALLARAT",
+   "Lon": 143.83767,
+   "Lat": -37.57811
+ },
+ {
+   "school": "Sacred Heart School",
+   "LGA": "LATROBE",
+   "Lon": 146.40432,
+   "Lat": -38.23943
+ },
+ {
+   "school": "St Michael's School",
+   "LGA": "LATROBE",
+   "Lon": 146.5347,
+   "Lat": -38.19516
+ },
+ {
+   "school": "St Brendan's School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.40765,
+   "Lat": -36.37473
+ },
+ {
+   "school": "St Mary's College",
+   "LGA": "MITCHELL",
+   "Lon": 145.14092,
+   "Lat": -37.0199
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "BULOKE",
+   "Lon": 142.98517,
+   "Lat": -36.37358
+ },
+ {
+   "school": "St Mary's Primary School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.06233,
+   "Lat": -38.11071
+ },
+ {
+   "school": "St Patrick's Primary School",
+   "LGA": "MITCHELL",
+   "Lon": 144.94811,
+   "Lat": -37.29939
+ },
+ {
+   "school": "St Brigid's School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.22873,
+   "Lat": -37.5999
+ },
+ {
+   "school": "St Patrick's School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.0909,
+   "Lat": -37.58065
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.73173,
+   "Lat": -37.27876
+ },
+ {
+   "school": "St Augustine's School",
+   "LGA": "HEPBURN",
+   "Lon": 143.89226,
+   "Lat": -37.42851
+ },
+ {
+   "school": "Tarrington Lutheran School",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.09426,
+   "Lat": -37.76623
+ },
+ {
+   "school": "St Monica's School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.2448,
+   "Lat": -36.7942
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "BENALLA",
+   "Lon": 145.97412,
+   "Lat": -36.55396
+ },
+ {
+   "school": "St Brendan's Primary School",
+   "LGA": "MOORABOOL",
+   "Lon": 143.96603,
+   "Lat": -37.59116
+ },
+ {
+   "school": "Sacred Heart College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.34015,
+   "Lat": -38.1495
+ },
+ {
+   "school": "St Patrick's School",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 143.24686,
+   "Lat": -36.61708
+ },
+ {
+   "school": "St Joseph's College Mildura",
+   "LGA": "MILDURA",
+   "Lon": 142.15346,
+   "Lat": -34.18872
+ },
+ {
+   "school": "St Liborius' School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.25729,
+   "Lat": -36.72348
+ },
+ {
+   "school": "Damascus College",
+   "LGA": "BALLARAT",
+   "Lon": 143.87035,
+   "Lat": -37.61146
+ },
+ {
+   "school": "Ballarat Clarendon College",
+   "LGA": "BALLARAT",
+   "Lon": 143.83365,
+   "Lat": -37.55965
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.22096,
+   "Lat": -37.06396
+ },
+ {
+   "school": "Sacred Heart College",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.45882,
+   "Lat": -37.25289
+ },
+ {
+   "school": "St Ambrose's School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.53049,
+   "Lat": -37.35779
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "BULOKE",
+   "Lon": 143.35105,
+   "Lat": -36.27177
+ },
+ {
+   "school": "Sacred Heart School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.22392,
+   "Lat": -36.43983
+ },
+ {
+   "school": "St Brigid's School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.59009,
+   "Lat": -37.49091
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "INDIGO",
+   "Lon": 146.60706,
+   "Lat": -36.14598
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "INDIGO",
+   "Lon": 146.46298,
+   "Lat": -36.05042
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "LODDON",
+   "Lon": 143.87249,
+   "Lat": -36.57114
+ },
+ {
+   "school": "FCJ College",
+   "LGA": "BENALLA",
+   "Lon": 145.97539,
+   "Lat": -36.55277
+ },
+ {
+   "school": "Sacred Heart Primary School",
+   "LGA": "MOIRA",
+   "Lon": 146.00925,
+   "Lat": -36.01072
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.28978,
+   "Lat": -37.87751
+ },
+ {
+   "school": "Marian College",
+   "LGA": "ARARAT",
+   "Lon": 142.93777,
+   "Lat": -37.28474
+ },
+ {
+   "school": "Sacred Heart School",
+   "LGA": "GLENELG",
+   "Lon": 141.41363,
+   "Lat": -37.58601
+ },
+ {
+   "school": "St Bernard's School",
+   "LGA": "MOORABOOL",
+   "Lon": 144.43486,
+   "Lat": -37.67227
+ },
+ {
+   "school": "St Patrick's School",
+   "LGA": "MOYNE",
+   "Lon": 142.36897,
+   "Lat": -38.29989
+ },
+ {
+   "school": "Geelong Grammar School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.39907,
+   "Lat": -38.06882
+ },
+ {
+   "school": "Ss Michael and John's Primary School",
+   "LGA": "HORSHAM",
+   "Lon": 142.20399,
+   "Lat": -36.714
+ },
+ {
+   "school": "Trinity College Colac",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.57693,
+   "Lat": -38.35203
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.5854,
+   "Lat": -38.33473
+ },
+ {
+   "school": "The Geelong College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.34009,
+   "Lat": -38.15242
+ },
+ {
+   "school": "Notre Dame College",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.40764,
+   "Lat": -36.37471
+ },
+ {
+   "school": "Sacred Heart College",
+   "LGA": "MOIRA",
+   "Lon": 146.00921,
+   "Lat": -36.00866
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "MOIRA",
+   "Lon": 145.4436,
+   "Lat": -36.08646
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.48614,
+   "Lat": -38.37249
+ },
+ {
+   "school": "Bayview College",
+   "LGA": "GLENELG",
+   "Lon": 141.60595,
+   "Lat": -38.34523
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.363,
+   "Lat": -38.15319
+ },
+ {
+   "school": "St Patrick's School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.34604,
+   "Lat": -38.13484
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.3896,
+   "Lat": -36.25408
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.72583,
+   "Lat": -36.13426
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "ARARAT",
+   "Lon": 142.93861,
+   "Lat": -37.2855
+ },
+ {
+   "school": "St Joseph's College",
+   "LGA": "CAMPASPE",
+   "Lon": 144.74337,
+   "Lat": -36.11815
+ },
+ {
+   "school": "St Patrick's School",
+   "LGA": "MOYNE",
+   "Lon": 142.23167,
+   "Lat": -38.38613
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.70117,
+   "Lat": -36.36476
+ },
+ {
+   "school": "All Saints Parish School",
+   "LGA": "GLENELG",
+   "Lon": 141.59279,
+   "Lat": -38.35947
+ },
+ {
+   "school": "Catholic College Sale",
+   "LGA": "WELLINGTON",
+   "Lon": 147.06378,
+   "Lat": -38.10871
+ },
+ {
+   "school": "St Augustine's College",
+   "LGA": "CAMPASPE",
+   "Lon": 145.04471,
+   "Lat": -36.30955
+ },
+ {
+   "school": "Our Lady of the Sacred Heart Primary",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.61562,
+   "Lat": -36.49302
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "INDIGO",
+   "Lon": 146.68281,
+   "Lat": -36.36007
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 141.69473,
+   "Lat": -37.60538
+ },
+ {
+   "school": "Mercy Regional College",
+   "LGA": "CORANGAMITE",
+   "Lon": 143.13956,
+   "Lat": -38.235
+ },
+ {
+   "school": "St Patrick's School",
+   "LGA": "CORANGAMITE",
+   "Lon": 143.139,
+   "Lat": -38.23503
+ },
+ {
+   "school": "St Michael's School",
+   "LGA": "HEPBURN",
+   "Lon": 144.15136,
+   "Lat": -37.33724
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.05091,
+   "Lat": -37.74114
+ },
+ {
+   "school": "St Kilian's School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.28421,
+   "Lat": -36.75458
+ },
+ {
+   "school": "St Augustine's School",
+   "LGA": "WODONGA",
+   "Lon": 146.88922,
+   "Lat": -36.11702
+ },
+ {
+   "school": "St Patrick's School",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 142.78726,
+   "Lat": -37.05935
+ },
+ {
+   "school": "St Thomas' School",
+   "LGA": "CORANGAMITE",
+   "Lon": 142.90996,
+   "Lat": -38.2398
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "BAW BAW",
+   "Lon": 145.91202,
+   "Lat": -38.15861
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.27835,
+   "Lat": -36.76942
+ },
+ {
+   "school": "St Columba's School",
+   "LGA": "BALLARAT",
+   "Lon": 143.86007,
+   "Lat": -37.54591
+ },
+ {
+   "school": "Ballarat Grammar",
+   "LGA": "BALLARAT",
+   "Lon": 143.83083,
+   "Lat": -37.53924
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "BASS COAST",
+   "Lon": 145.60341,
+   "Lat": -38.60086
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "GANNAWARRA",
+   "Lon": 143.91781,
+   "Lat": -35.72546
+ },
+ {
+   "school": "The Hamilton and Alexandra College",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.02421,
+   "Lat": -37.7372
+ },
+ {
+   "school": "St Francis Xavier School",
+   "LGA": "BALLARAT",
+   "Lon": 143.90299,
+   "Lat": -37.56161
+ },
+ {
+   "school": "St Laurence O'Toole School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.9543,
+   "Lat": -38.47894
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.82232,
+   "Lat": -38.43604
+ },
+ {
+   "school": "St Aloysius' School",
+   "LGA": "QUEENSCLIFFE",
+   "Lon": 144.6553,
+   "Lat": -38.26868
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "WELLINGTON",
+   "Lon": 146.67597,
+   "Lat": -38.5569
+ },
+ {
+   "school": "Holy Rosary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.31057,
+   "Lat": -36.72487
+ },
+ {
+   "school": "Our Lady of the Rosary",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.46212,
+   "Lat": -37.25051
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "SWAN HILL",
+   "Lon": 143.5456,
+   "Lat": -35.32846
+ },
+ {
+   "school": "St Brendan's School",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.5188,
+   "Lat": -38.27065
+ },
+ {
+   "school": "St John's School",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.44614,
+   "Lat": -38.3515
+ },
+ {
+   "school": "St Brigid's College",
+   "LGA": "HORSHAM",
+   "Lon": 142.20795,
+   "Lat": -36.71731
+ },
+ {
+   "school": "St John's School",
+   "LGA": "STRATHBOGIE",
+   "Lon": 145.56987,
+   "Lat": -36.75337
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "MOIRA",
+   "Lon": 145.65236,
+   "Lat": -35.91707
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "STRATHBOGIE",
+   "Lon": 145.15405,
+   "Lat": -36.78161
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 148.45563,
+   "Lat": -37.70917
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "ALPINE",
+   "Lon": 146.72693,
+   "Lat": -36.55357
+ },
+ {
+   "school": "Sacred Heart School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.42461,
+   "Lat": -37.21455
+ },
+ {
+   "school": "Gippsland Grammar",
+   "LGA": "WELLINGTON",
+   "Lon": 147.06463,
+   "Lat": -38.09365
+ },
+ {
+   "school": "Holy Rosary School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.70111,
+   "Lat": -36.91768
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "GANNAWARRA",
+   "Lon": 144.21854,
+   "Lat": -35.80823
+ },
+ {
+   "school": "Our Lady of the Sacred Heart School",
+   "LGA": "MILDURA",
+   "Lon": 142.05309,
+   "Lat": -34.16686
+ },
+ {
+   "school": "St Patrick's School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.07768,
+   "Lat": -37.96726
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "BAW BAW",
+   "Lon": 146.15219,
+   "Lat": -38.20721
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "MILDURA",
+   "Lon": 142.18796,
+   "Lat": -34.30235
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.35422,
+   "Lat": -36.39605
+ },
+ {
+   "school": "St Joseph's College Geelong",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.33186,
+   "Lat": -38.1502
+ },
+ {
+   "school": "St Robert's School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.34301,
+   "Lat": -38.15641
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "MOORABOOL",
+   "Lon": 143.9887,
+   "Lat": -37.5004
+ },
+ {
+   "school": "St Patrick's School",
+   "LGA": "HINDMARSH",
+   "Lon": 141.64304,
+   "Lat": -36.33541
+ },
+ {
+   "school": "St Margaret's School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.37393,
+   "Lat": -38.16462
+ },
+ {
+   "school": "St Kieran's School",
+   "LGA": "LATROBE",
+   "Lon": 146.25356,
+   "Lat": -38.17937
+ },
+ {
+   "school": "Marist-Sion College",
+   "LGA": "BAW BAW",
+   "Lon": 145.91527,
+   "Lat": -38.15903
+ },
+ {
+   "school": "Henderson College",
+   "LGA": "MILDURA",
+   "Lon": 142.15926,
+   "Lat": -34.22261
+ },
+ {
+   "school": "St Colman's School",
+   "LGA": "MOYNE",
+   "Lon": 142.80202,
+   "Lat": -38.07994
+ },
+ {
+   "school": "St Malachy's School",
+   "LGA": "WEST WIMMERA",
+   "Lon": 141.30005,
+   "Lat": -37.03403
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.71338,
+   "Lat": -37.19127
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "CAMPASPE",
+   "Lon": 145.0112,
+   "Lat": -36.5878
+ },
+ {
+   "school": "St Michael's School",
+   "LGA": "WELLINGTON",
+   "Lon": 146.78427,
+   "Lat": -37.98075
+ },
+ {
+   "school": "St Thomas Aquinas School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.35882,
+   "Lat": -38.09017
+ },
+ {
+   "school": "Monivae College",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.04945,
+   "Lat": -37.74204
+ },
+ {
+   "school": "St Joseph's School",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.36219,
+   "Lat": -35.72393
+ },
+ {
+   "school": "Holy Family School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.33833,
+   "Lat": -38.1111
+ },
+ {
+   "school": "Holy Spirit Parish School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.32996,
+   "Lat": -38.13581
+ },
+ {
+   "school": "St Patrick's School",
+   "LGA": "LODDON",
+   "Lon": 144.11184,
+   "Lat": -36.05485
+ },
+ {
+   "school": "Clonard College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.33048,
+   "Lat": -38.13008
+ },
+ {
+   "school": "St Therese's School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.29824,
+   "Lat": -36.7669
+ },
+ {
+   "school": "St James' School",
+   "LGA": "BALLARAT",
+   "Lon": 143.84018,
+   "Lat": -37.60347
+ },
+ {
+   "school": "Sacred Heart School",
+   "LGA": "MILDURA",
+   "Lon": 142.15224,
+   "Lat": -34.18733
+ },
+ {
+   "school": "Immaculate Heart of Mary School",
+   "LGA": "LATROBE",
+   "Lon": 146.29159,
+   "Lat": -38.18474
+ },
+ {
+   "school": "St Mel's School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.41068,
+   "Lat": -36.39247
+ },
+ {
+   "school": "St Vincent de Paul's School",
+   "LGA": "LATROBE",
+   "Lon": 146.41548,
+   "Lat": -38.23061
+ },
+ {
+   "school": "St Peter's Lutheran School",
+   "LGA": "HINDMARSH",
+   "Lon": 142.03758,
+   "Lat": -36.45706
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "BULOKE",
+   "Lon": 142.85067,
+   "Lat": -35.50183
+ },
+ {
+   "school": "St Brendan's School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 148.01234,
+   "Lat": -37.87102
+ },
+ {
+   "school": "St Michael's School",
+   "LGA": "TOWONG",
+   "Lon": 147.17342,
+   "Lat": -36.21623
+ },
+ {
+   "school": "Nagle College",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.58766,
+   "Lat": -37.8371
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "SWAN HILL",
+   "Lon": 142.77851,
+   "Lat": -34.58471
+ },
+ {
+   "school": "Our Lady's School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.32114,
+   "Lat": -36.37219
+ },
+ {
+   "school": "St Patrick's School",
+   "LGA": "CAMPASPE",
+   "Lon": 144.95359,
+   "Lat": -36.25266
+ },
+ {
+   "school": "St Mary of the Angels College",
+   "LGA": "MOIRA",
+   "Lon": 145.20875,
+   "Lat": -36.05766
+ },
+ {
+   "school": "St Pius X School",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.46583,
+   "Lat": -38.36492
+ },
+ {
+   "school": "Sacred Heart School",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.57855,
+   "Lat": -38.35316
+ },
+ {
+   "school": "St Bernard's School",
+   "LGA": "WANGARATTA",
+   "Lon": 146.3056,
+   "Lat": -36.34656
+ },
+ {
+   "school": "Our Lady Help of Christians School",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.47365,
+   "Lat": -36.62268
+ },
+ {
+   "school": "Our Lady Help of Christians School",
+   "LGA": "BALLARAT",
+   "Lon": 143.82561,
+   "Lat": -37.52544
+ },
+ {
+   "school": "Sacred Heart School",
+   "LGA": "TOWONG",
+   "Lon": 147.89919,
+   "Lat": -36.19824
+ },
+ {
+   "school": "Christ the King School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3931,
+   "Lat": -38.16655
+ },
+ {
+   "school": "St Mary's School",
+   "LGA": "WELLINGTON",
+   "Lon": 146.97239,
+   "Lat": -37.9635
+ },
+ {
+   "school": "St Thomas' School",
+   "LGA": "WELLINGTON",
+   "Lon": 147.08331,
+   "Lat": -38.0994
+ },
+ {
+   "school": "Our Lady Help of Christians School",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.51953,
+   "Lat": -38.38525
+ },
+ {
+   "school": "Marian College",
+   "LGA": "ALPINE",
+   "Lon": 146.72536,
+   "Lat": -36.55334
+ },
+ {
+   "school": "St Monica's School",
+   "LGA": "WODONGA",
+   "Lon": 146.87264,
+   "Lat": -36.12675
+ },
+ {
+   "school": "St Peter's School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.27274,
+   "Lat": -36.74417
+ },
+ {
+   "school": "St Paul's Primary School",
+   "LGA": "MILDURA",
+   "Lon": 142.15603,
+   "Lat": -34.2046
+ },
+ {
+   "school": "Braemar College",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.57598,
+   "Lat": -37.36383
+ },
+ {
+   "school": "St Francis Xavier School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.35813,
+   "Lat": -38.07203
+ },
+ {
+   "school": "Galen Catholic College",
+   "LGA": "WANGARATTA",
+   "Lon": 146.31054,
+   "Lat": -36.33875
+ },
+ {
+   "school": "Lumen Christi School",
+   "LGA": "LATROBE",
+   "Lon": 146.41571,
+   "Lat": -38.3164
+ },
+ {
+   "school": "Nhill Lutheran School",
+   "LGA": "HINDMARSH",
+   "Lon": 141.66215,
+   "Lat": -36.32773
+ },
+ {
+   "school": "Holy Trinity Lutheran College",
+   "LGA": "HORSHAM",
+   "Lon": 142.21775,
+   "Lat": -36.70818
+ },
+ {
+   "school": "Nazareth School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.33011,
+   "Lat": -38.20252
+ },
+ {
+   "school": "Olivet Christian College",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.20542,
+   "Lat": -37.08849
+ },
+ {
+   "school": "Covenant College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.318,
+   "Lat": -38.09719
+ },
+ {
+   "school": "Catholic College Wodonga",
+   "LGA": "WODONGA",
+   "Lon": 146.86239,
+   "Lat": -36.12962
+ },
+ {
+   "school": "St Thomas More School",
+   "LGA": "BALLARAT",
+   "Lon": 143.79995,
+   "Lat": -37.55349
+ },
+ {
+   "school": "St Gabriel's School",
+   "LGA": "LATROBE",
+   "Lon": 146.51105,
+   "Lat": -38.18765
+ },
+ {
+   "school": "Newhaven College",
+   "LGA": "BASS COAST",
+   "Lon": 145.27232,
+   "Lat": -38.48834
+ },
+ {
+   "school": "St John's Lutheran School",
+   "LGA": "GLENELG",
+   "Lon": 141.58984,
+   "Lat": -38.35679
+ },
+ {
+   "school": "Christian College Geelong",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.31307,
+   "Lat": -38.18524
+ },
+ {
+   "school": "St Francis' School",
+   "LGA": "MOIRA",
+   "Lon": 145.20774,
+   "Lat": -36.0586
+ },
+ {
+   "school": "Creek Street Christian College",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.27158,
+   "Lat": -36.76553
+ },
+ {
+   "school": "Good Shepherd College",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.04149,
+   "Lat": -37.77083
+ },
+ {
+   "school": "Our Lady Star of the Sea School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.54016,
+   "Lat": -38.26078
+ },
+ {
+   "school": "Trinity Lutheran College",
+   "LGA": "MILDURA",
+   "Lon": 142.12879,
+   "Lat": -34.2016
+ },
+ {
+   "school": "Goulburn Valley Grammar School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.41558,
+   "Lat": -36.32748
+ },
+ {
+   "school": "St Paul's Anglican Grammar School",
+   "LGA": "BAW BAW",
+   "Lon": 145.93042,
+   "Lat": -38.14781
+ },
+ {
+   "school": "St Anthony's School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.39058,
+   "Lat": -38.01519
+ },
+ {
+   "school": "River City Christian College",
+   "LGA": "CAMPASPE",
+   "Lon": 144.73176,
+   "Lat": -36.14482
+ },
+ {
+   "school": "Kerang Christian College",
+   "LGA": "GANNAWARRA",
+   "Lon": 143.91342,
+   "Lat": -35.73042
+ },
+ {
+   "school": "Chairo Christian School",
+   "LGA": "BAW BAW",
+   "Lon": 145.87712,
+   "Lat": -38.14284
+ },
+ {
+   "school": "Grace Christian College Wodonga",
+   "LGA": "WODONGA",
+   "Lon": 146.88735,
+   "Lat": -36.15717
+ },
+ {
+   "school": "Mansfield Rudolf Steiner School",
+   "LGA": "MANSFIELD",
+   "Lon": 146.08574,
+   "Lat": -37.0614
+ },
+ {
+   "school": "St Therese School",
+   "LGA": "SURF COAST",
+   "Lon": 144.31185,
+   "Lat": -38.32112
+ },
+ {
+   "school": "Mary MacKillop Catholic Regional College",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.96354,
+   "Lat": -38.46673
+ },
+ {
+   "school": "King's College",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.50617,
+   "Lat": -38.36211
+ },
+ {
+   "school": "St Mary MacKillop College",
+   "LGA": "SWAN HILL",
+   "Lon": 143.5568,
+   "Lat": -35.34192
+ },
+ {
+   "school": "Bacchus Marsh Grammar",
+   "LGA": "MOORABOOL",
+   "Lon": 144.43159,
+   "Lat": -37.69027
+ },
+ {
+   "school": "St Ita's School",
+   "LGA": "BAW BAW",
+   "Lon": 145.862,
+   "Lat": -38.13244
+ },
+ {
+   "school": "Lumen Christi School",
+   "LGA": "BALLARAT",
+   "Lon": 143.81724,
+   "Lat": -37.58019
+ },
+ {
+   "school": "Castlemaine Steiner School & Kindergarten",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.15669,
+   "Lat": -37.08188
+ },
+ {
+   "school": "Mansfield Autism Statewide Services",
+   "LGA": "MANSFIELD",
+   "Lon": 146.08586,
+   "Lat": -37.0608
+ },
+ {
+   "school": "Victory Lutheran College",
+   "LGA": "WODONGA",
+   "Lon": 146.84528,
+   "Lat": -36.11673
+ },
+ {
+   "school": "Son Centre Christian College",
+   "LGA": "SWAN HILL",
+   "Lon": 143.5465,
+   "Lat": -35.37756
+ },
+ {
+   "school": "Girton Grammar School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.27273,
+   "Lat": -36.76261
+ },
+ {
+   "school": "St Francis of the Fields School",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.36129,
+   "Lat": -36.80447
+ },
+ {
+   "school": "Victory Christian College",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.31346,
+   "Lat": -36.78263
+ },
+ {
+   "school": "Kardinia International College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.328,
+   "Lat": -38.10988
+ },
+ {
+   "school": "Holy Cross Primary School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.59778,
+   "Lat": -37.45589
+ },
+ {
+   "school": "St Thomas Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.55617,
+   "Lat": -38.18801
+ },
+ {
+   "school": "Shepparton Christian College Ltd",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.41598,
+   "Lat": -36.35387
+ },
+ {
+   "school": "Bairnsdale Christian College",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.57835,
+   "Lat": -37.84122
+ },
+ {
+   "school": "Clairvaux Catholic School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3249,
+   "Lat": -38.18552
+ },
+ {
+   "school": "Ballarat Steiner School",
+   "LGA": "BALLARAT",
+   "Lon": 143.8622,
+   "Lat": -37.64076
+ },
+ {
+   "school": "Freshwater Creek Steiner School",
+   "LGA": "SURF COAST",
+   "Lon": 144.27974,
+   "Lat": -38.26332
+ },
+ {
+   "school": "Gisborne Montessori School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.60001,
+   "Lat": -37.45339
+ },
+ {
+   "school": "Geelong Baptist College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.33029,
+   "Lat": -38.06714
+ },
+ {
+   "school": "Lavalla Catholic College",
+   "LGA": "LATROBE",
+   "Lon": 146.51425,
+   "Lat": -38.2009
+ },
+ {
+   "school": "Mildura Christian College",
+   "LGA": "MILDURA",
+   "Lon": 142.14532,
+   "Lat": -34.24742
+ },
+ {
+   "school": "St Luke's Catholic Primary School",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.41203,
+   "Lat": -36.32432
+ },
+ {
+   "school": "St Francis of Assisi Primary School, Wodonga",
+   "LGA": "WODONGA",
+   "Lon": 146.93993,
+   "Lat": -36.17389
+ },
+ {
+   "school": "Indie School Wodonga",
+   "LGA": "WODONGA",
+   "Lon": 146.8894,
+   "Lat": -36.11803
+ },
+ {
+   "school": "DOXA School Bendigo",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.28602,
+   "Lat": -36.75554
+ },
+ {
+   "school": "Beechworth Montessori School",
+   "LGA": "INDIGO",
+   "Lon": 146.69353,
+   "Lat": -36.36669
+ },
+ {
+   "school": "Ballarat Christian College",
+   "LGA": "BALLARAT",
+   "Lon": 143.84381,
+   "Lat": -37.59292
+ },
+ {
+   "school": "Emmaus Catholic Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.87158,
+   "Lat": -37.61258
+ },
+ {
+   "school": "EdSpace",
+   "LGA": "BENALLA",
+   "Lon": 145.9843,
+   "Lat": -36.54767
+ },
+ {
+   "school": "Geelong Lutheran College",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.33707,
+   "Lat": -38.23046
+ },
+ {
+   "school": "Daylesford Dharma School",
+   "LGA": "HEPBURN",
+   "Lon": 144.16595,
+   "Lat": -37.34233
+ },
+ {
+   "school": "Community College Gippsland Ltd | ECG Community College",
+   "LGA": "BAW BAW",
+   "Lon": 145.92622,
+   "Lat": -38.17823
+ },
+ {
+   "school": "Borinya, Wangaratta Community Partnership",
+   "LGA": "WANGARATTA",
+   "Lon": 146.30898,
+   "Lat": -36.33783
+ },
+ {
+   "school": "Shepparton ACE Secondary College",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.4017,
+   "Lat": -36.37766
+ },
+ {
+   "school": "MacKillop Specialist School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.38711,
+   "Lat": -38.17432
+ },
+ {
+   "school": "Cathedral College Wangaratta",
+   "LGA": "WANGARATTA",
+   "Lon": 146.32991,
+   "Lat": -36.38595
+ },
+ {
+   "school": "Koonwarra Village School",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.94392,
+   "Lat": -38.54791
+ },
+ {
+   "school": "Wild Cherry School",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.6078,
+   "Lat": -37.82106
+ },
+ {
+   "school": "Australian Christian College Hume",
+   "LGA": "BENALLA",
+   "Lon": 145.99668,
+   "Lat": -36.55392
+ },
+ {
+   "school": "Cobram Anglican Grammar School",
+   "LGA": "MOIRA",
+   "Lon": 145.66006,
+   "Lat": -35.92428
+ },
+ {
+   "school": "Marist College Bendigo",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.22169,
+   "Lat": -36.73171
+ },
+ {
+   "school": "Alice Miller School",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.53319,
+   "Lat": -37.4457
+ },
+ {
+   "school": "Phillip Island Village School",
+   "LGA": "BASS COAST",
+   "Lon": 145.2016,
+   "Lat": -38.50808
+ },
+ {
+   "school": "Siena Catholic Primary School",
+   "LGA": "BALLARAT",
+   "Lon": 143.78041,
+   "Lat": -37.54597
+ },
+ {
+   "school": "St Mary MacKillop Catholic Primary School",
+   "LGA": "GOLDEN PLAINS",
+   "Lon": 144.1701,
+   "Lat": -38.04693
+ },
+ {
+   "school": "Our Lady of the Way Catholic Primary School",
+   "LGA": "MITCHELL",
+   "Lon": 144.99984,
+   "Lat": -37.4241
+ },
+ {
+   "school": "Lisieux Catholic Primary School",
+   "LGA": "SURF COAST",
+   "Lon": 144.33228,
+   "Lat": -38.30332
+ },
+ {
+   "school": "Our Lady Star of the Sea Catholic Primary School",
+   "LGA": "BASS COAST",
+   "Lon": 145.2398,
+   "Lat": -38.4637
+ },
+ {
+   "school": "St Anne's College",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.40034,
+   "Lat": -36.43612
+ },
+ {
+   "school": "St Catherine of Siena Catholic Primary School",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.36945,
+   "Lat": -38.24009
+ },
+ {
+   "school": "Village High School",
+   "LGA": "BASS COAST",
+   "Lon": 145.55883,
+   "Lat": -38.52856
+ },
+ {
+   "school": "Iona College Geelong",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.35671,
+   "Lat": -38.21912
+ },
+ {
+   "school": "St Angela of the Cross Primary School",
+   "LGA": "BAW BAW",
+   "Lon": 145.96161,
+   "Lat": -38.14153
+ },
+ {
+   "school": "Woodline Primary",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.28535,
+   "Lat": -38.17178
+ }
+]

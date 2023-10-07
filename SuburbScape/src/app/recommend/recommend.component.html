@@ -9,7 +9,7 @@
 <section *ngIf = !checked2 class="hero image-as-background" style="height: 100vh;  background-image: url('assets/Base2.png?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
   <div class="hero-container">
 
-    <mat-card style="background-color: rgba(0,0,0,.6); margin-left: 90px; width: 85%; margin-right: 10px; margin-top: -20px; height: 520px;">
+    <mat-card style="background-color: rgba(0,0,0,.6); margin-left: 90px; width: 85%; margin-right: 10px; margin-top: -20px; height: 540px;">
       <p class="hero-title" style="margin-left: 80px;">
         Discover the regions
         </p>
@@ -18,32 +18,44 @@
           &nbsp;
          </p>
       <div class="container">
-      <div class="col-sm-5"  style="margin-left: 8%; background-color:white">
+      <div class="col-sm-5"  style="margin-left: 6%; background-color:white">
         <div class="bs-vertical-wizard">
           <ul>
             <li [class]="getClassname(completedCondition)">
-                <p style="text-align: center; ">Step 1 <i class="ico fa fa-check ico-green"></i>
+                <p style="text-align: center; ">Step 1
+                  <button mat-icon-button style="float: right;" (click)="openDialog2()">
+                    <mat-icon>question_mark</mat-icon>
+                  </button>
+                  <i class="ico fa fa-check ico-green"></i>
                     <span class="desc">Please select your weekly rental budget
-                      <i class="fa fa-question-circle" title="We will only show LGAs with median rent between your minimum and maximum rental budget."></i></span>
+                  </span>
                 </p>
                 <mat-divider></mat-divider>
             </li>
 
             <li [class]="getClassname1(completedCondition1)">
-              <p style="text-align: center; ">Step 2 <i class="ico fa fa-lock ico-muted"  *ngIf=!icheck></i>
+              <p style="text-align: center; ">Step 2
+                <button mat-icon-button style="float: right" (click)="openDialog2()">
+                  <mat-icon>question_mark</mat-icon>
+                </button>
+                <i class="ico fa fa-lock ico-muted"  *ngIf=!icheck></i>
                 <i class="ico fa fa-check ico-green"  *ngIf=icheck></i>
                   <span class="desc">Select your profession.(Select N/A if not applicable)
-                    <i class="fa fa-question-circle" title="We will look for LGAs where your profession accounts for more than 10% of total job opportunities."></i>
+
                   </span>
               </p>
               <mat-divider></mat-divider>
           </li>
           <li [class]="getClassname2(completedCondition2)">
-            <p  style="text-align: center; ">Step 3 <i class="ico fa fa-lock ico-muted" *ngIf=!checked3></i>
+            <p  style="text-align: center; ">Step 3
+              <button mat-icon-button style="float: right" (click)="openDialog3()">
+                <mat-icon>question_mark</mat-icon>
+              </button>
+              <i class="ico fa fa-lock ico-muted" *ngIf=!checked3></i>
               <i class="ico fa fa-check ico-green"  *ngIf=checked3></i>
                 <span class="desc">    Rearrange the preferences <br>
                   (1 being the highest priority and 4 being the lowest)
-                  <i class="fa fa-question-circle" title="By ranking these preferences, our recommendation system will look for LGAs that suit your priorities!"></i></span>
+                 </span>
             </p>
             <mat-divider></mat-divider>
         </li>
@@ -126,8 +138,9 @@
 
 <section *ngIf=checked3 style=" background-color: rgba(255, 255, 255, 0.897); background-image: url('assets/Base.png?&dpr=2&fit=crop&fm=jpg&h=2000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
   <div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); "></div>
-  <div class="container" style="margin-left: 60px; ">
-    <div class="col-sm-5" style="margin-top: 50px; background-color: rgb(52, 52, 49);">
+  <div class="container" style="margin-left: 60px;">
+
+    <div class="col-sm-5" style=" background-color: rgb(52, 52, 49);margin-left: 5s0px;">
       <img [src]="imageUrl" style = "height: 270px; width: 100%">
       <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 20px;">
         Based on your preferences we have arrived at
@@ -138,18 +151,27 @@
        <div class="horizontal-line"></div>
 
        <p class="hero-subtitle2"  style="font-size: 1vw; margin-left: 20px; width: 400px">
-        {{this.desc}}<br><br>
-
+        {{this.desc}}<br>
        </p>
-       <button mat-raised-button style="margin-top: 20px; margin-left: 100px; height: 50px; width: 280px;
+       <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 20px;">
+         ***As of 2023, top three professions in this region that <br>offer
+          significant employment opportunities.
+       </p>
+       <div class="horizontal-line"></div>
+       <ul class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 40px; margin-top:7px">
+        <li>{{this.top3Prof[0]}} </li>
+        <li>{{this.top3Prof[1]}} </li>
+        <li>{{this.top3Prof[2]}} </li>
+       </ul>
+       <button mat-raised-button style="margin-top: 8px; margin-left: 100px; height: 50px; width: 280px;
        background-color: rgb(49 49 148 / 85%); color: white;"
         (click)="scrollDown()">
          Explore further >>
         </button>
-        <br>
+        <br> &nbsp;
     </div>
-    <div class="col-sm-7" style=" margin-top: 50px; background-color: white ">
-      <div class="heading" style="text-align: center; margin-top: 20px;">
+    <div class="col-sm-7" style=" background-color: white ">
+      <div class="heading" style="text-align: center;">
         <br>
         <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto;
         margin-bottom: 20px;">
@@ -158,44 +180,37 @@
        <div class="container" style="margin-left: 30px; margin-top: 20px;">
         <div class="row">
           <div class="col-md-4" >
-            <mat-card style="height: 100px; position: relative; width: 180px;">
+            <mat-card style="height: 100px; position: relative; width: 180px; background-color:rgb(52, 52, 49) ;">
               <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                 <img src ="assets/house.png">
               </div>
-              <h3 style="text-align: center; margin-top: 40px;">
-                <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto; ">
+              <h3 style="text-align: center; margin-top: 40px; color: white">
                 Median Rent / Week <br>
-              </span>
+
                 <mat-divider style="width: 80%; margin-left: 10%;"></mat-divider>
                 {{this.rent}} AUD
               </h3>
           </mat-card>
           </div>
           <div class="col-md-4">
-            <mat-card style="height: 100px; width: 180px; margin-left: 5px;">
+            <mat-card style="height: 100px; width: 180px; margin-left: 5px; background-color:rgb(52, 52, 49) ;">
               <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                 <img src ="assets/vehicle.png">
               </div>
-              <h3 style="text-align: center; margin-top: 40px;">
-                <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto; ">
+              <h3 style="text-align: center; margin-top: 40px; color: white">
                   Drive to Melbourne <br>
-                </span>
-
                 <mat-divider style="width: 80%; margin-left: 10%;"></mat-divider>
                 {{this.distance}} Kms/ {{this.time}} minutes
               </h3>
           </mat-card>
           </div>
           <div class="col-md-4">
-            <mat-card style="height: 100px;margin-left: 5px;  width: 180px;">
+            <mat-card style="height: 100px;margin-left: 5px;  width: 180px; background-color:rgb(52, 52, 49) ;">
               <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                 <img src ="assets/crime.png">
               </div>
-              <h3 style="text-align: center; margin-top: 40px;">
-                <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto; ">
+              <h3 style="text-align: center; margin-top: 40px; color: white;">
                   Crimes/ 1000 people <br>
-                </span>
-
                 <mat-divider style="width: 80%; margin-left: 10%;"></mat-divider>
                 {{this.crime}}
               </h3>
@@ -206,14 +221,12 @@
         <div class="container" style=" margin-top: 50px;">
           <div class="row">
             <div class="col-md-4" >
-              <mat-card style="height: 100px; width: 180px; margin-left: 130px;">
+              <mat-card style="height: 100px; width: 200px; margin-left: 130px; background-color:rgb(52, 52, 49) ;">
                 <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                   <img src ="assets/school.png">
                 </div>
-                <h3 style="text-align: center; margin-top: 40px;">
-                  <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto; ">
+                <h3 style="text-align: center; margin-top: 40px; color: white;">
                     Schools & Kindergartens <br>
-                  </span>
                   <mat-divider style="width: 80%; margin-left: 10%;"></mat-divider>
                   {{this.schools}}
                 </h3>
@@ -221,14 +234,12 @@
             </mat-card>
             </div>
             <div class="col-md-4" >
-              <mat-card style="height: 100px; width: 180px; margin-left: 120px;">
+              <mat-card style="height: 100px; width: 200px; margin-left: 120px; background-color:rgb(52, 52, 49) ;">
                 <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                   <img src ="assets/hospital-bed.png">
                 </div>
-                <h3 style="text-align: center; margin-top: 40px;">
-                  <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto; ">
+                <h3 style="text-align: center; margin-top: 40px; color: white;">
                     Hospital <br>
-                    </span>
                   <mat-divider style="width: 80%; margin-left: 10%;"></mat-divider>
                   {{this.hospital}}
                 </h3>
@@ -237,11 +248,11 @@
             </div>
             </div></div>
 
-          <p class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 20px; color: black; margin-top: 20px;">
+          <p class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 60px; color: black; margin-top: 40px;">
             Not Satisfied with your Recommendation? <br>
             Choose from dropdown below to explore other recommended suburbs.
           </p>
-          <mat-form-field style="width: 280px;  margin-bottom: 3px; margin-top: 10px; margin-left: 50px;" *ngIf=checked>
+          <mat-form-field style="width: 280px;  margin-bottom: 3px; margin-top: 10px; margin-left: 140px;" *ngIf=checked>
             <mat-label >Explore Other Similar Suburbs</mat-label>
             <mat-select
             id="sub" name="sub" [(ngModel)]="sub" style="background-color: transparent;"
@@ -264,35 +275,41 @@
     <div class="col-sm-9">
       <div id="leafletMap"
       style="height: 600px; width: 100%;" >
+
     </div>
     </div>
-    <div class="col-sm-4" style="margin-top: 50px; background-color: rgb(52, 52, 49); margin-left: -30px;">
-      <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 40px; margin-top:20px">
-        As of 2023, top three professions in this region that <br>offer
-          significant employment opportunities.
-       </p>
-       <div class="horizontal-line" style=" width: 60%; margin-left: 35px;"></div>
-       <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 40px; margin-top:20px">
+    <div class="col-sm-4" style=" background-color: rgb(52, 52, 49);">
+      <button mat-raised-button
+      style=" margin-left: 60px; height: 50px; width: 250px;margin-top: 20px; background-color: rgba(148, 49, 49, 0.85); color: white;"
+        (click)="resetMap()">
+        Reset Map
+      </button>
+       <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 10px; margin-top:40px">
         Do you currently live in Victoria?<br>
-        * You can compare your rent with the <br>recommended suburb rent
+        * Compare your rent with the recommended suburb rent
        </p>
-       <div class="horizontal-line" style=" width: 60%; margin-left: 35px;"></div>
        <mat-form-field style="width: 250px;   margin-top: 5px; margin-left: 60px;" *ngIf=checked>
         <mat-label >Select LGA to compare</mat-label>
         <mat-select
-        id="sub1" name="sub1" [(ngModel)]="sub1" style="background-color: transparent;"
+        id="sub1" name="sub1" [(ngModel)]="sub1" style="background-color: transparent; height: 20px;"
         (selectionChange)="compareRent()">
           <mat-option *ngFor="let option of subListAll" [value]="option.value">{{ option.label }}</mat-option>
         </mat-select>
       </mat-form-field>
-      <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 40px; ">
+      <div style="height: 150px;">
+        <canvas style="margin-left: 40px; " id="Chartx" >{{ chart }}</canvas> <br>
+      </div>
+      <div class="horizontal-line" style=" width: 60%; margin-left: 35px;"></div>
+
+      <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 40px;  margin-top: 20px;">
         Not Satisfied with your Recommendation ? <br>
         </p>
         <button mat-raised-button
-        style="margin-top: 20px; margin-left: 60px; height: 50px; width: 250px; background-color: rgb(49 49 148 / 85%); color: white;"
+        style="margin-top: 5px; margin-left: 60px; height: 50px; width: 250px; background-color: rgb(49 49 148 / 85%); color: white;"
           (click)="scrollToTop()">
           Search Again
         </button>
+        <br> &nbsp;
     </div></div>
     <br> &nbsp;
 </section>

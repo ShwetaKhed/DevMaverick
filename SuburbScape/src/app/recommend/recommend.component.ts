@@ -2,14 +2,16 @@ import { Component } from '@angular/core';
 import { Suburb } from '../models/suburb.model';
 import { employment } from '../models/employment.model';
 import { community } from '../models/community.model';
+import { DialogComponent } from '../dialog/dialog.component';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { SharedService } from '../shared.service';
-import { MatSnackBar, MatSnackBarHorizontalPosition,
-  MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import * as L from 'leaflet';
 import Chart from 'chart.js/auto';
+import { MatDialog } from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-recommend',
@@ -35,10 +37,9 @@ export class RecommendComponent {
   checked1: Boolean = false;
   checked2: Boolean = false;
   checked3: Boolean = false;
-
+  top3Prof: string[] = [];
   preselectedSuburb: Suburb[] = [];
   public chart: any;
-  public piechart: any;
   suburb: string = '';
   desc: string = "";
   crime = 0;
@@ -103,17 +104,18 @@ export class RecommendComponent {
   distanceScore = 0;
 
   constructor(private router: Router, private http: HttpClient,
-    private sharedService: SharedService, private snackBar: MatSnackBar) {
-     this.http.get<any>('https://dev04backend.azurewebsites.net/api/data').subscribe((response) => {
+    private sharedService: SharedService, private snackBar: MatSnackBar,
+    private matDialog: MatDialog) {
+     this.http.get<any>('https://dev04final.azurewebsites.net/api/data').subscribe((response) => {
        this.suburbList = response;
        });
-       this.http.get<any>('https://dev04backend.azurewebsites.net/api/emp_data').subscribe((resp) => {
+       this.http.get<any>('https://dev04final.azurewebsites.net/api/emp_data').subscribe((resp) => {
          this.employmentList = resp;
        });
-       this.http.get<any>('https://dev04backend.azurewebsites.net/api/pro_data').subscribe((response1) => {
+       this.http.get<any>('https://dev04final.azurewebsites.net/api/pro_data').subscribe((response1) => {
          this.communityList = response1;
        });
-       this.http.get<any>('https://dev04backend.azurewebsites.net/api/rent_new_data').subscribe((response2) => {
+       this.http.get<any>('https://dev04final.azurewebsites.net/api/rent_new_data').subscribe((response2) => {
         this.subListAll = [];
          for (var i = 0; i < response2.length; i++){
           this.subListAll.push({ value: response2[i].LGA, label: response2[i].LGA, rent: response2[i].Rent});
@@ -126,10 +128,8 @@ export class RecommendComponent {
      }
 
   drop(event: CdkDragDrop<{title: string; }[]>) {
-
     moveItemInArray(this.items, event.previousIndex, event.currentIndex);
   }
-
 
   onOptionSelected(event: any) {
     const selectedValue = event.value;
@@ -221,10 +221,7 @@ export class RecommendComponent {
     {
       this.chart.destroy();
     }
-    if (this.piechart != undefined)
-    {
-      this.piechart.destroy();
-    }
+
     this.top3 = [];
     this.sharedService.selectedSuburb = [];
     if(this.minRent == 0){
@@ -334,10 +331,8 @@ export class RecommendComponent {
    }
 
    this.subList =[ ];
-   // remove later
-   this.setMapDetails();
 
-   this.http.get<any>('https://dev04backend.azurewebsites.net/api/score_data').subscribe((response) => {
+   this.http.get<any>('https://dev04final.azurewebsites.net/api/score_data').subscribe((response) => {
         for (var i =0; i < this.top3.length; i++){
           for (var j = 0; j < response.length; j++)
           {
@@ -361,7 +356,7 @@ export class RecommendComponent {
           }
         }
         }
-       this.setMapDetails();
+
        this.top3.sort((a, b) => b.score - a.score);
        this.top_Suburb = this.top3.slice(0, 1);
        this.suburb = this.top_Suburb[0].LGA;
@@ -375,6 +370,7 @@ export class RecommendComponent {
        this.hospital = this.top_Suburb[0].hospital;
        this.crime = this.top_Suburb[0].Rate_per_100000_population/100000 * 1000;
        this.subListAll = this.subListAll.filter(item => item.value !== this.suburb);
+       this.setMapDetails();
   });
 
     }, 10);
@@ -382,23 +378,82 @@ export class RecommendComponent {
   }
 
   setMapDetails(){
-    this.map = L.map('leafletMap').setView([-37.471310, 144.785156], 6);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-    }).addTo(this.map);
+
     const regionColors: { [key: string]: string } = {
     };
+    var customIcon = L.icon({
+      iconUrl: 'assets/marker.png',
+      iconSize: [45, 45],
+      iconAnchor: [16, 32],
+  });
 
-    for (var i =0; i < this.top3.length; i++){
-      regionColors[this.top3[i].LGA.toUpperCase()] = 'red';
-    }
+    const icon2 = L.icon({
+      iconUrl: 'assets/school.png',
+      iconSize: [32, 32],
+    });
+
+    const icon3 = L.icon({
+      iconUrl: 'assets/hospital-bed.png',
+      iconSize: [32, 32],
+    });
+
+    this.http.get<any>('assets/centroid.json').subscribe(centres => {
+      for (var i = 0; i < centres.length; i++){
+        if (this.sub.toUpperCase() == centres[i].LGA){
+          this.map = L.map('leafletMap').setView([centres[i].Lat, centres[i].Lon], 9);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+          }).addTo(this.map);
+          var popup = L.popup().setLatLng([centres[i].Lat,  centres[i].Lon]).setContent(
+            '<br>' +
+            '** Click on the school and hospital icons to view names<br>' +
+            'You can also zoom in and zoom out the map at anytime or use reset button on the right to reset the map.' +
+            '<br><h3> Suburb: ' +
+            this.sub.toUpperCase() +'</h3>')
+          .openOn(this.map);
+          const marker = L.marker([centres[i].Lat, centres[i].Lon], { icon: customIcon }).addTo(this.map).
+          bindPopup(popup);
+
+          /*var circle = L.circle([centres[i].Lat, centres[i].Lon], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.2,
+            radius: 20000
+        }).addTo(this.map);*/
+
+
+          break;
+        }
+      }
+      this.http.get<any>('assets/school.json').subscribe(school => {
+        for (var j = 0; j < school.length; j++){
+        if (this.sub.toUpperCase() == school[j].LGA){
+          const marker1 = L.marker([school[j].Lat, school[j].Lon], { icon: icon2 }).addTo(this.map)
+          .bindPopup(school[j].school);
+        }
+      }
+      });
+
+      this.http.get<any>('assets/hosp.json').subscribe(hosp => {
+        for (var j = 0; j < hosp.length; j++){
+          if (this.sub.toUpperCase() == hosp[j].LGA){
+            const marker1 = L.marker([hosp[j].Lat, hosp[j].Lon], { icon: icon3 }).addTo(this.map)
+            .bindPopup(hosp[j].hospital);
+          }
+        }
+      });
+
+
+
+    });
+
 
     this.http.get<any>('assets/regional_vic.json').subscribe(geojsonData => {
       this.geojsonData = geojsonData;
       L.geoJSON(geojsonData, {
         style: function(feature) {
           if (feature && feature.properties) {
-            const region = feature.properties.Region;
+
             const lga = feature.properties.LGA;
             const fillColor = regionColors[lga] ;
             return {
@@ -406,19 +461,17 @@ export class RecommendComponent {
               weight: 1,
               opacity: 1,
               color: 'grey',
-              fillOpacity: 0.2
+              fillOpacity: 0
             };
           }
           return {};
 
-        },
-        onEachFeature: function(feature, layer) {
-          layer.bindTooltip( feature.properties.LGA);
         }
+
       }).addTo(this.map);
 
       this.map.on("click", () => {
-        this.showSnackbar("Please select recommended suburbs from dropdown to view details.");
+        this.showSnackbar("Ohh no.");
       });
 
     const dataDict: Record<string, number> = {};
@@ -433,38 +486,9 @@ export class RecommendComponent {
     dataDict["Technicians/ trades workers"] = this.top_Suburb[0].Technicians;
 
     const dataEntries = Object.entries(dataDict);
-    console.log(dataEntries)
     dataEntries.sort((a, b) => b[1] - a[1]);
     const top3 = dataEntries.slice(0, 3);
-    const top3Names = top3.map(entry => entry[0]);
-    const top3Values = top3.map(entry => entry[1]);
-
-    this.chart = new Chart("Chartx", {
-      type: 'bar',
-      data: {
-        labels: top3Names,
-        datasets: [{
-          data: top3Values,
-          label: "Top Employment Opportunities",
-          backgroundColor: ['#FF5733', '#36A2EB', '#FFBF00']
-        }]
-      },
-      options: {
-        indexAxis: 'y',
-        plugins:{
-          title: {
-            display: true,
-            text: 'Employment Opportunities Comparision',
-          },
-        },
-        scales: {
-          x: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-
+    this.top3Prof = top3.map(entry => entry[0]);
     });
   }
 
@@ -493,7 +517,7 @@ export class RecommendComponent {
   scrollDown() {
     const yOffset = window.scrollY;
     window.scrollTo({
-      top: yOffset + 650,
+      top: yOffset + 680,
       behavior: "smooth"
     });
   }
@@ -514,59 +538,24 @@ export class RecommendComponent {
        this.hospital = this.top3[i].hospital;
        this.crime = this.top3[i].Rate_per_100000_population;
        this.subListAll = this.subListAll.filter(item => item.value !== this.suburb);
-
-
-    dataDict["Managers"] = this.top3[i].Managers;
-    dataDict["Professionals"] = this.top3[i].Professionals;
-    dataDict["Clerical/ administrative workers"] =  this.top3[i].Clerical;
-    dataDict["Community/ personal service workers"] =
-    this.top3[i].Community;
-    dataDict["Labourers"] =  this.top3[i].Labourers;
-    dataDict["Machinery operators/ drivers"] = this.top3[i].Drivers;
-    dataDict["Sales workers"] = this.top3[i].Sales;
-    dataDict["Technicians/ trades workers"] = this.top3[i].Technicians;
+       dataDict["Managers"] = this.top3[i].Managers;
+       dataDict["Professionals"] = this.top3[i].Professionals;
+       dataDict["Clerical/ administrative workers"] =  this.top3[i].Clerical;
+       dataDict["Community/ personal service workers"] =
+       this.top3[i].Community;
+       dataDict["Labourers"] =  this.top3[i].Labourers;
+       dataDict["Machinery operators/ drivers"] = this.top3[i].Drivers;
+       dataDict["Sales workers"] = this.top3[i].Sales;
+       dataDict["Technicians/ trades workers"] = this.top3[i].Technicians;
+       this.map.remove();
+       this.setMapDetails();
+       break;
+    }
   }
-}
-
-    console.log(dataDict);
     const dataEntries = Object.entries(dataDict);
     dataEntries.sort((a, b) => b[1] - a[1]);
     const top3 = dataEntries.slice(0, 3);
-    const top3Names = top3.map(entry => entry[0]);
-    const top3Values = top3.map(entry => entry[1]);
-
-    if (this.chart != undefined)
-    {
-      this.chart.destroy();
-    }
-
-    this.chart = new Chart("Chartx", {
-      type: 'bar',
-      data: {
-        labels: top3Names,
-        datasets: [{
-          data: top3Values,
-          label: "Top Employment Opportunities",
-          backgroundColor: ['#FF5733', '#36A2EB', '#FFBF00']
-        }]
-      },
-      options: {
-        indexAxis: 'y',
-        plugins:{
-          title: {
-            display: true,
-            text: 'Employment Opportunities Comparision',
-          },
-        },
-        scales: {
-          x: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-
-
+    this.top3Prof  = top3.map(entry => entry[0]);
 
   }
 
@@ -579,48 +568,59 @@ export class RecommendComponent {
         break;
       }
     }
-    if (this.piechart != undefined)
+    if (this.chart != undefined)
     {
-      this.piechart.destroy();
+      this.chart.destroy();
     }
-    this.piechart = new Chart("Charty", {
-      type: 'pie',
+    this.chart = new Chart("Chartx", {
+      type: 'bar',
       data: {
-        labels: [this.sub1, this.suburb],
+        labels: [this.subListAll[i].value , this.suburb],
         datasets: [{
           data: [this.subListAll[i].rent, this.rent],
-          label: "Median Rent Per Week",
-          backgroundColor: ['Orange', 'Blue']
+          label: "Rent",
+          backgroundColor: ['#FF5733', '#36A2EB']
         }]
       },
       options: {
-        plugins:{
-          title: {
-            display: true,
-            text: 'Median Rent Comparision',
-          },
+        indexAxis: 'y',
+        scales: {
+          x: {
+            beginAtZero: true
+          }
         }
       }
     });
-
   }
 
-  resetMap(){
-    this.map.remove();
-    this.setMapDetails();
-  }
-
-
-
-openSnackBar() {
-
-  this.snackBar.open("sdjbfjkdsbfjkds", 'OK', {
-    duration: 3000,
-    verticalPosition: 'bottom',
-    horizontalPosition: 'center',
-  });
+openDialog1(){
+  this.sharedService.message =
+  "This will allow us to make cutsomized recommendations that fit your rental budget!"
+  this.matDialog.open(DialogComponent,{
+    width: '350px'
+  })
 }
 
+openDialog2(){
+  this.sharedService.message =
+  "We will recommend you the LGAs where your profession accounts for more than 10% of total job opportunities!"
+  this.matDialog.open(DialogComponent,{
+    width: '350px'
+  })
+}
+
+openDialog3(){
+  this.sharedService.message =
+  "By ranking these preferences, our recommendation system will look for LGAs that suit your priorities!"
+  this.matDialog.open(DialogComponent,{
+    width: '350px'
+  })
+}
+
+resetMap(){
+  this.map.remove();
+  this.setMapDetails();
+}
 
 
 

@@ -16,6 +16,7 @@ export class SharedService {
   suburbWithAvgRent: String = "";
   avgCrime: number = 0;
   suburbWithAvgCrime : String = "";
+  message : string = "";
 
   constructor() { }
 }

@@ -1,0 +1,722 @@
+[
+ {
+   "hospital": "Ballarat Day Procedure Centre",
+   "LGA": "BALLARAT",
+   "Lon": 143.8322861,
+   "Lat": -37.54055256
+ },
+ {
+   "hospital": "Bendigo Day Surgery",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.2615,
+   "Lat": -36.7619
+ },
+ {
+   "hospital": "Monash IVF Geelong",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3632152,
+   "Lat": -38.15107303
+ },
+ {
+   "hospital": "Geelong Private Hospital",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.364398,
+   "Lat": -38.15103532
+ },
+ {
+   "hospital": "Maryvale Private Hospital",
+   "LGA": "LATROBE",
+   "Lon": 146.4187,
+   "Lat": -38.2151
+ },
+ {
+   "hospital": "Mildura Health Private Hospital",
+   "LGA": "MILDURA",
+   "Lon": 142.1453,
+   "Lat": -34.1848
+ },
+ {
+   "hospital": "Murray Valley Private Hospital",
+   "LGA": "WODONGA",
+   "Lon": 146.8761,
+   "Lat": -36.1386
+ },
+ {
+   "hospital": "Shepparton Private Hospital",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.4108,
+   "Lat": -36.3593
+ },
+ {
+   "hospital": "The Geelong Clinic",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3932,
+   "Lat": -38.182
+ },
+ {
+   "hospital": "Wangaratta Private Hospital",
+   "LGA": "WANGARATTA",
+   "Lon": 146.3122,
+   "Lat": -36.3492
+ },
+ {
+   "hospital": "Specialist Surgicentre Geelong",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3662,
+   "Lat": -38.1491
+ },
+ {
+   "hospital": "St John of God Ballarat Hospital",
+   "LGA": "BALLARAT",
+   "Lon": 143.8476,
+   "Lat": -37.5575
+ },
+ {
+   "hospital": "St John of God Bendigo Hospital",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.2640013,
+   "Lat": -36.76207693
+ },
+ {
+   "hospital": "St John of God Geelong Hospital",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3578138,
+   "Lat": -38.15130066
+ },
+ {
+   "hospital": "St John of God Warrnambool Hospital",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.4794,
+   "Lat": -38.3712
+ },
+ {
+   "hospital": "Ballan District Health & Care",
+   "LGA": "MOORABOOL",
+   "Lon": 144.2226728,
+   "Lat": -37.59918077
+ },
+ {
+   "hospital": "Euroa Health Inc",
+   "LGA": "STRATHBOGIE",
+   "Lon": 145.5700935,
+   "Lat": -36.75917026
+ },
+ {
+   "hospital": "Heyfield Hospital Incorporated",
+   "LGA": "WELLINGTON",
+   "Lon": 146.7836685,
+   "Lat": -37.9768257
+ },
+ {
+   "hospital": "Nagambie HealthCare",
+   "LGA": "STRATHBOGIE",
+   "Lon": 145.1501442,
+   "Lat": -36.78100413
+ },
+ {
+   "hospital": "Neerim District Health Service",
+   "LGA": "BAW BAW",
+   "Lon": 145.9540862,
+   "Lat": -38.02207501
+ },
+ {
+   "hospital": "Ballarat Surgicentre",
+   "LGA": "BALLARAT",
+   "Lon": 143.8519851,
+   "Lat": -37.5430748
+ },
+ {
+   "hospital": "Epworth Geelong",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3049395,
+   "Lat": -38.19422552
+ },
+ {
+   "hospital": "South West Regional Cancer Centre",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.4740014,
+   "Lat": -38.38062334
+ },
+ {
+   "hospital": "Mildura Base Hospital",
+   "LGA": "MILDURA",
+   "Lon": 142.1429,
+   "Lat": -34.1855
+ },
+ {
+   "hospital": "Central Gippsland Health Service (Maffra)",
+   "LGA": "WELLINGTON",
+   "Lon": 146.9834,
+   "Lat": -37.9612
+ },
+ {
+   "hospital": "Central Gippsland Health Service (Sale)",
+   "LGA": "WELLINGTON",
+   "Lon": 147.0808,
+   "Lat": -38.108
+ },
+ {
+   "hospital": "Cobram District Health",
+   "LGA": "MOIRA",
+   "Lon": 145.6512,
+   "Lat": -35.9165
+ },
+ {
+   "hospital": "Cohuna District Hospital",
+   "LGA": "GANNAWARRA",
+   "Lon": 144.2147,
+   "Lat": -35.8003
+ },
+ {
+   "hospital": "Colac Area Health",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.5839,
+   "Lat": -38.3415
+ },
+ {
+   "hospital": "Djerriwarrh Health Services (Bacchus Marsh)",
+   "LGA": "MOORABOOL",
+   "Lon": 144.4325,
+   "Lat": -37.6781
+ },
+ {
+   "hospital": "West Wimmera Health Service (Rupanyup)",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.6315902,
+   "Lat": -36.6366547
+ },
+ {
+   "hospital": "East Grampians Health Service (Ararat)",
+   "LGA": "ARARAT",
+   "Lon": 142.9323,
+   "Lat": -37.2787
+ },
+ {
+   "hospital": "East Grampians Health Service (Willaura)",
+   "LGA": "ARARAT",
+   "Lon": 142.7459,
+   "Lat": -37.5451
+ },
+ {
+   "hospital": "East Wimmera Health Service (Birchip)",
+   "LGA": "BULOKE",
+   "Lon": 142.9159,
+   "Lat": -35.9802
+ },
+ {
+   "hospital": "East Wimmera Health Service (Charlton)",
+   "LGA": "BULOKE",
+   "Lon": 143.3525055,
+   "Lat": -36.26923847
+ },
+ {
+   "hospital": "East Wimmera Health Service (Donald)",
+   "LGA": "BULOKE",
+   "Lon": 142.9764,
+   "Lat": -36.3666
+ },
+ {
+   "hospital": "East Wimmera Health Service (St Arnaud)",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 143.2465,
+   "Lat": -36.6094
+ },
+ {
+   "hospital": "East Wimmera Health Service (Wycheproof)",
+   "LGA": "BULOKE",
+   "Lon": 143.234,
+   "Lat": -36.0787
+ },
+ {
+   "hospital": "Echuca Regional Health",
+   "LGA": "CAMPASPE",
+   "Lon": 144.7486,
+   "Lat": -36.1382
+ },
+ {
+   "hospital": "Edenhope & District Hospital",
+   "LGA": "WEST WIMMERA",
+   "Lon": 141.2891,
+   "Lat": -37.0352
+ },
+ {
+   "hospital": "Gippsland Southern Health Service (Korumburra)",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.8285,
+   "Lat": -38.4304
+ },
+ {
+   "hospital": "Gippsland Southern Health Service (Leongatha)",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 145.9501,
+   "Lat": -38.4873
+ },
+ {
+   "hospital": "Shepparton Hospital",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.4042,
+   "Lat": -36.3631
+ },
+ {
+   "hospital": "Tatura Public Hospital",
+   "LGA": "GREATER SHEPPARTON",
+   "Lon": 145.2253,
+   "Lat": -36.4393
+ },
+ {
+   "hospital": "Waranga Memorial Hospital",
+   "LGA": "CAMPASPE",
+   "Lon": 145.0085,
+   "Lat": -36.5879
+ },
+ {
+   "hospital": "Alexandra District Hospital",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.7161,
+   "Lat": -37.1953
+ },
+ {
+   "hospital": "Alpine Health (Bright)",
+   "LGA": "ALPINE",
+   "Lon": 146.9661,
+   "Lat": -36.733
+ },
+ {
+   "hospital": "Alpine Health (Mount Beauty)",
+   "LGA": "ALPINE",
+   "Lon": 147.1694,
+   "Lat": -36.7433
+ },
+ {
+   "hospital": "Alpine Health (Myrtleford)",
+   "LGA": "ALPINE",
+   "Lon": 146.7291,
+   "Lat": -36.5544
+ },
+ {
+   "hospital": "Bairnsdale Regional Health Service",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.6083,
+   "Lat": -37.8317
+ },
+ {
+   "hospital": "Ballarat Hospital",
+   "LGA": "BALLARAT",
+   "Lon": 143.8474,
+   "Lat": -37.5587
+ },
+ {
+   "hospital": "Queen Elizabeth Centre, The (Ballarat QEC)",
+   "LGA": "BALLARAT",
+   "Lon": 143.8419,
+   "Lat": -37.5639
+ },
+ {
+   "hospital": "University Hospital Geelong",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.3654,
+   "Lat": -38.1512
+ },
+ {
+   "hospital": "McKellar Centre (Geelong)",
+   "LGA": "GREATER GEELONG",
+   "Lon": 144.336,
+   "Lat": -38.1193
+ },
+ {
+   "hospital": "Bass Coast Health",
+   "LGA": "BASS COAST",
+   "Lon": 145.5809,
+   "Lat": -38.6082
+ },
+ {
+   "hospital": "Beaufort & Skipton Health Service (Beaufort)",
+   "LGA": "PYRENEES",
+   "Lon": 143.3822,
+   "Lat": -37.4308
+ },
+ {
+   "hospital": "Beaufort & Skipton Health Service (Skipton)",
+   "LGA": "CORANGAMITE",
+   "Lon": 143.3676,
+   "Lat": -37.6842
+ },
+ {
+   "hospital": "Beechworth Health Service",
+   "LGA": "INDIGO",
+   "Lon": 146.6914,
+   "Lat": -36.3495
+ },
+ {
+   "hospital": "Benalla Health",
+   "LGA": "BENALLA",
+   "Lon": 145.9935,
+   "Lat": -36.5549
+ },
+ {
+   "hospital": "Bendigo Health (Anne Caudle)",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.28,
+   "Lat": -36.7513
+ },
+ {
+   "hospital": "Bendigo Hospital, The",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.2829,
+   "Lat": -36.7487
+ },
+ {
+   "hospital": "Boort District Health",
+   "LGA": "LODDON",
+   "Lon": 143.7273,
+   "Lat": -36.112
+ },
+ {
+   "hospital": "Casterton Memorial Hospital",
+   "LGA": "GLENELG",
+   "Lon": 141.3928,
+   "Lat": -37.5903
+ },
+ {
+   "hospital": "Creswick District Hospital",
+   "LGA": "HEPBURN",
+   "Lon": 143.8917,
+   "Lat": -37.4206
+ },
+ {
+   "hospital": "Daylesford District Hospital",
+   "LGA": "HEPBURN",
+   "Lon": 144.1455,
+   "Lat": -37.3376
+ },
+ {
+   "hospital": "Hesse Rural Health Service (Winchelsea)",
+   "LGA": "SURF COAST",
+   "Lon": 143.9842,
+   "Lat": -38.2431
+ },
+ {
+   "hospital": "Heywood Rural Health",
+   "LGA": "GLENELG",
+   "Lon": 141.6246,
+   "Lat": -38.1379
+ },
+ {
+   "hospital": "Inglewood and Districts Health Service",
+   "LGA": "LODDON",
+   "Lon": 143.8734,
+   "Lat": -36.5723
+ },
+ {
+   "hospital": "Kerang District Health",
+   "LGA": "GANNAWARRA",
+   "Lon": 143.9176,
+   "Lat": -35.7242
+ },
+ {
+   "hospital": "Kilmore and District Hospital",
+   "LGA": "MITCHELL",
+   "Lon": 144.9581,
+   "Lat": -37.3018
+ },
+ {
+   "hospital": "Kyabram and District Health Services",
+   "LGA": "CAMPASPE",
+   "Lon": 145.0422,
+   "Lat": -36.3153
+ },
+ {
+   "hospital": "Kyneton District Health Service",
+   "LGA": "MACEDON RANGES",
+   "Lon": 144.4701,
+   "Lat": -37.2545
+ },
+ {
+   "hospital": "Latrobe Regional Hospital",
+   "LGA": "LATROBE",
+   "Lon": 146.4714,
+   "Lat": -38.2188
+ },
+ {
+   "hospital": "Lorne Community Hospital",
+   "LGA": "SURF COAST",
+   "Lon": 143.9808,
+   "Lat": -38.5455
+ },
+ {
+   "hospital": "Maldon Hospital",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.064,
+   "Lat": -36.9927
+ },
+ {
+   "hospital": "Mallee Track Health and Community Service (Ouyen)",
+   "LGA": "MILDURA",
+   "Lon": 142.3131,
+   "Lat": -35.0745
+ },
+ {
+   "hospital": "Robinvale District Health Services (Managatang)",
+   "LGA": "SWAN HILL",
+   "Lon": 142.8808,
+   "Lat": -35.051
+ },
+ {
+   "hospital": "Mansfield District Hospital",
+   "LGA": "MANSFIELD",
+   "Lon": 146.0865084,
+   "Lat": -37.05760484
+ },
+ {
+   "hospital": "Maryborough District Health Service (Dunolly)",
+   "LGA": "CENTRAL GOLDFIELDS",
+   "Lon": 143.7352,
+   "Lat": -36.8554
+ },
+ {
+   "hospital": "Maryborough District Health Service (Maryborough)",
+   "LGA": "CENTRAL GOLDFIELDS",
+   "Lon": 143.7383,
+   "Lat": -37.0451
+ },
+ {
+   "hospital": "Heathcote Health",
+   "LGA": "GREATER BENDIGO",
+   "Lon": 144.7097,
+   "Lat": -36.9261
+ },
+ {
+   "hospital": "Mildura Base Hospital",
+   "LGA": "MILDURA",
+   "Lon": 142.1429,
+   "Lat": -34.1855
+ },
+ {
+   "hospital": "Moyne Health Services (Port Fairy)",
+   "LGA": "MOYNE",
+   "Lon": 142.2271,
+   "Lat": -38.3815
+ },
+ {
+   "hospital": "Castlemaine Health",
+   "LGA": "MOUNT ALEXANDER",
+   "Lon": 144.2121,
+   "Lat": -37.0526
+ },
+ {
+   "hospital": "Nathalia District Hospital",
+   "LGA": "MOIRA",
+   "Lon": 145.1977,
+   "Lat": -36.0572
+ },
+ {
+   "hospital": "Northeast Health Wangaratta",
+   "LGA": "WANGARATTA",
+   "Lon": 146.3143,
+   "Lat": -36.3543
+ },
+ {
+   "hospital": "Numurkah District Health Service",
+   "LGA": "MOIRA",
+   "Lon": 145.4438,
+   "Lat": -36.1
+ },
+ {
+   "hospital": "Omeo District Health",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 147.5972,
+   "Lat": -37.0981
+ },
+ {
+   "hospital": "Orbost Regional Health",
+   "LGA": "EAST GIPPSLAND",
+   "Lon": 148.4656,
+   "Lat": -37.7017
+ },
+ {
+   "hospital": "Otway Health",
+   "LGA": "COLAC-OTWAY",
+   "Lon": 143.6646,
+   "Lat": -38.7539
+ },
+ {
+   "hospital": "Portland District Health",
+   "LGA": "GLENELG",
+   "Lon": 141.6062,
+   "Lat": -38.3412
+ },
+ {
+   "hospital": "Robinvale District Health Services, Robinvale",
+   "LGA": "SWAN HILL",
+   "Lon": 142.782,
+   "Lat": -34.5845
+ },
+ {
+   "hospital": "Rochester and Elmore District Health Service",
+   "LGA": "CAMPASPE",
+   "Lon": 144.6978,
+   "Lat": -36.3665
+ },
+ {
+   "hospital": "Rural Northwest Health (Hopetoun)",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.3669,
+   "Lat": -35.7326
+ },
+ {
+   "hospital": "Rural Northwest Health (Warracknabeal)",
+   "LGA": "YARRIAMBIACK",
+   "Lon": 142.3821,
+   "Lat": -36.2528
+ },
+ {
+   "hospital": "Seymour Health",
+   "LGA": "MITCHELL",
+   "Lon": 145.1386,
+   "Lat": -37.0185
+ },
+ {
+   "hospital": "South Gippsland Hospital (Foster)",
+   "LGA": "SOUTH GIPPSLAND",
+   "Lon": 146.2062,
+   "Lat": -38.6587
+ },
+ {
+   "hospital": "South West Healthcare (Camperdown)",
+   "LGA": "CORANGAMITE",
+   "Lon": 143.1379,
+   "Lat": -38.2371
+ },
+ {
+   "hospital": "South West Healthcare (Warrnambool)",
+   "LGA": "WARRNAMBOOL",
+   "Lon": 142.4728,
+   "Lat": -38.3804
+ },
+ {
+   "hospital": "Stawell Regional Health",
+   "LGA": "NORTHERN GRAMPIANS",
+   "Lon": 142.7814,
+   "Lat": -37.0594
+ },
+ {
+   "hospital": "Swan Hill District Health (Swan Hill)",
+   "LGA": "SWAN HILL",
+   "Lon": 143.5566,
+   "Lat": -35.3406
+ },
+ {
+   "hospital": "Tallangatta Health Service",
+   "LGA": "TOWONG",
+   "Lon": 147.1839,
+   "Lat": -36.2138
+ },
+ {
+   "hospital": "Terang and Mortlake Health Service (Terang)",
+   "LGA": "CORANGAMITE",
+   "Lon": 142.9024,
+   "Lat": -38.2394
+ },
+ {
+   "hospital": "Timboon and District Healthcare Service",
+   "LGA": "CORANGAMITE",
+   "Lon": 142.9766,
+   "Lat": -38.4865
+ },
+ {
+   "hospital": "Upper Murray Health and Community Services (Corryong)",
+   "LGA": "TOWONG",
+   "Lon": 147.9032,
+   "Lat": -36.1988
+ },
+ {
+   "hospital": "West Gippsland Healthcare Group (Warragul)",
+   "LGA": "BAW BAW",
+   "Lon": 145.9275,
+   "Lat": -38.1728
+ },
+ {
+   "hospital": "West Wimmera Health Service (Jeparit)",
+   "LGA": "HINDMARSH",
+   "Lon": 141.9844,
+   "Lat": -36.1409
+ },
+ {
+   "hospital": "West Wimmera Health Service (Kaniva)",
+   "LGA": "WEST WIMMERA",
+   "Lon": 141.246,
+   "Lat": -36.3815
+ },
+ {
+   "hospital": "West Wimmera Health Service (Nhill)",
+   "LGA": "HINDMARSH",
+   "Lon": 141.6561,
+   "Lat": -36.3339
+ },
+ {
+   "hospital": "West Wimmera Health Service (Rainbow)",
+   "LGA": "HINDMARSH",
+   "Lon": 141.9951,
+   "Lat": -35.9041
+ },
+ {
+   "hospital": "Hamilton Base Hospital",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.0301,
+   "Lat": -37.7373
+ },
+ {
+   "hospital": "Penshurst & District Memorial Hospital",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 142.2825,
+   "Lat": -37.8772
+ },
+ {
+   "hospital": "Western District Health Service (Coleraine)",
+   "LGA": "SOUTHERN GRAMPIANS",
+   "Lon": 141.6925,
+   "Lat": -37.5998
+ },
+ {
+   "hospital": "Wimmera Base Hospital (Dimboola)",
+   "LGA": "HINDMARSH",
+   "Lon": 142.0242,
+   "Lat": -36.4497
+ },
+ {
+   "hospital": "Wimmera Base Hospital (Horsham)",
+   "LGA": "HORSHAM",
+   "Lon": 142.2092,
+   "Lat": -36.7119
+ },
+ {
+   "hospital": "Albury Wodonga Health (Wodonga)",
+   "LGA": "WODONGA",
+   "Lon": 146.8795,
+   "Lat": -36.1318
+ },
+ {
+   "hospital": "Yarram and District Health Service",
+   "LGA": "WELLINGTON",
+   "Lon": 146.6781,
+   "Lat": -38.5571
+ },
+ {
+   "hospital": "Yarrawonga Health",
+   "LGA": "MOIRA",
+   "Lon": 146.0068327,
+   "Lat": -36.01119805
+ },
+ {
+   "hospital": "Yea and District Memorial Hospital",
+   "LGA": "MURRINDINDI",
+   "Lon": 145.4313,
+   "Lat": -37.2139
+ },
+ {
+   "hospital": "Mallee Track Health & Community Service (Sea Lake)",
+   "LGA": "BULOKE",
+   "Lon": 142.8577,
+   "Lat": -35.5005
+ }
+]
