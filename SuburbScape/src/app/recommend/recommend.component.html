@@ -23,7 +23,7 @@
           <ul>
             <li [class]="getClassname(completedCondition)">
                 <p style="text-align: center; ">Step 1
-                  <button mat-icon-button style="float: right;" (click)="openDialog2()">
+                  <button mat-icon-button style="float: right;" (click)="openDialog1()">
                     <mat-icon>question_mark</mat-icon>
                   </button>
                   <i class="ico fa fa-check ico-green"></i>
@@ -115,11 +115,11 @@
       <br> &nbsp;
 
       <button mat-raised-button style="background-color: rgb(49 49 148 / 85%); color: white;
-       margin-left: -160px; margin-top: -20px;width: 140px;" *ngIf=checked1 (click)="reset()">
+       margin-left: -160px; margin-top: 10px;width: 140px;" *ngIf=checked1 (click)="reset()">
               Reset
       </button>
       <button mat-raised-button style="background-color: rgb(178 72 18 / 97%); color: white;
-       margin-left: 20px; margin-top: -20px;width: 140px;" *ngIf=checked1 (click)="search()">
+       margin-left: 20px; margin-top: 10px;width: 140px;" *ngIf=checked1 (click)="search()">
               Search
       </button>
       </div>
@@ -142,7 +142,8 @@
 
     <div class="col-sm-5" style=" background-color: rgb(52, 52, 49);margin-left: 5s0px;">
       <img [src]="imageUrl" style = "height: 270px; width: 100%">
-      <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 20px;">
+      <p class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 20px;">
+
         Based on your preferences we have arrived at
        </p>
        <p class="hero-subtitle" style="margin-left: 20px;">
@@ -166,7 +167,7 @@
        <button mat-raised-button style="margin-top: 8px; margin-left: 100px; height: 50px; width: 280px;
        background-color: rgb(49 49 148 / 85%); color: white;"
         (click)="scrollDown()">
-         Explore further >>
+         Locate {{this.suburb}} on map
         </button>
         <br> &nbsp;
     </div>
@@ -193,14 +194,14 @@
           </mat-card>
           </div>
           <div class="col-md-4">
-            <mat-card style="height: 100px; width: 180px; margin-left: 5px; background-color:rgb(52, 52, 49) ;">
+            <mat-card style="height: 100px; width: 190px; margin-left: 5px; background-color:rgb(52, 52, 49) ;">
               <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                 <img src ="assets/vehicle.png">
               </div>
               <h3 style="text-align: center; margin-top: 40px; color: white">
                   Drive to Melbourne <br>
                 <mat-divider style="width: 80%; margin-left: 10%;"></mat-divider>
-                {{this.distance}} Kms/ {{this.time}} minutes
+                {{this.distance}} Kms/ {{this.time}} mins
               </h3>
           </mat-card>
           </div>
@@ -247,8 +248,38 @@
             </mat-card>
             </div>
             </div></div>
+            <p class="hero-subtitle2"
+            style="font-size: 1.2vw; margin-left: 30px;
+            color: black; text-align: center; margin-top: 20px;">
+              Do you currently live in Victoria?<br>
+              </p>
+              <div class="horizontal-line"
+              style=" width: 40%; margin-left: 230px; border-color: #ced416;"></div>
+            <div class="container" >
+              <div class="row">
+                <div class="col-md-6" >
+                  <p class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 30px; color: black; margin-top: 20px;">
+                    Compare your rent with the recommended suburb
+                   </p>
+                   <mat-form-field style="width: 250px;   margin-top: 5px; margin-left: 60px;" *ngIf=checked>
+                    <mat-label >Select City/ Council to compare</mat-label>
+                    <mat-select
+                    id="sub1" name="sub1" [(ngModel)]="sub1" style="background-color: transparent; height: 20px;"
+                    (selectionChange)="compareRent()">
+                      <mat-option *ngFor="let option of subListAll" [value]="option.value">{{ option.label }}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
 
-          <p class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 60px; color: black; margin-top: 40px;">
+                </div>
+                <div class="col-md-6" >
+
+                  <div style="height: 150px; margin-left: -30px;">
+                    <canvas style="margin-left: 40px; " id="Chartx" >{{ chart }}</canvas> <br>
+                  </div>
+                </div>
+            </div> </div>
+
+          <p class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 60px; color: black; margin-top: 10px;">
             Not Satisfied with your Recommendation? <br>
             Choose from dropdown below to explore other recommended suburbs.
           </p>
@@ -279,27 +310,18 @@
     </div>
     </div>
     <div class="col-sm-4" style=" background-color: rgb(52, 52, 49);">
+      <p class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 30px; margin-top: 20px;">
+        ** Click on the school <img src ="assets/school.png" style="height: 30px;">
+        or  <br>hospital <img src ="assets/hospital-bed.png" style="height: 30px;"> icons to view respective names <br>
+        You can also zoom in and zoom out the map at anytime or <br>
+        use reset button on the reset the map.
+      </p>
+
       <button mat-raised-button
       style=" margin-left: 60px; height: 50px; width: 250px;margin-top: 20px; background-color: rgba(148, 49, 49, 0.85); color: white;"
         (click)="resetMap()">
         Reset Map
       </button>
-       <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 10px; margin-top:40px">
-        Do you currently live in Victoria?<br>
-        * Compare your rent with the recommended suburb rent
-       </p>
-       <mat-form-field style="width: 250px;   margin-top: 5px; margin-left: 60px;" *ngIf=checked>
-        <mat-label >Select LGA to compare</mat-label>
-        <mat-select
-        id="sub1" name="sub1" [(ngModel)]="sub1" style="background-color: transparent; height: 20px;"
-        (selectionChange)="compareRent()">
-          <mat-option *ngFor="let option of subListAll" [value]="option.value">{{ option.label }}</mat-option>
-        </mat-select>
-      </mat-form-field>
-      <div style="height: 150px;">
-        <canvas style="margin-left: 40px; " id="Chartx" >{{ chart }}</canvas> <br>
-      </div>
-      <div class="horizontal-line" style=" width: 60%; margin-left: 35px;"></div>
 
       <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 40px;  margin-top: 20px;">
         Not Satisfied with your Recommendation ? <br>

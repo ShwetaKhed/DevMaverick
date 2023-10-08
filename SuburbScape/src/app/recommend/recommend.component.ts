@@ -11,6 +11,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import * as L from 'leaflet';
 import Chart from 'chart.js/auto';
 import { MatDialog } from '@angular/material/dialog';
+import 'leaflet-routing-machine';
 
 
 @Component({
@@ -249,7 +250,10 @@ export class RecommendComponent {
       this.checked2 = false;
       this.checked3 = true;
     }, 10);
+
     setTimeout(() => {
+      this.checked2 = false;
+      this.checked3 = true;
       window.scrollTo({
         top: yOffset + 740,
         behavior: 'smooth'
@@ -369,7 +373,8 @@ export class RecommendComponent {
        this.distance = this.top_Suburb[0].distance;
        this.time = this.top_Suburb[0].time;
        this.hospital = this.top_Suburb[0].hospital;
-       this.crime = this.top_Suburb[0].Rate_per_100000_population/100000 * 1000;
+       var subcrime = (this.top_Suburb[0].Rate_per_100000_population / 100000) * 1000
+       this.crime = parseFloat(subcrime.toFixed(2));
        this.subListAll = this.subListAll.filter(item => item.value !== this.suburb);
        this.setMapDetails();
   });
@@ -379,6 +384,21 @@ export class RecommendComponent {
   }
 
   setMapDetails(){
+    const dataDict: Record<string, number> = {};
+    dataDict["Managers"] = this.top_Suburb[0].Managers;
+    dataDict["Professionals"] = this.top_Suburb[0].Professionals;
+    dataDict["Clerical/ administrative workers"] =  this.top_Suburb[0].Clerical;
+    dataDict["Community/ personal service workers"] =
+    this.top_Suburb[0].Community;
+    dataDict["Labourers"] =  this.top_Suburb[0].Labourers;
+    dataDict["Machinery operators/ drivers"] = this.top_Suburb[0].Drivers;
+    dataDict["Sales workers"] = this.top_Suburb[0].Sales;
+    dataDict["Technicians/ trades workers"] = this.top_Suburb[0].Technicians;
+
+    const dataEntries = Object.entries(dataDict);
+    dataEntries.sort((a, b) => b[1] - a[1]);
+    const top3 = dataEntries.slice(0, 3);
+    this.top3Prof = top3.map(entry => entry[0]);
 
     const regionColors: { [key: string]: string } = {
     };
@@ -405,23 +425,16 @@ export class RecommendComponent {
           L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
           }).addTo(this.map);
-          var popup = L.popup().setLatLng([centres[i].Lat,  centres[i].Lon]).setContent(
-            '<br>' +
-            '** Click on the school and hospital icons to view names<br>' +
-            'You can also zoom in and zoom out the map at anytime or use reset button on the right to reset the map.' +
-            '<br><h3> Suburb: ' +
+          var popup = L.popup({
+            closeButton: false,
+            closeOnClick: false,
+            autoClose: false,
+          }).setLatLng([centres[i].Lat,  centres[i].Lon]).setContent(
+              '<h3> Suburb: ' +
             this.sub.toUpperCase() +'</h3>')
           .openOn(this.map);
           const marker = L.marker([centres[i].Lat, centres[i].Lon], { icon: customIcon }).addTo(this.map).
           bindPopup(popup);
-
-          /*var circle = L.circle([centres[i].Lat, centres[i].Lon], {
-            color: 'red',
-            fillColor: '#f03',
-            fillOpacity: 0.2,
-            radius: 20000
-        }).addTo(this.map);*/
-
 
           break;
         }
@@ -443,8 +456,6 @@ export class RecommendComponent {
           }
         }
       });
-
-
 
     });
 
@@ -472,24 +483,10 @@ export class RecommendComponent {
       }).addTo(this.map);
 
       this.map.on("click", () => {
-        this.showSnackbar("Ohh no.");
+        this.showSnackbar("Ohh no. Please click on one of the icons in the map.");
       });
 
-    const dataDict: Record<string, number> = {};
-    dataDict["Managers"] = this.top_Suburb[0].Managers;
-    dataDict["Professionals"] = this.top_Suburb[0].Professionals;
-    dataDict["Clerical/ administrative workers"] =  this.top_Suburb[0].Clerical;
-    dataDict["Community/ personal service workers"] =
-    this.top_Suburb[0].Community;
-    dataDict["Labourers"] =  this.top_Suburb[0].Labourers;
-    dataDict["Machinery operators/ drivers"] = this.top_Suburb[0].Drivers;
-    dataDict["Sales workers"] = this.top_Suburb[0].Sales;
-    dataDict["Technicians/ trades workers"] = this.top_Suburb[0].Technicians;
 
-    const dataEntries = Object.entries(dataDict);
-    dataEntries.sort((a, b) => b[1] - a[1]);
-    const top3 = dataEntries.slice(0, 3);
-    this.top3Prof = top3.map(entry => entry[0]);
     });
   }
 
@@ -537,7 +534,8 @@ export class RecommendComponent {
        this.distance = this.top3[i].distance;
        this.time = this.top3[i].time;
        this.hospital = this.top3[i].hospital;
-       this.crime = this.top3[i].Rate_per_100000_population;
+       var subcrime = (this.top3[i].Rate_per_100000_population / 100000) * 1000;
+       this.crime = parseFloat(subcrime.toFixed(2));
        this.subListAll = this.subListAll.filter(item => item.value !== this.suburb);
        dataDict["Managers"] = this.top3[i].Managers;
        dataDict["Professionals"] = this.top3[i].Professionals;
@@ -579,7 +577,7 @@ export class RecommendComponent {
         labels: [this.subListAll[i].value , this.suburb],
         datasets: [{
           data: [this.subListAll[i].rent, this.rent],
-          label: "Rent",
+          label: "Weekly Rent",
           backgroundColor: ['#FF5733', '#36A2EB']
         }]
       },
@@ -596,7 +594,7 @@ export class RecommendComponent {
 
 openDialog1(){
   this.sharedService.message =
-  "This will allow us to make cutsomized recommendations that fit your rental budget!"
+  "This will allow us to make customized recommendations that fit your rental budget!"
   this.matDialog.open(DialogComponent,{
     width: '350px'
   })
@@ -604,7 +602,7 @@ openDialog1(){
 
 openDialog2(){
   this.sharedService.message =
-  "We will recommend you the LGAs where your profession accounts for more than 10% of total job opportunities!"
+  "We will recommend you the suburbs where your profession accounts for more than 10% of total job opportunities!"
   this.matDialog.open(DialogComponent,{
     width: '350px'
   })
@@ -612,7 +610,7 @@ openDialog2(){
 
 openDialog3(){
   this.sharedService.message =
-  "By ranking these preferences, our recommendation system will look for LGAs that suit your priorities!"
+  "By ranking these preferences, our recommendation system will look for suburbs that suit your priorities!"
   this.matDialog.open(DialogComponent,{
     width: '350px'
   })
