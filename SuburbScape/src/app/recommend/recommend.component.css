@@ -350,6 +350,7 @@ footer {
 
 .hero-subtitle {
 	color: white;
+  font-family: "Cambria", sans-serif;
 	letter-spacing: 1px;
   line-height: 1.1;
   margin: 5px 0;
@@ -393,19 +394,19 @@ footer {
 
 .hero-title {
 	color: white;
+  font-family: "Cambria", sans-serif;
   margin-top: 10px;
   text-align: center;
-  width: 85%;
-  @media screen and (min-width:640px) {
-		font-size: 2vw;
-	}
+  width: 100%;
+	font-size: 2vw;
+
 }
 
 .center-snackbar {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 30px; /* Adjust the bottom value to position the snackbar as needed */
+  bottom: 30px;
 }
 
 

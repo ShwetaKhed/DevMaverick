@@ -219,6 +219,7 @@ export class RecommendComponent {
   }
 
   search(){
+    this.sub1 = "";
     if (this.chart != undefined)
     {
       this.chart.destroy();
@@ -250,12 +251,12 @@ export class RecommendComponent {
       this.checked2 = false;
       this.checked3 = true;
     }, 10);
-
+    const windowHeight = window.outerHeight;
     setTimeout(() => {
       this.checked2 = false;
       this.checked3 = true;
       window.scrollTo({
-        top: yOffset + 740,
+        top: yOffset + windowHeight + 30,
         behavior: 'smooth'
       });
 
@@ -458,7 +459,7 @@ export class RecommendComponent {
       });
 
     });
-
+    regionColors[this.sub.toUpperCase()] = 'red';
 
     this.http.get<any>('assets/regional_vic.json').subscribe(geojsonData => {
       this.geojsonData = geojsonData;
@@ -466,14 +467,16 @@ export class RecommendComponent {
         style: function(feature) {
           if (feature && feature.properties) {
 
+            const region = feature.properties.Region;
             const lga = feature.properties.LGA;
-            const fillColor = regionColors[lga] ;
+            const fillColor = regionColors[lga] || 'transparent';
+
             return {
               fillColor: fillColor,
               weight: 1,
               opacity: 1,
               color: 'grey',
-              fillOpacity: 0
+              fillOpacity: 0.2
             };
           }
           return {};
@@ -514,8 +517,9 @@ export class RecommendComponent {
 
   scrollDown() {
     const yOffset = window.scrollY;
+    const windowHeight = window.outerHeight;
     window.scrollTo({
-      top: yOffset + 680,
+      top: yOffset + windowHeight + 30,
       behavior: "smooth"
     });
   }

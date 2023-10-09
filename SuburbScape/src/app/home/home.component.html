@@ -1,13 +1,13 @@
 
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <section class="hero image-as-background" style="background-image: url('assets/Ballarat.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
-  <div class="hero-container">
+  <div class="hero-container" style="width: 100%;">
     <app-navbar ></app-navbar>
     <mat-card style=" background-color: rgba(0,0,0,.6); margin-top: 50px;
     margin-left: 50px; margin-right: 50px;" class="animate fadeInLeft delay-600 ">
-      <p class="hero-title " style="margin-left: 80px;">
+      <p class="hero-title " style="text-align: center;">
         Discover a new beginning with affordability
         in the beautiful landscapes of Regional Victoria.
         </p>
@@ -15,21 +15,26 @@
           "Explore affordable housing, serene lifestyle & build stronger connections"<br>
           &nbsp;
          </p>
+         <div style="display: flex; justify-content: center; align-items: center;">
          <button mat-raised-button
-         style="margin-top: 0px; margin-left: 400px; height: 50px; width: 280px;
+         style="margin-top: 0px; height: 50px; width: 280px;
          margin-bottom: 10px; "
          (click)="explore()">
          <mat-icon>explore</mat-icon>
           Explore Regional Victoria
          </button>
+        </div>
 
     </mat-card>
-
-    <div class="scroll-down-arrow" style="align-content: center;">
-      <span style="margin-left: 580px; margin-top: 200px;" (click)="scrollDown()"></span>
+    <div style="display: flex; justify-content: center; align-items: center;">
+    <div class="scroll-down-arrow"
+    style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+      <span  (click)="scrollDown()"></span>
     </div>
+    </div>
+    <div style="display: flex; justify-content: right; align-items: right;">
     <mat-card style=" background-color: rgba(0,0,0,.6); margin-top: -10px;
-    margin-left: 850px; margin-right: 50px; width: 280px" >
+     width: 280px" >
     <button mat-raised-button
     style=" margin-top: 0px; margin-left: 20px;
     width: 220px; margin-bottom: 10px; margin-top: 20px;"
@@ -43,6 +48,7 @@
      How SuburbScape Works?
     </button>
     </mat-card>
+    </div>
        </div>
 </section>
 <div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); "></div>
@@ -68,7 +74,7 @@
   </div>
      <p style="text-align: center; font-size: 15px; margin-bottom: 15px; margin-left: 120px;">
       We asked people to rank which factors influenced their decision to move regionally.</p>
-    <div class="container" style="margin-left: 70px;">
+    <div class="container" style="display: flex; justify-content: center; align-items: center; ">
       <div class="row">
         <div class="col-md-4" >
           <img src ="assets/amenities.png" height="70px" style="margin-bottom: 25px;">
@@ -85,15 +91,20 @@
           <h1><span class="counter" style="color: rgb(68, 47, 125); font-size: 40px;" [@counterAnimation2]="'enter'" #counterElement2>{{ counter2 }} %</span></h1>
           <h3>Said they are satisfied with affordable <br>housing</h3>
           <br>
-          <div class="blue-box" style="margin-left: 270px;" (click)="scrollToTop()">
+
+        </div>
+        </div>
+        </div>
+        <div style="display: flex; justify-content: right; align-items: right;">
+          <div class="blue-box" style="margin-right: 100px; margin-top: -90px;" (click)="scrollToTop()">
             <mat-icon style="color: white;">arrow_upward</mat-icon>
           </div>
         </div>
-        </div>
-        </div>
   <div style="height: 12vh; margin-top: -40px;  text-align: center; background-color: rgb(29, 4, 100);">
+    <div style="display: flex; justify-content: center; align-items: center; ">
           <div class="scroll-down-arrow" style="align-content: center;">
-            <span style="margin-left: 600px; margin-top: 200px;" (click)="scrollLater()"></span>
+            <span style="margin-top: 200px;" (click)="scrollLater()"></span>
+          </div>
           </div>
 
   </div>
@@ -107,7 +118,7 @@
 
    <h3 style="text-align: center; margin-left: 30px;">
     "Finding a new area to relocate to can be difficult, <br>but we believe SuburbScape makes this easier."</h3>
-   <div class="container" style="margin-left: 60px; margin-top: 40px;">
+   <div class="container" style="display: flex; justify-content: center; align-items: center; ">
     <div class="row">
       <div class="col-md-4" >
         <mat-card style="height: 100px; position: relative; width: 350px;">
@@ -147,7 +158,7 @@
     <div class="heading" style="margin-top: 5px;">
     </div>
 
-    <div class="container" style="margin-left: 40px; margin-top: -60px;">
+    <div class="container"  style="display: flex; justify-content: center; align-items: center;">
       <div class="row">
         <div class="col-md-4" >
           <div class="heading" style="margin-top: 5px; font-size: 19px;">
@@ -165,36 +176,35 @@
           <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto;">
             You can view details like schools, hospitals, distance to Melbourne.</span></div>
           <br>
-          <div class="blue-box" style="margin-left: 350px; margin-top: -50px;" (click)="scrollToTop()">
-            <mat-icon style="color: white;">arrow_upward</mat-icon>
-          </div>
+
         </div>
         </div>
         </div>
 
 
-  </div>
-  <br>
-  <div class="container" style="margin-left: 40px; margin-top: -60px; background-color: #edd7bc1c;">
-    <div class="row">
-      <div class="col-md-4" >
-      </div>
-      <div class="col-md-4" >
+
+
+  <div style="display: flex; justify-content: center; align-items: center;">
         <button mat-raised-button
         style=" height: 50px; width: 280px;
         margin-bottom: 10px; background-color: rgb(29, 4, 100); color: white;"
         (click)="explore()">
          Explore Regional Victoria Now
         </button>
-      </div>
-      <div class="col-md-4" >
-      </div>
-    </div></div>
 
+  </div>
 
+    <div style="display: flex; justify-content: right; align-items: right;">
+      <div class="blue-box" style="margin-right: 100px; margin-top: -50px;" (click)="scrollToTop()">
+        <mat-icon style="color: white;">arrow_upward</mat-icon>
+      </div>
+    </div>
+
+  </div>
   <footer>
     <p>&copy; 2023 SuburbScape.</p>
   </footer>
+
 
 
 

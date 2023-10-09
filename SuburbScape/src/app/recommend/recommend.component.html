@@ -1,6 +1,7 @@
 
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <section class="hero image-as-background" style="background-image: url('assets/home.jpg?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
   <div class="hero-container">
     <app-navbar></app-navbar>
@@ -9,16 +10,17 @@
 <section *ngIf = !checked2 class="hero image-as-background" style="height: 100vh;  background-image: url('assets/Base2.png?crop=entropy&dpr=2&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
   <div class="hero-container">
 
-    <mat-card style="background-color: rgba(0,0,0,.6); margin-left: 90px; width: 85%; margin-right: 10px; margin-top: -20px; height: 540px;">
-      <p class="hero-title" style="margin-left: 80px;">
+    <mat-card style="background-color: rgba(0,0,0,.6); margin-left: 90px; width: 85%; margin-right: 10px; margin-top: 2%; height: 540px;">
+      <p class="hero-title" style="margin-top: 20px;">
         Discover the regions
         </p>
         <p class="hero-subtitle2" style="text-align: center;">
-          "To assist with financial security , let's explore  rental accommodation in Regional Victoria."<br>
+          "To assist with financial security , let's explore  suitable accommodations in Regional Victoria."<br>
           &nbsp;
          </p>
-      <div class="container">
-      <div class="col-sm-5"  style="margin-left: 6%; background-color:white">
+      <div style="display: flex; justify-content: center; align-items: center;">
+      <div class ="row">
+      <div class="col-sm-7"  style="margin-left: 6%; background-color:white">
         <div class="bs-vertical-wizard">
           <ul>
             <li [class]="getClassname(completedCondition)">
@@ -70,10 +72,10 @@
         </div>
       </div>
 
-      <div class="col-sm-5" >
+      <div class="col-sm-4" >
         <div [class]="getClassname(completedCondition)">
-        <div class="container" style="margin-left: 5%; margin-top: 10px; ">
-          <div class="col-sm-5">
+        <div  style=" margin-top: 10px; display: flex; justify-content: left; align-items: right; ">
+          <div class="col-sm-4">
 
             <mat-form-field style="  width: 140px;">
               <mat-label>Min</mat-label>
@@ -83,8 +85,8 @@
               </mat-select>
             </mat-form-field>
           </div>
-          <div class="col-sm-7">
-            <mat-form-field style="width: 140px; margin-left: 0px;">
+          <div class="col-sm-2" style="margin-left: 50px;">
+            <mat-form-field style="width: 140px; margin-left: 30px;">
               <mat-label>Max</mat-label>
               <mat-select required="true"  id="maxRent" name="maxRent"
               [(ngModel)]="maxRent" style="background-color: transparent;"
@@ -96,7 +98,7 @@
         </div>
 
         </div>
-       <mat-form-field style="width: 280px; margin-left: 50px; margin-bottom: 3px;" *ngIf=checked>
+       <mat-form-field style="width: 280px; margin-left: 0px; margin-bottom: 3px;" *ngIf=checked>
         <mat-label >Professions</mat-label>
         <mat-select required="true"
         id="occ" name="occ" [(ngModel)]="occ" style="background-color: transparent;"
@@ -104,81 +106,88 @@
           <mat-option *ngFor="let option of occList" [value]="option.value">{{ option.label }}</mat-option>
         </mat-select>
       </mat-form-field><br>
-
-      <div style = "margin-left: 50px;" cdkDropList class="example-list"
+      <div  style=" margin-top: 10px; display: flex; justify-content: left; align-items: left; ">
+        <div class="col-sm-9">
+      <div  cdkDropList class="example-list"
       (cdkDropListDropped)="drop($event)"  *ngIf=checked1>
         <div class="example-box" *ngFor="let item of items" cdkDrag style="background-color: rgba(193, 193, 207, 0.208)">
           {{item.title}}
         </div>
       </div>
       <br> &nbsp;
-      <br> &nbsp;
-
-      <button mat-raised-button style="background-color: rgb(49 49 148 / 85%); color: white;
-       margin-left: -160px; margin-top: 10px;width: 140px;" *ngIf=checked1 (click)="reset()">
-              Reset
-      </button>
-      <button mat-raised-button style="background-color: rgb(178 72 18 / 97%); color: white;
-       margin-left: 20px; margin-top: 10px;width: 140px;" *ngIf=checked1 (click)="search()">
-              Search
-      </button>
       </div>
-      <div class="col-sm-2" style="margin-left: -48px; margin-top: 4%;">
-        <div *ngIf=checked1 style=" height: 124px; margin-top: 140px; margin-left: -100px; width: 144px">
+      <div class="col-sm-2">
+        <div *ngIf=checked1 style=" height: 124px; margin-left: 40px; width: 144px">
         <img  src="assets/reorder.gif" *ngIf=checked1 style="height: 120px; ">
 
         </div>
       </div>
+    </div>
+
+      <button mat-raised-button style="background-color: rgb(49 49 148 / 85%); color: white;
+       margin-left: -160px; width: 140px;" *ngIf=checked1 (click)="reset()">
+              Reset
+      </button>
+      <button mat-raised-button style="background-color: rgb(178 72 18 / 97%); color: white;
+       margin-left: 20px; width: 140px;" *ngIf=checked1 (click)="search()">
+              Search
+      </button>
       </div>
+
+      </div>
+    </div>
       <br>
     </mat-card>
     <br>&nbsp;
       </div>
 </section>
 
-<section *ngIf=checked3 style=" background-color: rgba(255, 255, 255, 0.897); background-image: url('assets/Base.png?&dpr=2&fit=crop&fm=jpg&h=2000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
+<section *ngIf=checked3 style=" background-color: rgba(255, 255, 255, 0.897);">
   <div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); "></div>
-  <div class="container" style="margin-left: 60px;">
-
-    <div class="col-sm-5" style=" background-color: rgb(52, 52, 49);margin-left: 5s0px;">
+  <div  style="display: flex; justify-content: center; align-items: left;">
+    <div class="row">
+    <div class="col-sm-5" style=" background-color: rgb(52, 52, 49);margin-left: 50px;">
       <img [src]="imageUrl" style = "height: 270px; width: 100%">
-      <p class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 20px;">
+      <h3 style="font-family: Cambria; margin-left: 20px; color:white">
 
         Based on your preferences we have arrived at
-       </p>
-       <p class="hero-subtitle" style="margin-left: 20px;">
+      </h3>
+       <h1 style="font-family: Cambria; margin-left: 20px; color:white">
         {{this.suburb}}
-       </p>
-       <div class="horizontal-line"></div>
+       </h1>
+       <div class="horizontal-line" style="margin-top: -5px; margin-bottom: 5px;"></div>
 
-       <p class="hero-subtitle2"  style="font-size: 1vw; margin-left: 20px; width: 400px">
+       <h3 style="font-family: Cambria; margin-left: 20px; color:white">
         {{this.desc}}<br>
-       </p>
-       <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 20px;">
-         ***As of 2023, top three professions in this region that <br>offer
+
+         ***As of 2023, top three professions in this region that offer
           significant employment opportunities.
-       </p>
+        </h3>
        <div class="horizontal-line"></div>
-       <ul class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 40px; margin-top:7px">
+       <h3>
+       <ul style="font-family: Cambria; margin-left: 40px; margin-top:7px; color:white">
         <li>{{this.top3Prof[0]}} </li>
         <li>{{this.top3Prof[1]}} </li>
         <li>{{this.top3Prof[2]}} </li>
        </ul>
-       <button mat-raised-button style="margin-top: 8px; margin-left: 100px; height: 50px; width: 280px;
+      </h3>
+      <div style="display: flex; justify-content: center; align-items: center;">
+       <button mat-raised-button style="margin-top: 8px; height: 50px; width: 280px;
        background-color: rgb(49 49 148 / 85%); color: white;"
         (click)="scrollDown()">
          Locate {{this.suburb}} on map
         </button>
+        </div>
         <br> &nbsp;
     </div>
-    <div class="col-sm-7" style=" background-color: white ">
+    <div class="col-sm-6" style=" background-color: white; ">
       <div class="heading" style="text-align: center;">
         <br>
         <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto;
         margin-bottom: 20px;">
           At a glance</span>
        </div>
-       <div class="container" style="margin-left: 30px; margin-top: 20px;">
+       <div style=" margin-top: 20px; display: flex; justify-content: center; align-items: center;">
         <div class="row">
           <div class="col-md-4" >
             <mat-card style="height: 100px; position: relative; width: 180px; background-color:rgb(52, 52, 49) ;">
@@ -194,7 +203,7 @@
           </mat-card>
           </div>
           <div class="col-md-4">
-            <mat-card style="height: 100px; width: 190px; margin-left: 5px; background-color:rgb(52, 52, 49) ;">
+            <mat-card style="height: 100px; width: 190px; background-color:rgb(52, 52, 49) ;">
               <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                 <img src ="assets/vehicle.png">
               </div>
@@ -219,10 +228,10 @@
 
           </div>
         </div></div>
-        <div class="container" style=" margin-top: 50px;">
+        <div  style=" margin-top: 50px; display: flex; justify-content: center; align-items: center;">
           <div class="row">
             <div class="col-md-4" >
-              <mat-card style="height: 100px; width: 200px; margin-left: 130px; background-color:rgb(52, 52, 49) ;">
+              <mat-card style="height: 100px; width: 200px;  background-color:rgb(52, 52, 49) ;">
                 <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                   <img src ="assets/school.png">
                 </div>
@@ -235,7 +244,7 @@
             </mat-card>
             </div>
             <div class="col-md-4" >
-              <mat-card style="height: 100px; width: 200px; margin-left: 120px; background-color:rgb(52, 52, 49) ;">
+              <mat-card style="height: 100px; width: 200px; margin-left: 60px; background-color:rgb(52, 52, 49) ;">
                 <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                   <img src ="assets/hospital-bed.png">
                 </div>
@@ -248,20 +257,26 @@
             </mat-card>
             </div>
             </div></div>
-            <p class="hero-subtitle2"
-            style="font-size: 1.2vw; margin-left: 30px;
-            color: black; text-align: center; margin-top: 20px;">
-              Do you currently live in Victoria?<br>
-              </p>
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <h2
+                style="margin-left: 30px; font-family: Cambria;
+                color: black; text-align: center; margin-top: 20px;">
+                  Do you currently live in Victoria?
+              </h2></div>
+              <div style="display: flex; justify-content: center; align-items: center;">
               <div class="horizontal-line"
-              style=" width: 40%; margin-left: 230px; border-color: #ced416;"></div>
-            <div class="container" >
+              style=" width: 40%;  border-color: #ced416;"></div></div>
+              <div style="display: flex; justify-content: center; align-items: center;">
+              <h2
+              style="margin-left: 30px; font-family: Cambria;
+              color: black; text-align: center; margin-top: 20px;">
+                Compare your rent with the recommended suburb
+            </h2>
+            </div>
+            <div  style="display: flex; justify-content: center; align-items: center;">
               <div class="row">
                 <div class="col-md-6" >
-                  <p class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 30px; color: black; margin-top: 20px;">
-                    Compare your rent with the recommended suburb
-                   </p>
-                   <mat-form-field style="width: 250px;   margin-top: 5px; margin-left: 60px;" *ngIf=checked>
+                   <mat-form-field style="width: 250px;   margin-top: 5px; " *ngIf=checked>
                     <mat-label >Select City/ Council to compare</mat-label>
                     <mat-select
                     id="sub1" name="sub1" [(ngModel)]="sub1" style="background-color: transparent; height: 20px;"
@@ -269,6 +284,7 @@
                       <mat-option *ngFor="let option of subListAll" [value]="option.value">{{ option.label }}</mat-option>
                     </mat-select>
                   </mat-form-field>
+
 
                 </div>
                 <div class="col-md-6" >
@@ -278,11 +294,26 @@
                   </div>
                 </div>
             </div> </div>
-
-          <p class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 60px; color: black; margin-top: 10px;">
-            Not Satisfied with your Recommendation? <br>
+            <h3
+            style="margin-left: 30px; font-family: Cambria;
+            color: black; text-align: center; margin-top: -18px;">
+              ** Suburb is part of a bigger city. E.g Clayton is part of City of Monash
+          </h3>
+          <div  style="display: flex; justify-content: center; align-items: center;">
+            <div class="horizontal-line"
+            style=" width: 40%;  border-color: #ced416;"></div> </div>
+          <div  style="display: flex; justify-content: center; align-items: center;">
+          <h2
+          style="margin-left: 30px; font-family: Cambria;
+          color: black; text-align: center;">
+          <span style="background-image: url('https://cw-contentful-assets.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2Fwvozpes63uc8%2F1CrwvVr7sGZXcXLkcxk3gP%2F5323db2d2c82a41321c92abecb150786%2Fww-brush-pluto.png?ixlib=rails-4.1.0&auto=format&w=1182&fm=png&s=a70719cb6123a53ae2295252bf035619'); background-size: 100% auto;
+          margin-bottom: 20px;">
+            Not Satisfied with your Recommendation? <br> </span>
             Choose from dropdown below to explore other recommended suburbs.
-          </p>
+
+        </h2>
+      </div>
+      <div  style="display: flex; justify-content: center; align-items: center;">
           <mat-form-field style="width: 280px;  margin-bottom: 3px; margin-top: 10px; margin-left: 140px;" *ngIf=checked>
             <mat-label >Explore Other Similar Suburbs</mat-label>
             <mat-select
@@ -291,46 +322,59 @@
               <mat-option *ngFor="let option of subList" [value]="option.value">{{ option.label }}</mat-option>
             </mat-select>
           </mat-form-field>
-          <div class="blue-box" style="margin-left: 620px; margin-top: -50px;" (click)="scrollToTop()">
-            <mat-icon style="color: white;">arrow_upward</mat-icon>
-         </div>
-         <br>
+          </div>
 
+         </div>
     </div>
+    </div>
+    <div style="display: flex; justify-content: right; align-items: right;">
+      <div class="blue-box" style="margin-right: 100px; margin-top: -50px;" (click)="scrollToTop()">
+        <mat-icon style="color: white;">arrow_upward</mat-icon>
+      </div>
     </div>
     <br> &nbsp;
 </section>
-<section *ngIf=checked3 style="background-image: url('assets/Base.png?&dpr=2&fit=crop&fm=jpg&h=2000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1300');">
+<section *ngIf=checked3 >
   <div style="height: 12vh;  text-align: center; background-color: rgb(29, 4, 100); "></div>
-  <div class="container" >
+  <div style="display: flex; justify-content: right; align-items: right;" >
     <div class="col-sm-9">
       <div id="leafletMap"
       style="height: 600px; width: 100%;" >
 
     </div>
     </div>
-    <div class="col-sm-4" style=" background-color: rgb(52, 52, 49);">
-      <p class="hero-subtitle2" style="font-size: 1.2vw; margin-left: 30px; margin-top: 20px;">
+    <div class="col-sm-3" style=" background-color: rgb(52, 52, 49);">
+      <h3
+      style="margin-left: 30px; font-family: Cambria; margin-top: 40px;
+      color: white; text-align: left;">
         ** Click on the school <img src ="assets/school.png" style="height: 30px;">
-        or  <br>hospital <img src ="assets/hospital-bed.png" style="height: 30px;"> icons to view respective names <br>
-        You can also zoom in and zoom out the map at anytime or <br>
+        or  hospital <img src ="assets/hospital-bed.png" style="height: 30px;"> icons to view respective names
+        You can also zoom in and zoom out the map at anytime or
         use reset button on the reset the map.
-      </p>
-
+    </h3>
+    <div style="display: flex; justify-content: center; align-items: center;">
       <button mat-raised-button
-      style=" margin-left: 60px; height: 50px; width: 250px;margin-top: 20px; background-color: rgba(148, 49, 49, 0.85); color: white;"
+      style=" margin-left: 60px; height: 50px; width: 250px; background-color: rgba(148, 49, 49, 0.85); color: white;"
         (click)="resetMap()">
         Reset Map
       </button>
+    </div>
 
-      <p class="hero-subtitle2" style="font-size: 1vw; margin-left: 40px;  margin-top: 20px;">
+      <h2
+      style="margin-left: 30px; font-family: Cambria;
+      color: white; text-align: center; margin-top: 20px;">
         Not Satisfied with your Recommendation ? <br>
-        </p>
+    </h2>
+    <div  style="display: flex; justify-content: center; align-items: center;">
+      <div class="horizontal-line"
+      style=" width: 60%;  border-color: #ced416;"></div> </div>
+    <div style="display: flex; justify-content: center; align-items: center;">
         <button mat-raised-button
-        style="margin-top: 5px; margin-left: 60px; height: 50px; width: 250px; background-color: rgb(49 49 148 / 85%); color: white;"
+        style="margin-top: 25px; margin-left: 60px; height: 50px; width: 250px; background-color: rgb(49 49 148 / 85%); color: white;"
           (click)="scrollToTop()">
           Search Again
         </button>
+        </div>
         <br> &nbsp;
     </div></div>
     <br> &nbsp;
