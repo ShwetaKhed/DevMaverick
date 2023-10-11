@@ -362,8 +362,8 @@
       Locate Schools or Hospitals on the map<br>
       </h3>
       <div style="background-color: white; margin: 10px;">
-      <mat-checkbox  (change)="setSchools($event.checked)" >Schools  <img src ="assets/school.png" style="height: 30px;"></mat-checkbox> <br>
-      <mat-checkbox  (change)="setHospitals($event.checked)">Hospitals  <img src ="assets/hospital-bed.png" style="height: 30px;"></mat-checkbox>
+      <mat-checkbox [checked]="isCheckedSchool" (change)="setSchools($event.checked)" >Schools  <img src ="assets/school.png" style="height: 30px;"></mat-checkbox> <br>
+      <mat-checkbox  [checked]="isCheckedHospital" (change)="setHospitals($event.checked)">Hospitals  <img src ="assets/hospital-bed.png" style="height: 30px;"></mat-checkbox>
     </div>
       <h3
       style="margin-left: 30px; font-family: Cambria; margin-top: 40px;

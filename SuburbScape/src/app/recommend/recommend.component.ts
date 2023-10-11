@@ -56,6 +56,8 @@ export class RecommendComponent {
   initialDisabled = true;
   completedCondition3 = true;
   imageUrl = "";
+  isCheckedSchool: boolean = true;
+  isCheckedHospital: boolean = true;
 
   options = [
     { value: '200', label: '$200' },
@@ -383,6 +385,8 @@ export class RecommendComponent {
        this.crime = parseFloat(subcrime.toFixed(2));
        this.subListAll = this.subListAll.filter(item => item.value !== this.suburb);
        this.setMapDetails();
+       this.setSchools(true);
+       this.setHospitals(true);
   });
 
     }, 200);
@@ -537,7 +541,15 @@ export class RecommendComponent {
        dataDict["Technicians/ trades workers"] = this.top3[i].Technicians;
        this.map.remove();
        this.setMapDetails();
+       if (this.isCheckedHospital){
+        this.setHospitals(true);
+      }
+      if (this.isCheckedSchool){
+        this.setSchools(true);
+      }
+       if (this.chart != undefined){
        this.compareRent();
+       }
        break;
     }
   }
@@ -585,7 +597,7 @@ export class RecommendComponent {
 
 openDialog1(){
   this.sharedService.message =
-  "This will allow us to make customized recommendations that fit your rental budget!"
+  "This will allow us to make apcustomized recommendations that fit your rental budget!"
   this.matDialog.open(DialogComponent,{
     width: '350px'
   })
@@ -610,6 +622,13 @@ openDialog3(){
 resetMap(){
   this.map.remove();
   this.setMapDetails();
+  if (this.isCheckedHospital){
+    this.setHospitals(true);
+  }
+  if (this.isCheckedSchool){
+    this.setSchools(true);
+  }
+
 }
 
 knowAboutRent(){
@@ -656,6 +675,7 @@ knowAbouthospitals(){
 setHospitals(completed: boolean) {
   let isFirstLayer = true;
   if (completed){
+    this.isCheckedHospital =true;
   const icon3 = L.icon({
     iconUrl: 'assets/hospital-bed.png',
     iconSize: [32, 32],
@@ -671,6 +691,7 @@ setHospitals(completed: boolean) {
     }
   });
 }else {
+  this.isCheckedHospital =false;
   for (const key in this.map._layers) {
     if (this.map._layers.hasOwnProperty(key)) {
       if (isFirstLayer) {
@@ -710,33 +731,38 @@ setHospitals(completed: boolean) {
     }).addTo(this.map);
 
     this.map.on("click", () => {
-      this.showSnackbar("Ohh no. Please click on one of the icons in the map.");
+      this.showSnackbar("Please click on one of the icons in the map.");
     });
-  });
 
+  });
+  if (this.isCheckedSchool){
+    this.setSchools(true);
+  }
 }
 }
 
 setSchools(completed: boolean) {
+  console.log(this.isCheckedSchool);
+  console.log(this.isCheckedHospital);
   let isFirstLayer = true;
-
   const icon2 = L.icon({
     iconUrl: 'assets/school.png',
     iconSize: [32, 32],
   });
   if (completed){
-
+    this.isCheckedSchool = true;
   this.http.get<any>('assets/school.json').subscribe(school => {
     for (var j = 0; j < school.length; j++){
     if (this.sub.toUpperCase() == school[j].LGA){
       const marker1 = L.marker([school[j].Lat, school[j].Lon], { icon: icon2 }).addTo(this.map)
       .bindPopup(school[j].school);
-
     }
   }
   });
 }
 else {
+  this.isCheckedSchool = false;
+
   for (const key in this.map._layers) {
     if (this.map._layers.hasOwnProperty(key)) {
       if (isFirstLayer) {
@@ -774,9 +800,12 @@ else {
       }
 
     }).addTo(this.map);
+    if (this.isCheckedHospital){
+      this.setHospitals(true);
+    }
 
     this.map.on("click", () => {
-      this.showSnackbar("Ohh no. Please click on one of the icons in the map.");
+      this.showSnackbar("Please click on one of the icons in the map.");
     });
 
 
