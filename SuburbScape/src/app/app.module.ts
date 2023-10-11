@@ -38,6 +38,7 @@ import {
 } from '@angular/cdk/drag-drop';
 import { CustomSnackbarComponent } from './custom-snackbar/custom-snackbar.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { SuburbscapeComponent } from './suburbscape/suburbscape.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { DialogComponent } from './dialog/dialog.component';
     LoadComponent,
     RecommendComponent,
     CustomSnackbarComponent,
-    DialogComponent
+    DialogComponent,
+    SuburbscapeComponent
   ],
   imports: [
     BrowserModule,

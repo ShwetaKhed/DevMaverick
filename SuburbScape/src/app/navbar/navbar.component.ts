@@ -22,4 +22,8 @@ export class NavbarComponent {
     this.router.navigate(['explore']);
   }
 
+  why(){
+    this.router.navigate(['why']);
+  }
+
 }

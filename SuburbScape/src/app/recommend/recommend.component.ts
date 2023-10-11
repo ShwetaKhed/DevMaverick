@@ -104,6 +104,8 @@ export class RecommendComponent {
   hospitalScore = 0;
   distanceScore = 0;
 
+
+
   constructor(private router: Router, private http: HttpClient,
     private sharedService: SharedService, private snackBar: MatSnackBar,
     private matDialog: MatDialog) {
@@ -354,7 +356,9 @@ export class RecommendComponent {
           for (var j = 0; j < this.top3.length; j++){
             if (this.top3[j].LGA == this.communityList[i].LGA){
               this.top3[j].distance = this.communityList[i].Distance;
-              this.top3[j].time = this.communityList[i].Travel_Time;
+              const hours = Math.floor(this.communityList[i].Travel_Time / 60);
+              const remainingMinutes = this.communityList[i].Travel_Time  % 60;
+              this.top3[j].time = hours;
               this.top3[j].school =
               this.communityList[i].Number_of_schools +
                this.communityList[i].Number_of_kindergartens;
@@ -625,6 +629,46 @@ resetMap(){
   this.setMapDetails();
 }
 
+knowAboutRent(){
+  this.sharedService.message =
+  "This is the average weekly rent accross " + this.sub + "."
+  this.matDialog.open(DialogComponent,{
+    width: '350px'
+  })
+}
+
+knowAboutDist(){
+  this.sharedService.message =
+  "This is the distance and the time taken to travel from " + this.sub + " to Melbourne.";
+  this.matDialog.open(DialogComponent,{
+    width: '350px'
+  })
+}
+
+knowAboutCrime(){
+  this.sharedService.message =
+  "This denotes the number of crimes reported  1000 people." +
+   "It is a standardized metric used to express the number of crimes within a specific population, allowing for meaningful comparisons across regions.";
+  this.matDialog.open(DialogComponent,{
+    width: '350px'
+  })
+}
+
+knowAboutSchools(){
+  this.sharedService.message =
+  "These are the number of available schools, colleges and kindergartens across " + this.sub;
+  this.matDialog.open(DialogComponent,{
+    width: '350px'
+  })
+}
+
+knowAbouthospitals(){
+  this.sharedService.message =
+  "These are the number of available hospitals " + this.sub;
+  this.matDialog.open(DialogComponent,{
+    width: '350px'
+  })
+}
 
 
 }
