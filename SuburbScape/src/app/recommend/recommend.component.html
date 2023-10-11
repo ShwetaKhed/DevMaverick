@@ -86,11 +86,11 @@
             </mat-form-field>
           </div>
           <div class="col-sm-2" style="margin-left: 50px;">
-            <mat-form-field style="width: 140px; margin-left: 30px;">
+            <mat-form-field style="width: 140px; margin-left: 30px;" >
               <mat-label>Max</mat-label>
               <mat-select required="true"  id="maxRent" name="maxRent"
               [(ngModel)]="maxRent" style="background-color: transparent;"
-              (selectionChange)="onMaxOptionSelected()">
+              (selectionChange)="onMaxOptionSelected()" >
                 <mat-option *ngFor="let option of option1" [value]="option.value">{{ option.label }}</mat-option>
               </mat-select>
             </mat-form-field>
@@ -351,7 +351,7 @@
   <div style="display: flex; justify-content: right; align-items: right;" >
     <div class="col-sm-9">
       <div id="leafletMap"
-      style="height: 600px; width: 100%;" >
+      style="height: 650px; width: 100%;" >
 
     </div>
     </div>
@@ -359,8 +359,18 @@
       <h3
       style="margin-left: 30px; font-family: Cambria; margin-top: 40px;
       color: white; text-align: left;">
+      Locate Schools or Hospitals on the map<br>
+      </h3>
+      <div style="background-color: white; margin: 10px;">
+      <mat-checkbox  (change)="setSchools($event.checked)" >Schools  <img src ="assets/school.png" style="height: 30px;"></mat-checkbox> <br>
+      <mat-checkbox  (change)="setHospitals($event.checked)">Hospitals  <img src ="assets/hospital-bed.png" style="height: 30px;"></mat-checkbox>
+    </div>
+      <h3
+      style="margin-left: 30px; font-family: Cambria; margin-top: 40px;
+      color: white; text-align: left;">
+
         ** Click on the school <img src ="assets/school.png" style="height: 30px;">
-        or  hospital <img src ="assets/hospital-bed.png" style="height: 30px;"> icons to view respective names
+        or  hospital <img src ="assets/hospital-bed.png" style="height: 30px;"> icons to view respective names.
         You can also zoom in and zoom out the map at anytime or
         use reset button on the reset the map.
     </h3>

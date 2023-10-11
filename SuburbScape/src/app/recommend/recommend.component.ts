@@ -103,7 +103,7 @@ export class RecommendComponent {
   safetyScore = 0;
   hospitalScore = 0;
   distanceScore = 0;
-
+  isSelectDisabled: boolean = true;
 
 
   constructor(private router: Router, private http: HttpClient,
@@ -138,6 +138,7 @@ export class RecommendComponent {
   onOptionSelected(event: any) {
     const selectedValue = event.value;
     this.initialDisabled = false;
+    this.isSelectDisabled = true;
     interface OptionMapping {
       value: string;
       label: string;
@@ -413,15 +414,7 @@ export class RecommendComponent {
       iconAnchor: [16, 32],
   });
 
-    const icon2 = L.icon({
-      iconUrl: 'assets/school.png',
-      iconSize: [32, 32],
-    });
 
-    const icon3 = L.icon({
-      iconUrl: 'assets/hospital-bed.png',
-      iconSize: [32, 32],
-    });
 
     this.http.get<any>('assets/centroid.json').subscribe(centres => {
       for (var i = 0; i < centres.length; i++){
@@ -444,26 +437,13 @@ export class RecommendComponent {
           break;
         }
       }
-      this.http.get<any>('assets/school.json').subscribe(school => {
-        for (var j = 0; j < school.length; j++){
-        if (this.sub.toUpperCase() == school[j].LGA){
-          const marker1 = L.marker([school[j].Lat, school[j].Lon], { icon: icon2 }).addTo(this.map)
-          .bindPopup(school[j].school);
-        }
-      }
-      });
 
-      this.http.get<any>('assets/hosp.json').subscribe(hosp => {
-        for (var j = 0; j < hosp.length; j++){
-          if (this.sub.toUpperCase() == hosp[j].LGA){
-            const marker1 = L.marker([hosp[j].Lat, hosp[j].Lon], { icon: icon3 }).addTo(this.map)
-            .bindPopup(hosp[j].hospital);
-          }
-        }
-      });
 
     });
+
     regionColors[this.sub.toUpperCase()] = 'red';
+
+
 
     this.http.get<any>('assets/regional_vic.json').subscribe(geojsonData => {
       this.geojsonData = geojsonData;
@@ -530,6 +510,7 @@ export class RecommendComponent {
 
   onSuburbSelected()
   {
+
     const dataDict: Record<string, number> = {};
     for (var i = 0; i <  this.top3.length; i++ )
     {
@@ -556,6 +537,7 @@ export class RecommendComponent {
        dataDict["Technicians/ trades workers"] = this.top3[i].Technicians;
        this.map.remove();
        this.setMapDetails();
+       this.compareRent();
        break;
     }
   }
@@ -567,6 +549,7 @@ export class RecommendComponent {
   }
 
   compareRent(){
+
     var data = 0;
     for (var i = 0; i < this.subListAll.length; i++)
     {
@@ -668,6 +651,138 @@ knowAbouthospitals(){
   this.matDialog.open(DialogComponent,{
     width: '350px'
   })
+}
+
+setHospitals(completed: boolean) {
+  let isFirstLayer = true;
+  if (completed){
+  const icon3 = L.icon({
+    iconUrl: 'assets/hospital-bed.png',
+    iconSize: [32, 32],
+  });
+
+
+  this.http.get<any>('assets/hosp.json').subscribe(hosp => {
+    for (var j = 0; j < hosp.length; j++){
+      if (this.sub.toUpperCase() == hosp[j].LGA){
+        const marker1 = L.marker([hosp[j].Lat, hosp[j].Lon], { icon: icon3 }).addTo(this.map)
+        .bindPopup(hosp[j].hospital);
+      }
+    }
+  });
+}else {
+  for (const key in this.map._layers) {
+    if (this.map._layers.hasOwnProperty(key)) {
+      if (isFirstLayer) {
+        isFirstLayer = false;
+        continue;
+      }
+      const value = this.map._layers[key];
+      this.map.removeLayer(value);
+    }
+  }
+  const regionColors: { [key: string]: string } = {
+  };
+
+ regionColors[this.sub.toUpperCase()] = 'red';
+  this.http.get<any>('assets/regional_vic.json').subscribe(geojsonData => {
+    this.geojsonData = geojsonData;
+    L.geoJSON(geojsonData, {
+      style: function(feature) {
+        if (feature && feature.properties) {
+
+          const region = feature.properties.Region;
+          const lga = feature.properties.LGA;
+          const fillColor = regionColors[lga] || 'transparent';
+
+          return {
+            fillColor: fillColor,
+            weight: 1,
+            opacity: 1,
+            color: 'grey',
+            fillOpacity: 0.2
+          };
+        }
+        return {};
+
+      }
+
+    }).addTo(this.map);
+
+    this.map.on("click", () => {
+      this.showSnackbar("Ohh no. Please click on one of the icons in the map.");
+    });
+  });
+
+}
+}
+
+setSchools(completed: boolean) {
+  let isFirstLayer = true;
+
+  const icon2 = L.icon({
+    iconUrl: 'assets/school.png',
+    iconSize: [32, 32],
+  });
+  if (completed){
+
+  this.http.get<any>('assets/school.json').subscribe(school => {
+    for (var j = 0; j < school.length; j++){
+    if (this.sub.toUpperCase() == school[j].LGA){
+      const marker1 = L.marker([school[j].Lat, school[j].Lon], { icon: icon2 }).addTo(this.map)
+      .bindPopup(school[j].school);
+
+    }
+  }
+  });
+}
+else {
+  for (const key in this.map._layers) {
+    if (this.map._layers.hasOwnProperty(key)) {
+      if (isFirstLayer) {
+        isFirstLayer = false;
+        continue;
+      }
+      const value = this.map._layers[key];
+      this.map.removeLayer(value);
+    }
+  }
+  const regionColors: { [key: string]: string } = {
+  };
+
+ regionColors[this.sub.toUpperCase()] = 'red';
+  this.http.get<any>('assets/regional_vic.json').subscribe(geojsonData => {
+    this.geojsonData = geojsonData;
+    L.geoJSON(geojsonData, {
+      style: function(feature) {
+        if (feature && feature.properties) {
+
+          const region = feature.properties.Region;
+          const lga = feature.properties.LGA;
+          const fillColor = regionColors[lga] || 'transparent';
+
+          return {
+            fillColor: fillColor,
+            weight: 1,
+            opacity: 1,
+            color: 'grey',
+            fillOpacity: 0.2
+          };
+        }
+        return {};
+
+      }
+
+    }).addTo(this.map);
+
+    this.map.on("click", () => {
+      this.showSnackbar("Ohh no. Please click on one of the icons in the map.");
+    });
+
+
+  });
+
+}
 }
 
 
