@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-suburbscape',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./suburbscape.component.css']
 })
 export class SuburbscapeComponent {
+
+  constructor( private router: Router) {
+  }
+
+  explore(){
+    this.router.navigate(['explore']);
+  }
 
 }
