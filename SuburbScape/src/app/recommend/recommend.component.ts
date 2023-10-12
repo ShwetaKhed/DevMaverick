@@ -76,7 +76,6 @@ export class RecommendComponent {
     { value: 'NA', label: '' },
   ];
   occList = [
-    { value: 'NA', label: 'N/A' },
     { value: 'Managers', label: 'Manager' },
     { value: 'Professionals', label: 'Professional' },
     { value: 'Clerical', label: 'Clerical/ administrative workers' },
@@ -84,7 +83,8 @@ export class RecommendComponent {
     { value: 'Labourers', label: 'Labourers' },
     { value: 'Drivers', label: 'Machinery operators/drivers' },
     { value: 'Sales', label: 'Sales workers' },
-    { value: 'Technicians', label: 'Technicians/trades workers' }
+    { value: 'Technicians', label: 'Technicians/trades workers' },
+    { value: 'NA', label: 'N/A' }
 
   ];
   option1 = [ { value: '', label: '' }];
