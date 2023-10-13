@@ -474,7 +474,7 @@ export class RecommendComponent {
       }).addTo(this.map);
 
       this.map.on("click", () => {
-        this.showSnackbar("Ohh no. Please click on one of the icons in the map.");
+        this.showSnackbar("Please click on one of the icons in the map.");
       });
 
 
