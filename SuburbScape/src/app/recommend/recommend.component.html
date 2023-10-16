@@ -29,7 +29,7 @@
                     <mat-icon>question_mark</mat-icon>
                   </button>
                   <i class="ico fa fa-check ico-green"></i>
-                    <span class="desc">Please select your weekly rental budget
+                    <span class="desc">Select your weekly rental budget
                   </span>
                 </p>
                 <mat-divider></mat-divider>
@@ -193,14 +193,14 @@
               <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                 <img src ="assets/house.png">
               </div>
-              <h3 style="text-align: center; margin-top: 40px; color: white">
+              <h3 style="text-align: center; margin-top: 60px; color: white">
                 Median Rent / Week <br>
                 {{this.rent}} AUD
-              </h3> <br>
-              <button mat-raised-button style="background-color: rgb(49 49 148 / 85%); color: white;
-              margin-left: 20px; height: 30px; width: 140px; margin-top: -20px;" *ngIf=checked1 (click)="knowAboutRent()">
-                 Know more
-             </button>
+                <button mat-mini-fab color="primary" (click)="knowAboutRent()">
+                  <mat-icon>question_mark</mat-icon>
+                  </button>
+              </h3>
+
           </mat-card>
           </div>
           <div class="col-md-4">
@@ -208,15 +208,13 @@
               <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                 <img src ="assets/vehicle.png">
               </div>
-              <h3 style="text-align: center; margin-top: 40px; color: white">
+              <h3 style="text-align: center; margin-top: 60px; color: white">
                   Drive to Melbourne <br>
-                {{this.distance}} Kms/ {{this.time}} hours
-
-              </h3> <br>
-              <button mat-raised-button style="background-color: rgb(49 49 148 / 85%); color: white;
-              margin-left: 20px; height: 30px; width: 140px; margin-top: -20px;" *ngIf=checked1 (click)="knowAboutDist()">
-                     Know more
-             </button>
+                {{this.distance}} Kms/ {{this.time}} hr
+                <button mat-mini-fab color="primary" (click)="knowAboutDist()">
+                  <mat-icon>question_mark</mat-icon>
+                  </button>
+              </h3>
           </mat-card>
           </div>
           <div class="col-md-4">
@@ -224,14 +222,13 @@
               <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                 <img src ="assets/crime.png">
               </div>
-              <h3 style="text-align: center; margin-top: 40px; color: white;">
+              <h3 style="text-align: center; margin-top: 60px; color: white;">
                   Crimes Reported in 2022 <br>
                 {{this.crime}}
+                <button mat-mini-fab color="primary" (click)="knowAboutCrime()">
+                  <mat-icon>question_mark</mat-icon>
+                  </button>
               </h3>
-              <button mat-raised-button style="background-color: rgb(49 49 148 / 85%); color: white;
-              margin-left: 20px; height: 30px; width: 140px; " *ngIf=checked1 (click)="knowAboutCrime()">
-                     Know more
-             </button>
           </mat-card>
 
           </div>
@@ -243,15 +240,13 @@
                 <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                   <img src ="assets/school.png">
                 </div>
-                <h3 style="text-align: center; margin-top: 40px; color: white;">
+                <h3 style="text-align: center; margin-top: 60px; color: white;">
                     Schools & Kindergartens <br>
                   {{this.schools}}
-                </h3><br>
-                <button mat-raised-button style="background-color: rgb(49 49 148 / 85%); color: white;
-                margin-left: 30px; height: 30px; width: 140px; margin-top: -20px; " *ngIf=checked1 (click)="knowAboutSchools()">
-                       Know more
-               </button>
-
+                  <button mat-mini-fab color="primary" (click)="knowAboutSchools()">
+                    <mat-icon>question_mark</mat-icon>
+                    </button>
+                </h3>
             </mat-card>
             </div>
             <div class="col-md-4" >
@@ -259,15 +254,13 @@
                 <div class="circular-image" style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; border-radius: 50%; background-color: rgb(29, 4, 100);">
                   <img src ="assets/hospital-bed.png">
                 </div>
-                <h3 style="text-align: center; margin-top: 40px; color: white;">
+                <h3 style="text-align: center; margin-top: 60px; color: white;">
                     Hospitals <br>
                   {{this.hospital}}
+                  <button mat-mini-fab color="primary" (click)="knowAbouthospitals()">
+                    <mat-icon>question_mark</mat-icon>
+                    </button>
                 </h3>
-                <button mat-raised-button style="background-color: rgb(49 49 148 / 85%); color: white;
-              margin-left: 30px; height: 30px; width: 140px; " *ngIf=checked1 (click)="knowAbouthospitals()">
-                     Know more
-             </button>
-
             </mat-card>
             </div>
             </div></div>
@@ -373,8 +366,8 @@
 
         ** Click on the school <img src ="assets/school.png" style="height: 30px;">
         or  hospital <img src ="assets/hospital-bed.png" style="height: 30px;"> icons to view respective names.
-        You can also zoom in and zoom out the map at anytime or
-        use reset button on the reset the map.
+        You can also zoom in and zoom out the map at anytime or click
+        reset button to reset the map.
     </h3>
     <div style="display: flex; justify-content: center; align-items: center;">
       <button mat-raised-button

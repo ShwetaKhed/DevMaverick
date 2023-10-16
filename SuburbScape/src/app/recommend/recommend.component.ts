@@ -658,7 +658,7 @@ knowAboutCrime(){
 
 knowAboutSchools(){
   this.sharedService.message =
-  "These are the number of available schools, colleges and kindergartens across " + this.sub;
+  "These are the number of available schools, colleges and kindergartens across " + this.sub + ".";
   this.matDialog.open(DialogComponent,{
     width: '350px'
   })
@@ -666,7 +666,7 @@ knowAboutSchools(){
 
 knowAbouthospitals(){
   this.sharedService.message =
-  "These are the number of available hospitals " + this.sub;
+  "These are the number of available hospitals " + this.sub + ".";
   this.matDialog.open(DialogComponent,{
     width: '350px'
   })
